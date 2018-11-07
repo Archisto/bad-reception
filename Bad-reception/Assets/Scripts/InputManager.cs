@@ -56,12 +56,13 @@ public class InputManager : MonoBehaviour {
         {
             previousMouseX1 = null;
         }
+
         //Read mouse as backup - right thumb
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(2))
         {
             previousMouseX2 = Input.mousePosition.x;
         }
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(2))
         {
             leftValX = 1f;
             if (previousLeftAngle != null && previousMouseX2 != null)
