@@ -34,3 +34,14 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Wwise
+WCOM/WCOM_WwiseProject/.cache/*
+WCOM/WCOM_WwiseProject/Originals/*
+WCOM/WwiseProject/.cache/*
+WCOM/WwiseProject/Originals/*
+*.akd
+*.prof
+*.wsettings
+*.validationcache
+*.wem
