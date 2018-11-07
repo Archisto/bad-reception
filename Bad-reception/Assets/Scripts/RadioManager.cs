@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RadioManager : MonoBehaviour {
+    
+    public static float minFrequency = 148.5f;
+    public static float maxFrequency = 283.5f;
 
-    public float minFrequency = 148.5f;
-    public float maxFrequency = 283.5f;
+    public Channels channels;
     
     private float _volume = 1f;
     public float volume
@@ -25,7 +27,7 @@ public class RadioManager : MonoBehaviour {
     public float frequency
     {
         get{ return _frequency; }
-        set{ _frequency = Mathf.Clamp(value, minFrequency, maxFrequency); updateWWValues(); }
+        set{ _frequency = Mathf.Clamp(value, RadioManager.minFrequency, RadioManager.maxFrequency); updateWWValues(); }
     }
 
     private float _tuning = 0f;
@@ -48,7 +50,14 @@ public class RadioManager : MonoBehaviour {
         get { return _distort; }
         set { _distort = Mathf.Clamp(value, 0, 1f); updateWWValues(); }
     }
-    
+
+    private float _angle = 0f;
+    public float angle
+    {
+        get { return _angle; }
+        set { _angle = value; updateWWValues(); }
+    }
+
     // Use this for initialization
     void Start () {
         
@@ -61,6 +70,24 @@ public class RadioManager : MonoBehaviour {
 
     void updateWWValues()
     {
+        //Calculate nearest channel & tuning & noise
+        Channel nearest = null;
+        float nearestDistance = 999f;
+
+        foreach (Channel chnl in channels.channels)
+        {
+            //Create channel indicators
+            float distance = Mathf.Abs(chnl.frequency - this.frequency);
+            if(distance < nearestDistance)
+            {
+                nearest = chnl;
+                nearestDistance = distance;
+            }
+        }
+
+        var angle = smallestAngleBetween(nearest.angle, this.angle);
+        this._noise = Mathf.Min(1f,Mathf.Abs(angle));
+
         AkSoundEngine.SetRTPCValue("ChannelA", _channelA);
         //AkSoundEngine.SetRTPCValue("ChannelB", _channelB);
         AkSoundEngine.SetRTPCValue("Tuning", _tuning);
@@ -69,5 +96,13 @@ public class RadioManager : MonoBehaviour {
         AkSoundEngine.SetRTPCValue("Volume", _tuning);
         AkSoundEngine.SetRTPCValue("Program", _tuning);
         
+    }
+
+    float smallestAngleBetween(float a1, float a2)
+    {
+        float d = a1 - a2;
+        float max = Mathf.PI * 2;
+        float mp = Mathf.Floor((d - -Mathf.PI) / max);
+        return d - (mp * max);
     }
 }

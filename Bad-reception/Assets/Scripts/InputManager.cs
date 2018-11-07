@@ -17,6 +17,8 @@ public class InputManager : MonoBehaviour {
     private float? previousLeftAngle;
     private float? previousRightAngle;
 
+    private float? previousMouseX;
+    
 	// Use this for initialization
 	void Start () {
 		
@@ -29,6 +31,7 @@ public class InputManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        //Read xbox controller.
         var leftValX = Input.GetAxis("left axis x");
         var leftValY = Input.GetAxis("left axis y");
         var rightValX = Input.GetAxis("right axis x");
@@ -36,6 +39,24 @@ public class InputManager : MonoBehaviour {
         
         var leftAngle = Mathf.Atan2(leftValY, leftValX);
         var rightAngle = Mathf.Atan2(rightValY, rightValX);
+        
+        //Read mouse as backup
+        if(Input.GetMouseButtonDown(0))
+        {
+            previousMouseX = Input.mousePosition.x;
+        }
+        if (Input.GetMouseButton(0))
+        {
+            leftValX = 1f;
+            if (previousLeftAngle != null && previousMouseX != null)
+                leftAngle = previousLeftAngle.Value + (previousMouseX.Value- Input.mousePosition.x)/150f;
+            
+        }
+        else
+        {
+            previousMouseX = null;
+        }
+
 
         if (Mathf.Abs(leftValX) + Mathf.Abs(leftValY) < 0.9)
         {
@@ -62,7 +83,6 @@ public class InputManager : MonoBehaviour {
             var speed = Input.GetAxis("right trigger") > 0 ? 1.6f : 0.2f;
             var d = smallestAngleBetween(previousRightAngle.Value, rightAngle) * speed;
             this.rightAngle += d * 180 / Mathf.PI;
-            
         }
         
         leftTemp.transform.rotation = Quaternion.Euler(new Vector3(0,0,this.leftAngle));
