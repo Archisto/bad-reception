@@ -86,6 +86,7 @@ public class RadioManager : MonoBehaviour {
             }
         }
         _tuning = Mathf.Clamp( (5f-nearestDistance)/5f, 0f,1f);
+        _channelA = nearest.channelId;
 
         var angle = smallestAngleBetween(nearest.angle, this.angle);
         this._noise = Mathf.Min(1f,Mathf.Abs(angle));
