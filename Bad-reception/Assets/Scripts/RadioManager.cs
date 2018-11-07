@@ -85,6 +85,7 @@ public class RadioManager : MonoBehaviour {
                 nearestDistance = distance;
             }
         }
+        _tuning = Mathf.Clamp( (5f-nearestDistance)/5f, 0f,1f);
 
         var angle = smallestAngleBetween(nearest.angle, this.angle);
         this._noise = Mathf.Min(1f,Mathf.Abs(angle));
@@ -96,7 +97,9 @@ public class RadioManager : MonoBehaviour {
         AkSoundEngine.SetRTPCValue("Distort", _distort);
         AkSoundEngine.SetRTPCValue("Volume", _tuning);
         AkSoundEngine.SetRTPCValue("Program", _tuning);
-        
+
+
+       // Debug.Log("Update: channel " + _channelA + ", tuning " + _tuning + " noise " + _noise);
     }
 
     float smallestAngleBetween(float a1, float a2)

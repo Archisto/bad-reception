@@ -11,11 +11,11 @@ public class Channels : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         this.channels = new List<Channel>();
-        this.channels.Add(new Channel(0, 170, 0, "Tampereen Radio"));
-        this.channels.Add(new Channel(0, 200, 70, "Moskova"));
-        this.channels.Add(new Channel(0, 240, 140, "Helsinki"));
-        this.channels.Add(new Channel(0, 280, 270, "Ruotsi"));
-        this.channels.Add(new Channel(0, 150, 300, "Lahti"));
+        this.channels.Add(new Channel(0, 210, 0, "Tampereen Radio"));
+        this.channels.Add(new Channel(1, 170, 70, "Moskova"));
+        this.channels.Add(new Channel(1, 240, 140, "Helsinki"));
+        this.channels.Add(new Channel(1, 280, 270, "Ruotsi"));
+        this.channels.Add(new Channel(1, 150, 300, "Lahti"));
 
         if(showChannels)
         {

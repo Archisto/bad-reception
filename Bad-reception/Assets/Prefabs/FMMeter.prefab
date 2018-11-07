@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4518897744591182}
   - component: {fileID: 114256687472369542}
+  - component: {fileID: 114717756159139078}
   m_Layer: 0
   m_Name: FMMeter
   m_TagString: Untagged
@@ -224,3 +225,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radio: {fileID: 0}
+--- !u!114 &114717756159139078
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1330528180515948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9420bebf6f9e0e245a40fc6272052022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  channelIndicator: {fileID: 1114054755584710, guid: 7fc8485b1d7c7784983ee2ea3f49c758,
+    type: 2}
+  showChannels: 1
