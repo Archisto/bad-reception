@@ -9,6 +9,22 @@
 							<ObjectRef Name="System" ID="{2A939891-0B6A-408C-9637-FA1E8B664E47}" WorkUnitID="{DA84AF5D-8CE2-4630-9CA2-180C9106F20C}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Radio_static" ID="{E4128DF6-7D90-4E42-8028-BEE7F8EEB52F}"/>
+						<Bus Name="Radio_reception" ID="{FA421D48-6361-47AC-9F01-820418E2E4F4}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+									<ObjectRef Name="Very_Bad_Connection" ID="{0C5A674D-5EC0-45A6-87A7-3885B3196DCD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Bus Name="Tampere" ID="{EFC6BBA7-49B2-49ED-853F-E29C105D1E32}"/>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

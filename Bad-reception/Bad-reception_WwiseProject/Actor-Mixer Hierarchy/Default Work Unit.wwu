@@ -1,6 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}" SchemaVersion="89">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Tampere" ID="{832F4C5A-817D-47FA-98B2-C92A5AE82E93}" ShortID="709927673">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Tampere-virta" ID="{E61B3179-5C47-4168-88AB-98BBA83AB42D}" ShortID="628353369">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Tampere" ID="{EFC6BBA7-49B2-49ED-853F-E29C105D1E32}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Tampere-musiikit" ID="{A472B311-CA1D-41B2-9410-7FFC856D4CD7}" ShortID="494898706">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Faust_Aino_Ackte" ID="{5034AF49-C69E-4E25-B1FB-CBB3261F9AB4}" ShortID="938791526">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Faust_Aino_Ackte" ID="{8F71D79E-82F3-47C3-BB95-96C90F553008}" ShortID="340283207">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.202583829992175"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.62170128228282"/>
+														<Property Name="TrimEnd" Type="Real64" Value="34.8106547869885"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Faust_Aino_Ackte.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Faust_Aino_Ackte" ID="{8F71D79E-82F3-47C3-BB95-96C90F553008}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Tampere-jingle" ID="{BA7D63F8-18E7-4388-8877-9600C7EC97BF}" ShortID="117580426">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ääninäyte_1_Radiolähetysten_Alkujuonto" ID="{1B94E895-1ABD-4AB4-8015-1FC3E73E248B}" ShortID="486792087">
+											<Language>SFX</Language>
+											<AudioFile>Ääninäyte_1_Radiolähetysten_Alkujuonto.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ääninäyte_1_Radiolähetysten_Alkujuonto" ID="{1B94E895-1ABD-4AB4-8015-1FC3E73E248B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Tampere-jingle" ID="{BA7D63F8-18E7-4388-8877-9600C7EC97BF}"/>
+								<ItemRef Name="Tampere-musiikit" ID="{A472B311-CA1D-41B2-9410-7FFC856D4CD7}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Static" ID="{96B33C5A-B579-42F3-A8DF-FBA4957660CD}" ShortID="840530171">
+					<ChildrenList>
+						<Sound Name="radio_static_loop" ID="{99BE1B34-9816-4256-BFC1-2BF5495ACF34}" ShortID="144177238">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-19</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Radio_static" ID="{E4128DF6-7D90-4E42-8028-BEE7F8EEB52F}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="radio_static_loop" ID="{776725E9-F028-412C-9392-C181725C2B94}" ShortID="1047536226">
+									<Language>SFX</Language>
+									<AudioFile>radio_static_loop.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="radio_static_loop" ID="{776725E9-F028-412C-9392-C181725C2B94}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

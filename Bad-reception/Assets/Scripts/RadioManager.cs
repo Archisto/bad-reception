@@ -60,7 +60,8 @@ public class RadioManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        
+        AkSoundEngine.PostEvent("PlayRadio", gameObject);
+
 	}
 	
 	// Update is called once per frame

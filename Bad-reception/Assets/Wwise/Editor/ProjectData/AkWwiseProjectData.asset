@@ -11,14 +11,103 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f22d0ffecd92431697539ec51426e0a, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 30adb8f71e40ff4fad0ab41256708bae
+    m_lastTime: -8586600077684775808
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 7b5aa15acc4a234da9a57e45ca84af82
+    m_lastTime: -8586599928084775808
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 62a232ab0460844b8f22bb119c5bfa27
+    m_lastTime: -8586599952134775808
+    List:
+    - name: SoundBank
+      guid: 55db96cfe200d54fbe983cf2d1030bae
+      id: 1661994096
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SoundBank
+        ObjectType: 7
+      Path: Default Work Unit/SoundBank
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: bb2d239dfc92f74d80854f2d5caa6fba
+    m_lastTime: -8586599925964775808
+    List:
+    - name: PlayRadio
+      guid: 1714363695cf414cb1d463f2600f36b1
+      id: 2507646724
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayRadio
+        ObjectType: 3
+      Path: Default Work Unit/PlayRadio
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 908e32237304834c840bc0d1456eb9bd
+    m_lastTime: -8586599928084775808
+    List:
+    - name: ChannelA
+      guid: 343635321db60643bc57c2f1b6b40a7b
+      id: 4231616191
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ChannelA
+        ObjectType: 13
+      Path: Default Work Unit/ChannelA
+    - name: ChannelB
+      guid: 76d5fa29bf809343b28b4c4c9ea73960
+      id: 4231616188
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ChannelB
+        ObjectType: 13
+      Path: Default Work Unit/ChannelB
+    - name: Tuning
+      guid: 9fb17cd65d73df49bcf0b3c5cf156c5a
+      id: 2977229006
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Tuning
+        ObjectType: 13
+      Path: Default Work Unit/Tuning
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 111376008af75d43ac24cb3d59f738c1
+    m_lastTime: -8586600077684775808
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 5986e8d2d82fb44b8691e74910fbc560
+    m_lastTime: -8586599953324775808
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: c1c4c7cef31510489ee8eb4fb375e57b
+    m_lastTime: -8586600077694775808
+    List: []
+  ExpandedItems:
+  - /Bad-reception_WwiseProject
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
