@@ -6,19 +6,14 @@ using UnityEngine.UI;
 public class UIController : MonoBehaviour
 {
     public Image fadeScreen;
-
-    public void ActivatePauseScreen(bool activate)
+    
+    private void Start()
     {
-        Debug.Log("Game should " + (activate ? "" : "not ") + "be paused now");
+        
     }
 
     private void Update()
     {
         
-    }
-
-    public void ResetUI()
-    {
-
     }
 }

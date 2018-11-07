@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
 
     private UIController _ui;
     private FadeToColor _fade;
+    private PlayerTaskController _taskController;
 
     private bool _freshGameStart;
     private bool _updateAtSceneStart;
@@ -118,6 +119,7 @@ public class GameManager : MonoBehaviour
         }
 
         InitLevels();
+        _taskController = FindObjectOfType<PlayerTaskController>();
         _updateAtSceneStart = true;
     }
 
@@ -200,7 +202,6 @@ public class GameManager : MonoBehaviour
                  && _fade.FadedOut)
         {
             SceneTransition = TransitionPhase.None;
-            ActivatePauseScreen(false, "");
             ResetScene();
         }
         else if (!SceneChanging)
@@ -233,7 +234,6 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void ResetScene()
     {
-        _ui.ResetUI();
         _fade.StartFadeIn(true);
     }
 
@@ -346,14 +346,6 @@ public class GameManager : MonoBehaviour
 
     #endregion Scene Management
 
-    public void ActivatePauseScreen(bool activate, string playerName)
-    {
-        if (activate || SceneTransition == TransitionPhase.None)
-        {
-            _ui.ActivatePauseScreen(activate);
-        }
-    }
-
     public void WinGame()
     {
         // TODO
@@ -369,6 +361,11 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.P))
         {
             _fade.StartNextFade();
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            _taskController.NextTask();
         }
     }
 
