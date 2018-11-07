@@ -50,21 +50,21 @@ public class InputManager : MonoBehaviour {
 
         if(previousLeftAngle != null)
         {
-            var speed = Input.GetAxis("left trigger") > 0 ? 0.25f : 0.05f;
+            var speed = Input.GetAxis("left trigger") > 0 ? 0.5f : 0.05f;
             var d = smallestAngleBetween(previousLeftAngle.Value, leftAngle) * speed;
             this.leftAngle += d * 180 / Mathf.PI;
 
-            rm.frequency -= d*5f;
+            rm.frequency -= d*20f;
         }
 
         if(previousRightAngle != null)
         {
-            var speed = Input.GetAxis("right trigger") > 0 ? 0.25f : 0.05f;
+            var speed = Input.GetAxis("right trigger") > 0 ? 1.6f : 0.2f;
             var d = smallestAngleBetween(previousRightAngle.Value, rightAngle) * speed;
             this.rightAngle += d * 180 / Mathf.PI;
-            rm.frequency += d;
+            
         }
-
+        
         leftTemp.transform.rotation = Quaternion.Euler(new Vector3(0,0,this.leftAngle));
         rightTemp.transform.rotation = Quaternion.Euler(new Vector3(0,0,this.rightAngle));
 
