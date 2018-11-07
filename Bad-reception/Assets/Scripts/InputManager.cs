@@ -17,10 +17,11 @@ public class InputManager : MonoBehaviour {
     private float? previousLeftAngle;
     private float? previousRightAngle;
 
-    private float? previousMouseX;
-    
-	// Use this for initialization
-	void Start () {
+    private float? previousMouseX1;
+    private float? previousMouseX2;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 
@@ -40,23 +41,36 @@ public class InputManager : MonoBehaviour {
         var leftAngle = Mathf.Atan2(leftValY, leftValX);
         var rightAngle = Mathf.Atan2(rightValY, rightValX);
         
-        //Read mouse as backup
+        //Read mouse as backup - left thumb
         if(Input.GetMouseButtonDown(0))
         {
-            previousMouseX = Input.mousePosition.x;
+            previousMouseX1 = Input.mousePosition.x;
         }
         if (Input.GetMouseButton(0))
         {
             leftValX = 1f;
-            if (previousLeftAngle != null && previousMouseX != null)
-                leftAngle = previousLeftAngle.Value + (previousMouseX.Value- Input.mousePosition.x)/150f;
-            
+            if (previousLeftAngle != null && previousMouseX1 != null)
+                leftAngle = previousLeftAngle.Value + (previousMouseX1.Value- Input.mousePosition.x)/150f;
         }
         else
         {
-            previousMouseX = null;
+            previousMouseX1 = null;
         }
-
+        //Read mouse as backup - right thumb
+        if (Input.GetMouseButtonDown(1))
+        {
+            previousMouseX2 = Input.mousePosition.x;
+        }
+        if (Input.GetMouseButton(1))
+        {
+            leftValX = 1f;
+            if (previousLeftAngle != null && previousMouseX2 != null)
+                leftAngle = previousLeftAngle.Value + (previousMouseX2.Value - Input.mousePosition.x) / 150f;
+        }
+        else
+        {
+            previousMouseX2 = null;
+        }
 
         if (Mathf.Abs(leftValX) + Mathf.Abs(leftValY) < 0.9)
         {

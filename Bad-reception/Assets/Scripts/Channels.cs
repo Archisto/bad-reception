@@ -12,7 +12,7 @@ public class Channels : MonoBehaviour {
 	void Start () {
         this.channels = new List<Channel>();
         this.channels.Add(new Channel(0, 210, 0, "Tampereen Radio"));
-        this.channels.Add(new Channel(1, 170, 70, "Moskova"));
+        this.channels.Add(new Channel(1, 170, 70, "Tukholma"));
         this.channels.Add(new Channel(1, 240, 140, "Helsinki"));
         this.channels.Add(new Channel(1, 280, 270, "Ruotsi"));
         this.channels.Add(new Channel(1, 150, 300, "Lahti"));
