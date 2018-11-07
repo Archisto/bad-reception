@@ -2,7 +2,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	2507646724	PlayRadio			\Default Work Unit\PlayRadio	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	340283207	Faust_Aino_Ackte	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Mac\SFX\Faust_Aino_Ackte_A50090FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Faust_Aino_Ackte		269627
+	250462957	RAI-HMVX3136-01-2-001	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Mac\SFX\RAI-HMVX3136-01-2-001_54840529.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\RAI-HMVX3136-01-2-001		1438779
+	324652965	RAI-Gramophone282796-01-1-001	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Mac\SFX\RAI-Gramophone282796-01-1-001_18A61914.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\RAI-Gramophone282796-01-1-001		1511988
+	340283207	Faust_Aino_Ackte	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Mac\SFX\Faust_Aino_Ackte_9BC16157.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Faust_Aino_Ackte		269627
 	486792087	Tampere-jingle	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Mac\SFX\Ääninäyte_1_Radiolähetysten_Alkujuonto_A1793BE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-jingle		359846
+	867146824	RAI-Gramophone7-282154-01-2-001	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Mac\SFX\RAI-Gramophone7-282154-01-2-001_4EF7152B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\RAI-Gramophone7-282154-01-2-001		1419874
 	1047536226	radio_static_loop	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Mac\SFX\radio_static_loop_CB1F3167.wem		\Actor-Mixer Hierarchy\Default Work Unit\Static\radio_static_loop		102996
 

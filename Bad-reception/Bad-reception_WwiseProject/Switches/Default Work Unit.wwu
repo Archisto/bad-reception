@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D2E88659-2FD8-4BB4-8691-E74910FBC560}" SchemaVersion="89">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{D2E88659-2FD8-4BB4-8691-E74910FBC560}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D2E88659-2FD8-4BB4-8691-E74910FBC560}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="ChannelA" ID="{6BF4818B-E31C-47D1-B12F-63A006E027ED}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Tampere" ID="{73561A3D-BEA9-4155-A548-7EAE9A746E4C}"/>
+						<Switch Name="Tukholma" ID="{CEC531D2-1E76-4058-B1D8-68F7DD95D0C8}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}"/>
+						<Curve Name="" ID="{3FCE1652-937F-4436-84FB-FB09F8E5009C}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>0</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>20</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
