@@ -29,6 +29,12 @@ public class Channels : MonoBehaviour {
         }
     }
 
+    void randomizeChannels()
+    {
+        List<float> availableFrequencies = new List<float>();
+        
+    }
+
     // Update is called once per frame
     void Update () {
 		
