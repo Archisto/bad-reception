@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>/Users/Matias/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/Projektit/MuseoGameJam/bad-reception/Bad-reception/Bad-reception_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/Matias/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/Projektit/MuseoGameJam/bad-reception/Bad-reception/Bad-reception_WwiseProject/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/Matias/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/Projektit/MuseoGameJam/bad-reception/Bad-reception/Bad-reception_WwiseProject/GeneratedSoundBanks/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/Matias/Library/Application Support/Wwise2018/Bottles/wwise/dosdevices/y:/Documents/Projektit/MuseoGameJam/bad-reception/Bad-reception/Bad-reception_WwiseProject/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1661994096" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SoundBank</ObjectPath>
+			<ShortName>SoundBank</ShortName>
+			<Path>SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2507646724" Name="PlayRadio" ObjectPath="\Events\Default Work Unit\PlayRadio"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="340283207" Language="SFX">
+					<ShortName>Faust_Aino_Ackte.wav</ShortName>
+					<Path>SFX/Faust_Aino_Ackte_9BC16157.wem</Path>
+				</File>
+				<File Id="486792087" Language="SFX">
+					<ShortName>Ääninäyte_1_Radiolähetysten_Alkujuonto.wav</ShortName>
+					<Path>SFX/Ääninäyte_1_Radiolähetysten_Alkujuonto_A1793BE9.wem</Path>
+				</File>
+				<File Id="1047536226" Language="SFX">
+					<ShortName>radio_static_loop.wav</ShortName>
+					<Path>SFX/radio_static_loop_CB1F3167.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -36,10 +36,8 @@ sysinfo.txt
 *.unitypackage
 
 # Wwise
-WCOM/WCOM_WwiseProject/.cache/*
-WCOM/WCOM_WwiseProject/Originals/*
-WCOM/WwiseProject/.cache/*
-WCOM/WwiseProject/Originals/*
+Bad-reception/Bad-reception_WwiseProject/.cache/*
+Bad-reception/Bad-reception_WwiseProject/Originals/*
 *.akd
 *.prof
 *.wsettings

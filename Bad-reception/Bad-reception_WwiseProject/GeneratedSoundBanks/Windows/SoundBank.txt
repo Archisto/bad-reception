@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2507646724	PlayRadio			\Default Work Unit\PlayRadio	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	340283207	Faust_Aino_Ackte	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Faust_Aino_Ackte_A50090FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Faust_Aino_Ackte		269627
+	486792087	Tampere-jingle	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Ääninäyte_1_Radiolähetysten_Alkujuonto_A1793BE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-jingle		359846
+	1047536226	radio_static_loop	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\radio_static_loop_CB1F3167.wem		\Actor-Mixer Hierarchy\Default Work Unit\Static\radio_static_loop		102996
+

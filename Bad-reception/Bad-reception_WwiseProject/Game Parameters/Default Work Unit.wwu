@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{23328E90-0473-4C83-840B-C0D1456EB9BD}" SchemaVersion="89">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{23328E90-0473-4C83-840B-C0D1456EB9BD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{23328E90-0473-4C83-840B-C0D1456EB9BD}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="ChannelB" ID="{29FAD576-80BF-4393-B28B-4C4C9EA73960}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Tuning" ID="{D67CB19F-735D-49DF-BCF0-B3C5CF156C5A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

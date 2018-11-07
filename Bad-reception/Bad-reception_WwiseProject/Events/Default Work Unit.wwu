@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9D232DBB-92FC-4DF7-8085-4F2D5CAA6FBA}" SchemaVersion="89">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{9D232DBB-92FC-4DF7-8085-4F2D5CAA6FBA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9D232DBB-92FC-4DF7-8085-4F2D5CAA6FBA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="PlayRadio" ID="{36361417-CF95-4C41-B1D4-63F2600F36B1}">
+					<ChildrenList>
+						<Action Name="" ID="{36F69FDB-A5D8-4CC2-9DF7-0FF4F9118638}" ShortID="538564302">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tampere-virta" ID="{E61B3179-5C47-4168-88AB-98BBA83AB42D}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2F6C6BEC-4D28-4D97-A4CD-D26B97D0D50C}" ShortID="122528468">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="radio_static_loop" ID="{99BE1B34-9816-4256-BFC1-2BF5495ACF34}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
