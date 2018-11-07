@@ -1,0 +1,31 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	4231616191	ChannelA			\Default Work Unit\ChannelA	
+
+Switch	ID	Name	Switch Group			Notes
+	1413860146	Tukholma	ChannelA			
+	1849635779	Tampere	ChannelA			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2977229006	Tuning			\Default Work Unit\Tuning	
+	4231616191	ChannelA			\Default Work Unit\ChannelA	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	376964263	Radio_static			\Default Work Unit\Master Audio Bus\Radio_static	
+	554678636	Radio_reception			\Default Work Unit\Master Audio Bus\Radio_reception	
+	716292993	Berliini			\Default Work Unit\Master Audio Bus\Radio_reception\Berliini	
+	954211654	Helsinki			\Default Work Unit\Master Audio Bus\Radio_reception\Helsinki	
+	1413860146	Tukholma			\Default Work Unit\Master Audio Bus\Radio_reception\Tukholma	
+	1507264790	Turku			\Default Work Unit\Master Audio Bus\Radio_reception\Turku	
+	1849635779	Tampere			\Default Work Unit\Master Audio Bus\Radio_reception\Tampere	
+	2433866642	Lontoo			\Default Work Unit\Master Audio Bus\Radio_reception\Lontoo	
+	3698121253	Lahti			\Default Work Unit\Master Audio Bus\Radio_reception\Lahti	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+	2230265344	Very_Bad_Connection	Wwise Tremolo			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

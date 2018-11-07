@@ -621,7 +621,34 @@
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
 										<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
-										<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="20000">
+											<RTPCList>
+												<RTPC Name="" ID="{6D97FA3B-228E-413E-B5C0-9E558A13D9A4}" ShortID="519193769">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Tuning" ID="{D67CB19F-735D-49DF-BCF0-B3C5CF156C5A}" WorkUnitID="{23328E90-0473-4C83-840B-C0D1456EB9BD}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C41BEB53-EC6B-44F6-92E3-56D5AAFFA138}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>20</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>12000</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="OnOffBand1" Type="bool" Value="False"/>
 										<Property Name="OnOffBand2" Type="bool" Value="False"/>
 									</PropertyList>
@@ -1905,7 +1932,40 @@
 						</Effect>
 						<Effect Name="Very_Bad_Connection" ID="{0C5A674D-5EC0-45A6-87A7-3885B3196DCD}" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 							<PropertyList>
-								<Property Name="ModFrequency" Type="Real32" Value="1376.52"/>
+								<Property Name="ModDepth" Type="Real32" Value="81.6">
+									<RTPCList>
+										<RTPC Name="" ID="{C6FDF9CC-2098-4B6A-B57B-BDFFFB24CED7}" ShortID="568702808">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Tuning" ID="{D67CB19F-735D-49DF-BCF0-B3C5CF156C5A}" WorkUnitID="{23328E90-0473-4C83-840B-C0D1456EB9BD}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{E644B374-2AEB-411C-BF87-89BD374A371B}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="1"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>74.82517</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.41146</XPos>
+														<YPos>48.05294</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>-100</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="ModFrequency" Type="Real32" Value="396.76"/>
 								<Property Name="ModPWM" Type="Real32" Value="1"/>
 								<Property Name="ModPhaseOffset" Type="Real32" Value="-180"/>
 								<Property Name="ModSmoothing" Type="Real32" Value="100"/>

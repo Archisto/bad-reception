@@ -21,7 +21,7 @@ public class FMMeter : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        var position = -1.5f + (rm.frequency-rm.minFrequency) / (rm.maxFrequency - rm.minFrequency) * 3f;
+        var position = -1.5f + (rm.frequency-RadioManager.minFrequency) / (RadioManager.maxFrequency - RadioManager.minFrequency) * 3f;
         this.meter.localPosition = new Vector3(position, 0f, 0f);
 	}
 }

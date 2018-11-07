@@ -1,5 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="89">
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1541614289" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1541599116" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1541599116" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Bad-reception_WwiseProject.crossover.wsettings" DateLow="1541615160" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Bad-reception_WwiseProject.wproj" DateLow="1541599116" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1541614077" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1541611672" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1541599117" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1541599117" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1541599117" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Effects\Factory Effects.wwu" DateLow="1541614077" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Events\Default Work Unit.wwu" DateLow="1541614289" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1541614077" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1541599116" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1541614077" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1541599117" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1541599117" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1541599117" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1541599117" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Queries\Factory Queries.wwu" DateLow="1541599117" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1541611672" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1541599117" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\States\Default Work Unit.wwu" DateLow="1541599117" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1541611553" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1541599116" DateHigh="0"/>
+	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1541599117" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception_WwiseIntegrationTemp\Bad-reception_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1541599040" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception_WwiseIntegrationTemp\Bad-reception_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1541599040" DateHigh="0"/>
 	<ValidationCacheItem File="Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception_WwiseIntegrationTemp\Bad-reception_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1541599040" DateHigh="0"/>
