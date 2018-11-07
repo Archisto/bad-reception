@@ -16,6 +16,21 @@ namespace AK
         static const AkUniqueID PLAYRADIO = 2507646724U;
     } // namespace EVENTS
 
+    namespace SWITCHES
+    {
+        namespace CHANNELA
+        {
+            static const AkUniqueID GROUP = 4231616191U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID TAMPERE = 1849635779U;
+                static const AkUniqueID TUKHOLMA = 1413860146U;
+            } // namespace SWITCH
+        } // namespace CHANNELA
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID CHANNELA = 4231616191U;
@@ -31,10 +46,16 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID BERLIINI = 716292993U;
+        static const AkUniqueID HELSINKI = 954211654U;
+        static const AkUniqueID LAHTI = 3698121253U;
+        static const AkUniqueID LONTOO = 2433866642U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID RADIO_RECEPTION = 554678636U;
         static const AkUniqueID RADIO_STATIC = 376964263U;
         static const AkUniqueID TAMPERE = 1849635779U;
+        static const AkUniqueID TUKHOLMA = 1413860146U;
+        static const AkUniqueID TURKU = 1507264790U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

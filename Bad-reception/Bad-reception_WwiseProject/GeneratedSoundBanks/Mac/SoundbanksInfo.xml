@@ -24,13 +24,25 @@
 				<Event Id="2507646724" Name="PlayRadio" ObjectPath="\Events\Default Work Unit\PlayRadio"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="250462957" Language="SFX">
+					<ShortName>RAI-HMVX3136-01-2-001.wav</ShortName>
+					<Path>SFX/RAI-HMVX3136-01-2-001_54840529.wem</Path>
+				</File>
+				<File Id="324652965" Language="SFX">
+					<ShortName>RAI-Gramophone282796-01-1-001.wav</ShortName>
+					<Path>SFX/RAI-Gramophone282796-01-1-001_18A61914.wem</Path>
+				</File>
 				<File Id="340283207" Language="SFX">
 					<ShortName>Faust_Aino_Ackte.wav</ShortName>
-					<Path>SFX/Faust_Aino_Ackte_A50090FD.wem</Path>
+					<Path>SFX/Faust_Aino_Ackte_9BC16157.wem</Path>
 				</File>
 				<File Id="486792087" Language="SFX">
 					<ShortName>Ääninäyte_1_Radiolähetysten_Alkujuonto.wav</ShortName>
 					<Path>SFX/Ääninäyte_1_Radiolähetysten_Alkujuonto_A1793BE9.wem</Path>
+				</File>
+				<File Id="867146824" Language="SFX">
+					<ShortName>RAI-Gramophone7-282154-01-2-001.wav</ShortName>
+					<Path>SFX/RAI-Gramophone7-282154-01-2-001_4EF7152B.wem</Path>
 				</File>
 				<File Id="1047536226" Language="SFX">
 					<ShortName>radio_static_loop.wav</ShortName>
