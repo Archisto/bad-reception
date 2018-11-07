@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Persistence;
 
 public class GameManager : MonoBehaviour
 {
@@ -56,6 +58,7 @@ public class GameManager : MonoBehaviour
     private UIController _ui;
     private FadeToColor _fade;
     private PlayerTaskController _taskController;
+    private SaveSystem _saveSystem;
 
     private bool _freshGameStart;
     private bool _updateAtSceneStart;
@@ -118,8 +121,11 @@ public class GameManager : MonoBehaviour
             GameState = State.Play;
         }
 
-        InitLevels();
         _taskController = FindObjectOfType<PlayerTaskController>();
+        _taskController.Init();
+        _saveSystem = new SaveSystem(new JSONPersistence(SavePath));
+        LoadTasks();
+        InitLevels();
         _updateAtSceneStart = true;
     }
 
@@ -187,6 +193,80 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion Initialization
+
+    #region Persistence
+
+    /// <summary>
+    /// The file path where the game is saved. On Windows, points to
+    /// %userprofile%\AppData\LocalLow\<companyname>\<productname>\<savefile>.
+    /// </summary>
+    public string SavePath
+    {
+        get
+        {
+            return Path.Combine(Application.persistentDataPath, "tasks");
+        }
+    }
+
+    /// <summary>
+    /// Gets data from the game and stores it to a data object.
+    /// </summary>
+    public void SaveGame()
+    {
+        GameData data = new GameData();
+
+        foreach (PlayerTask task in _taskController.tasks)
+        {
+            data.PlayerTasks.Add(task);
+        }
+
+        //foreach (PlayerTask task in _taskController.tasks)
+        //{
+        //    data.TaskQuestions.Add(task.question);
+        //    data.TaskAnswers.Add(task.answers);
+        //}
+
+        //foreach (PlayerTask task in data.Tasks)
+        //{
+        //    Debug.Log(task.question);
+        //}
+
+        _saveSystem.Save(data);
+        Debug.Log(string.Format("Game saved"));
+    }
+
+    /// <summary>
+    /// Loads saved data.
+    /// </summary>
+    /// <returns>Loaded game data</returns>
+    public GameData LoadTasks()
+    {
+        GameData data = _saveSystem.LoadFromResources("Tasks");
+        //GameData data = _saveSystem.Load();
+
+        if (data == null)
+        {
+            Debug.LogWarning("Save data not loaded.");
+            return null;
+        }
+
+        List<PlayerTask> tasks = new List<PlayerTask>();
+        foreach (PlayerTask task in data.PlayerTasks)
+        {
+            tasks.Add(task);
+        }
+        //for (int i = 0; i < data.TaskQuestions.Count; i++)
+        //{
+        //    PlayerTask task = new PlayerTask(data.TaskQuestions[i]);
+        //    task.SetAnswers(data.TaskCorrectAnswers[i], data.TaskAnswers[i]);
+        //    tasks.Add(task);
+        //}
+        _taskController.SetTasks(tasks);
+
+        return data;
+    }
+
+    #endregion Persistence
 
     #region Updating
 
@@ -367,6 +447,11 @@ public class GameManager : MonoBehaviour
         {
             _taskController.NextTask();
         }
+
+        //if (Input.GetKeyDown(KeyCode.F5))
+        //{
+        //    SaveGame();
+        //}
     }
 
     private void OnDisable()
