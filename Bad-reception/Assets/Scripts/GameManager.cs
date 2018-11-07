@@ -452,6 +452,11 @@ public class GameManager : MonoBehaviour
         //{
         //    SaveGame();
         //}
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            _ui.ToggleCreditsScreen();
+        }
     }
 
     private void OnDisable()

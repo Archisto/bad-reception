@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class UIController : MonoBehaviour
 {
     public Image fadeScreen;
-    
+    public GameObject creditsScreen;
+
     private void Start()
     {
         
@@ -15,5 +16,15 @@ public class UIController : MonoBehaviour
     private void Update()
     {
         
+    }
+
+    public void ToggleCreditsScreen()
+    {
+        creditsScreen.SetActive(!creditsScreen.activeSelf);
+    }
+
+    public void ActivateCreditsScreen(bool activate)
+    {
+        creditsScreen.SetActive(activate);
     }
 }
