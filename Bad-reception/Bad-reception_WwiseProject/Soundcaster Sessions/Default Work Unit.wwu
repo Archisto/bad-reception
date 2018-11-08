@@ -25,7 +25,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}"/>
-							<Value>6</Value>
+							<Value>5</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Program" ID="{2BAA839B-329A-4342-AE45-CEC1A708B111}"/>

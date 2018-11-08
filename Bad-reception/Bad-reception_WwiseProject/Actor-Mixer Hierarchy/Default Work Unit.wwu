@@ -812,13 +812,6 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="RAI-OdeonA228064-01-1-001" ID="{2F44C34D-299F-4518-BDFE-2D0917F9B384}" ShortID="803277249">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -869,11 +862,11 @@
 				</Folder>
 				<Folder Name="Lontoo" ID="{725F97F4-087C-4BE7-BB3D-3101DAE70649}" ShortID="5477467">
 					<ChildrenList>
-						<RandomSequenceContainer Name="Lontoo-virta" ID="{BD5E5CAF-C475-4A5D-91E2-E306860D117D}" ShortID="576789219">
+						<RandomSequenceContainer Name="Lontoo-virta" ID="{C349465C-C471-4C31-890B-DB6A13C3C5D5}" ShortID="145338039">
 							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -884,7 +877,143 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="BuddyBurton_JohnnyDodds" ID="{987DF8A8-D274-40CE-BA6D-25A4DCEB9693}" ShortID="677415213">
+								<RandomSequenceContainer Name="Lontoo-musat" ID="{BD5E5CAF-C475-4A5D-91E2-E306860D117D}" ShortID="576789219">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Lontoo" ID="{D285F763-40AB-4A75-A98D-715CE88BEFFF}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="BuddyBurton_JohnnyDodds" ID="{987DF8A8-D274-40CE-BA6D-25A4DCEB9693}" ShortID="677415213">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="BuddyBurton_JohnnyDodds" ID="{284FD9F2-49EB-49FB-90A8-21F9BA759814}" ShortID="453063245">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="1.536"/>
+														<Property Name="TrimEnd" Type="Real64" Value="148.48"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>BuddyBurton_JohnnyDodds.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="BuddyBurton_JohnnyDodds" ID="{284FD9F2-49EB-49FB-90A8-21F9BA759814}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DoctorJazz_Jelly-Roll" ID="{30D4263A-1645-46E1-AE9D-8ED64D8CEB94}" ShortID="583236923">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="DoctorJazz_Jelly-Roll" ID="{B8C05AC8-0C81-43D0-B1EF-4BB405F14F02}" ShortID="927013688">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="3.26476825221239"/>
+														<Property Name="TrimEnd" Type="Real64" Value="206.846388550885"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>DoctorJazz_Jelly-Roll.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="DoctorJazz_Jelly-Roll" ID="{B8C05AC8-0C81-43D0-B1EF-4BB405F14F02}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="IHateToLeaveYouNow_LouisArmstrong" ID="{FFE6E45A-5195-49DA-BF23-6CB9D130A709}" ShortID="79277883">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="IHateToLeaveYouNow_LouisArmstrong" ID="{DE03DEC5-E090-4274-9F47-9BB9DD4CBFAF}" ShortID="1072169702">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="1.26495630530974"/>
+														<Property Name="TrimEnd" Type="Real64" Value="184.894446626106"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>IHateToLeaveYouNow_LouisArmstrong.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="IHateToLeaveYouNow_LouisArmstrong" ID="{DE03DEC5-E090-4274-9F47-9BB9DD4CBFAF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="TakeMeToTheLandOfJazz" ID="{45C74ED4-1E6E-4407-A3CB-6AE7A81B5B89}" ShortID="147022319">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="TakeMeToTheLandOfJazz" ID="{A1726DBD-4EF8-4C43-A49A-5B42433FF83B}" ShortID="1048002417">
+													<PropertyList>
+														<Property Name="TrimBegin" Type="Real64" Value="5.9382328539823"/>
+														<Property Name="TrimEnd" Type="Real64" Value="164.884932245575"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>TakeMeToTheLandOfJazz.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="TakeMeToTheLandOfJazz" ID="{A1726DBD-4EF8-4C43-A49A-5B42433FF83B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="BigBen" ID="{64276333-EA15-4150-AFF8-FB5F94939883}" ShortID="578780222">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -894,122 +1023,37 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="BuddyBurton_JohnnyDodds" ID="{284FD9F2-49EB-49FB-90A8-21F9BA759814}" ShortID="453063245">
-											<PropertyList>
-												<Property Name="TrimBegin" Type="Real64" Value="1.536"/>
-												<Property Name="TrimEnd" Type="Real64" Value="148.48"/>
-												<Property Name="VolumeOffset" Type="Real64">
-													<ValueList>
-														<Value>9</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
+										<AudioFileSource Name="BigBen" ID="{96CC581F-D03B-4F44-AACD-12327D8382E1}" ShortID="411624144">
 											<Language>SFX</Language>
-											<AudioFile>BuddyBurton_JohnnyDodds.wav</AudioFile>
+											<AudioFile>BigBen.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="BigBenDistort" ID="{7B2CDF15-AA7A-4E24-B849-161310D848CD}" ShortID="511440219">
+											<Language>SFX</Language>
+											<AudioFile>BigBenDistort.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="BuddyBurton_JohnnyDodds" ID="{284FD9F2-49EB-49FB-90A8-21F9BA759814}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="DoctorJazz_Jelly-Roll" ID="{30D4263A-1645-46E1-AE9D-8ED64D8CEB94}" ShortID="583236923">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="DoctorJazz_Jelly-Roll" ID="{B8C05AC8-0C81-43D0-B1EF-4BB405F14F02}" ShortID="927013688">
-											<PropertyList>
-												<Property Name="TrimBegin" Type="Real64" Value="3.26476825221239"/>
-												<Property Name="TrimEnd" Type="Real64" Value="206.846388550885"/>
-												<Property Name="VolumeOffset" Type="Real64">
-													<ValueList>
-														<Value>9</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>DoctorJazz_Jelly-Roll.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="DoctorJazz_Jelly-Roll" ID="{B8C05AC8-0C81-43D0-B1EF-4BB405F14F02}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="IHateToLeaveYouNow_LouisArmstrong" ID="{FFE6E45A-5195-49DA-BF23-6CB9D130A709}" ShortID="79277883">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="IHateToLeaveYouNow_LouisArmstrong" ID="{DE03DEC5-E090-4274-9F47-9BB9DD4CBFAF}" ShortID="1072169702">
-											<PropertyList>
-												<Property Name="TrimBegin" Type="Real64" Value="1.26495630530974"/>
-												<Property Name="TrimEnd" Type="Real64" Value="184.894446626106"/>
-												<Property Name="VolumeOffset" Type="Real64">
-													<ValueList>
-														<Value>9</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>IHateToLeaveYouNow_LouisArmstrong.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="IHateToLeaveYouNow_LouisArmstrong" ID="{DE03DEC5-E090-4274-9F47-9BB9DD4CBFAF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="TakeMeToTheLandOfJazz" ID="{45C74ED4-1E6E-4407-A3CB-6AE7A81B5B89}" ShortID="147022319">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="TakeMeToTheLandOfJazz" ID="{A1726DBD-4EF8-4C43-A49A-5B42433FF83B}" ShortID="1048002417">
-											<PropertyList>
-												<Property Name="TrimBegin" Type="Real64" Value="5.9382328539823"/>
-												<Property Name="TrimEnd" Type="Real64" Value="164.884932245575"/>
-												<Property Name="VolumeOffset" Type="Real64">
-													<ValueList>
-														<Value>15</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>TakeMeToTheLandOfJazz.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="TakeMeToTheLandOfJazz" ID="{A1726DBD-4EF8-4C43-A49A-5B42433FF83B}" Platform="Linked"/>
+										<ActiveSource Name="BigBenDistort" ID="{7B2CDF15-AA7A-4E24-B849-161310D848CD}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="BigBen" ID="{64276333-EA15-4150-AFF8-FB5F94939883}"/>
+								<ItemRef Name="Lontoo-musat" ID="{BD5E5CAF-C475-4A5D-91E2-E306860D117D}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Moskova" ID="{9459D410-B837-422B-B5F0-218C79B4EE0E}" ShortID="485814257">
 					<ChildrenList>
-						<RandomSequenceContainer Name="Moskova-virta" ID="{404F7A02-07FC-49CB-910E-C74C8910416E}" ShortID="76712035">
+						<RandomSequenceContainer Name="Moskova-virta" ID="{5A9CA33D-2CCD-4178-9A12-3C5F31000CB8}" ShortID="179506465">
 							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1020,46 +1064,169 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="RAI-OdeonA228064-01-1-001" ID="{213EC065-1380-4926-BE41-885F0CBFED77}" ShortID="297455656">
+								<RandomSequenceContainer Name="Venaja-biisit" ID="{02776B32-0E73-4203-B5DA-C01D9C0DCC87}" ShortID="437037032">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+											<ObjectRef Name="Moskova" ID="{3C579F18-DE73-4C53-891E-66C2D3CCC300}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="RAI-OdeonA228064-01-1-001" ID="{E7D37112-B48F-4FD8-A523-D7723AC85DD9}" ShortID="632165566">
-											<PropertyList>
-												<Property Name="VolumeOffset" Type="Real64">
-													<ValueList>
-														<Value>9</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>RAI-OdeonA228064-01-1-001.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="191356147"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
+										<Sound Name="Russian1" ID="{E1BB5076-84BE-4136-89EA-30C0AB311602}" ShortID="203310399">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Russian1" ID="{C4195640-7553-40E3-8224-7E7CE3BD16E7}" ShortID="290576465">
+													<PropertyList>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Russian1.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Russian1" ID="{C4195640-7553-40E3-8224-7E7CE3BD16E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Russian2" ID="{A04111C1-5874-4443-B973-2C353F8E29EB}" ShortID="700977124">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Russian2" ID="{017E40A5-64B4-45C2-B82F-5772063EB46B}" ShortID="1071556064">
+													<PropertyList>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Russian2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Russian2" ID="{017E40A5-64B4-45C2-B82F-5772063EB46B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Russian3" ID="{542B2943-65A4-4D9B-ACCD-9E6840033C98}" ShortID="14519185">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Russian3" ID="{0D997A82-C868-4FA8-8CCF-486A9159D648}" ShortID="579549146">
+													<PropertyList>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Russian3.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Russian3" ID="{0D997A82-C868-4FA8-8CCF-486A9159D648}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Russian4" ID="{1F648075-5323-42FF-B0E7-9C61A2AC30B3}" ShortID="609887582">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Russian4" ID="{E9E1E12B-D165-4CC0-A140-16C88314ACD6}" ShortID="701909898">
+													<PropertyList>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Russian4.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Russian4" ID="{E9E1E12B-D165-4CC0-A140-16C88314ACD6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Russian5" ID="{2F32E9E3-98A7-4FE7-B82C-AD5E3851C6F5}" ShortID="789846418">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Russian5" ID="{D9C6BC33-312C-4B20-B893-CCCE9B7C2BE1}" ShortID="551731891">
+													<PropertyList>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Russian5.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Russian5" ID="{D9C6BC33-312C-4B20-B893-CCCE9B7C2BE1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RAI-OdeonA228064-01-1-001" ID="{E7D37112-B48F-4FD8-A523-D7723AC85DD9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 								<Sound Name="Russian" ID="{A48D4103-782E-4C27-BECC-6AB6566C06BC}" ShortID="77225023">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+											<ObjectRef Name="Moskova" ID="{3C579F18-DE73-4C53-891E-66C2D3CCC300}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Russian" ID="{FEE4E65B-E217-4BEA-8CC5-558ED7142D31}" ShortID="958184055">
+											<PropertyList>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Russian.wav</AudioFile>
 										</AudioFileSource>
@@ -1069,6 +1236,11 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Venaja-biisit" ID="{02776B32-0E73-4203-B5DA-C01D9C0DCC87}"/>
+								<ItemRef Name="Russian" ID="{A48D4103-782E-4C27-BECC-6AB6566C06BC}"/>
+								<ItemRef Name="Venaja-biisit" ID="{02776B32-0E73-4203-B5DA-C01D9C0DCC87}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>

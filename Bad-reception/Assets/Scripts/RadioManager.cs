@@ -12,7 +12,10 @@ public class RadioManager : MonoBehaviour {
 
     public Channels channels;
     public GameObject distortObject;
-    
+
+    public GameObject switchon;
+    public GameObject switchoff;
+
     private float _volume = 1f;
     public float volume
     {
@@ -95,9 +98,17 @@ public class RadioManager : MonoBehaviour {
             AkSoundEngine.PostEvent("StopRadio", gameObject);
         }
 
+        this.switchon.SetActive(RadioManager.Running);
+        this.switchoff.SetActive(!RadioManager.Running);
+
         distortTarget += (Random.value-0.5f)*0.6f*Time.deltaTime + Mathf.Sin(Time.time*0.6f)*0.000f;
         distortTarget = Mathf.Clamp(distortTarget, 0f, 1f);
         userDistortLevel = Mathf.Clamp(userDistortLevel, -1f, 2f);
+        if(!RadioManager.Running)
+        {
+            distortTarget = 0.5f;
+            userDistortLevel = 0.5f;
+        }
         updateWWValues();
 	}
 

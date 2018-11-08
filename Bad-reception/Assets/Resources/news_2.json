@@ -1,0 +1,11 @@
+﻿{"PlayerTasks":[
+    {"Question":"Mikä oli junan numero?",
+        "Answers":["112","313","212","222"],
+        "CorrectAnswer":2},
+    {"Question":"Moneltako vaunu siirretään?",
+        "Answers":["Klo 21.00","Klo 22.00","Klo 20.00","Klo 00.00"],
+        "CorrectAnswer":3},
+    {"Question":"Moneltako matkustajien tulisi olla paikalla?",
+        "Answers":["Klo 18","Klo 19","Klo 20","Klo 21"],
+        "CorrectAnswer":3},
+]}
