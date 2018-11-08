@@ -99,6 +99,7 @@ public class RadioManager : MonoBehaviour {
             }
         }
         _tuning = Mathf.Clamp( (8f-nearestDistance)/8f, 0f,1f);
+        _tuning = getPowIn(2, _tuning);
         _channelA = nearest.channelId;
 
         var angle = smallestAngleBetween(nearest.angle, this.angle);
