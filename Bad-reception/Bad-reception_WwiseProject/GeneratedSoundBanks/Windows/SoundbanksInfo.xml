@@ -28,9 +28,17 @@
 					<ShortName>Lontoon_Jenny.wav</ShortName>
 					<Path>SFX/Lontoon_Jenny_224453E6.wem</Path>
 				</File>
+				<File Id="165011521" Language="SFX">
+					<ShortName>Enkä_minä_ryyppää.wav</ShortName>
+					<Path>SFX/Enkä_minä_ryyppää_A1793BE9.wem</Path>
+				</File>
 				<File Id="188239427" Language="SFX">
 					<ShortName>HuomioHuomio3NBTampere.wav</ShortName>
 					<Path>SFX/HuomioHuomio3NBTampere_A1793BE9.wem</Path>
+				</File>
+				<File Id="191356147" Language="SFX">
+					<ShortName>RAI-OdeonA228064-01-1-001.wav</ShortName>
+					<Path>SFX/RAI-OdeonA228064-01-1-001_A1793BE9.wem</Path>
 				</File>
 				<File Id="223650898" Language="SFX">
 					<ShortName>Kalliolle_kukkulalle.wav</ShortName>
@@ -60,9 +68,25 @@
 					<ShortName>Isotalon_Antti.wav</ShortName>
 					<Path>SFX/Isotalon_Antti_1393AC4C.wem</Path>
 				</File>
+				<File Id="563266515" Language="SFX">
+					<ShortName>Pai-pai-paitaressu.wav</ShortName>
+					<Path>SFX/Pai-pai-paitaressu_A1793BE9.wem</Path>
+				</File>
+				<File Id="590978195" Language="SFX">
+					<ShortName>Jannen_hanuripolkka.wav</ShortName>
+					<Path>SFX/Jannen_hanuripolkka_A1793BE9.wem</Path>
+				</File>
 				<File Id="608550253" Language="SFX">
 					<ShortName>SeuraaMusiikkia.wav</ShortName>
 					<Path>SFX/SeuraaMusiikkia_A1793BE9.wem</Path>
+				</File>
+				<File Id="614635772" Language="SFX">
+					<ShortName>Lontoon_Jenny.wav</ShortName>
+					<Path>SFX/Lontoon_Jenny_A1793BE9.wem</Path>
+				</File>
+				<File Id="632588341" Language="SFX">
+					<ShortName>RAI-Gramophone2-42134-01-1-001.wav</ShortName>
+					<Path>SFX/RAI-Gramophone2-42134-01-1-001_A1793BE9.wem</Path>
 				</File>
 				<File Id="641888413" Language="SFX">
 					<ShortName>Uutinen_Tullit.wav</ShortName>
@@ -88,9 +112,25 @@
 					<ShortName>Jannen_hanuripolkka.wav</ShortName>
 					<Path>SFX/Jannen_hanuripolkka_4A5A7BED.wem</Path>
 				</File>
+				<File Id="910310310" Language="SFX">
+					<ShortName>RAI-Victor69646-01-2-001.wav</ShortName>
+					<Path>SFX/RAI-Victor69646-01-2-001_A1793BE9.wem</Path>
+				</File>
+				<File Id="913535258" Language="SFX">
+					<ShortName>Isotalon_Antti.wav</ShortName>
+					<Path>SFX/Isotalon_Antti_A1793BE9.wem</Path>
+				</File>
+				<File Id="941620570" Language="SFX">
+					<ShortName>Kalliolle_kukkulalle.wav</ShortName>
+					<Path>SFX/Kalliolle_kukkulalle_A1793BE9.wem</Path>
+				</File>
 				<File Id="971992029" Language="SFX">
 					<ShortName>BlimBlom.wav</ShortName>
 					<Path>SFX/BlimBlom_A1793BE9.wem</Path>
+				</File>
+				<File Id="979727979" Language="SFX">
+					<ShortName>Faust_Aino_Ackte.wav</ShortName>
+					<Path>SFX/Faust_Aino_Ackte_A1793BE9.wem</Path>
 				</File>
 				<File Id="1026393945" Language="SFX">
 					<ShortName>Uutinen_Pariisin_olympialaiset.wav</ShortName>

@@ -25,6 +25,26 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{DDA01498-B714-4F21-B25C-7D68F785A49A}" ShortID="109175486">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whistle" ID="{21A2D506-B8B1-4C5A-B306-B60067CDCD22}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2C9A88C7-467D-459C-A145-9CB380A65EB4}" ShortID="323206415">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whistle_01" ID="{10CF7755-A6F6-4821-A57A-2F7D125414EF}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{36F69FDB-A5D8-4CC2-9DF7-0FF4F9118638}" ShortID="538564302">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -45,23 +65,53 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{DDA01498-B714-4F21-B25C-7D68F785A49A}" ShortID="109175486">
+						<Action Name="" ID="{1F48AAF5-CBD5-451A-B221-D3D5F243B737}" ShortID="266148058">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Whistle" ID="{21A2D506-B8B1-4C5A-B306-B60067CDCD22}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+									<ObjectRef Name="Berliini-virta" ID="{4FF2A951-2349-412F-8585-B24AED157944}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{2C9A88C7-467D-459C-A145-9CB380A65EB4}" ShortID="323206415">
+						<Action Name="" ID="{A0CA71A4-8582-43B7-870C-159DA4CA4776}" ShortID="169872770">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Whistle_01" ID="{10CF7755-A6F6-4821-A57A-2F7D125414EF}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+									<ObjectRef Name="Helsinki-virta" ID="{D55138AA-40D3-4BCC-BB14-17127D015E57}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{68301DB9-CB6F-4074-B887-23CF931E0391}" ShortID="659504061">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lahti-virta" ID="{38C09F8A-C265-4A78-8CF4-B682B56C591B}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B9A18E5E-60CD-4599-B155-75F838E0C07A}" ShortID="186064062">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lontoo-virta" ID="{BD5E5CAF-C475-4A5D-91E2-E306860D117D}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D7FB1794-D9E8-4F6A-ADBB-1C42EF170CA4}" ShortID="906419151">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Moskova-virta" ID="{404F7A02-07FC-49CB-910E-C74C8910416E}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
