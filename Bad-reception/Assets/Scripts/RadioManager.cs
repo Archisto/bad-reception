@@ -149,7 +149,7 @@ public class RadioManager : MonoBehaviour {
         AkSoundEngine.SetRTPCValue("Program", program);
 
 
-        Debug.Log("Update: channel " + _channelA + ", tuning " + _tuning + " noise " + _noise +" "+ "distort "+  _distort + " target " + distortTarget + " user " + userDistortLevel);
+  //      Debug.Log("Update: channel " + _channelA + ", tuning " + _tuning + " noise " + _noise +" "+ "distort "+  _distort + " target " + distortTarget + " user " + userDistortLevel);
     }
 
 

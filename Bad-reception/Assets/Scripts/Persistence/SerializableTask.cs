@@ -12,6 +12,7 @@ namespace Persistence
         public int CorrectAnswer;
         public string AudioClipTag;
 
+        
         public SerializableTask(string question, List<string> answers, int correctAnswer, string audioClipTag)
         {
             Question = question;
@@ -25,7 +26,7 @@ namespace Persistence
             Question = playerTask.question;
             Answers = playerTask.answers;
             CorrectAnswer = playerTask.correctAnswer;
-            AudioClipTag = playerTask.audioClipTag;
+           
         }
 
         public static implicit operator SerializableTask(PlayerTask playerTask)
@@ -37,7 +38,7 @@ namespace Persistence
         {
             PlayerTask playerTask = new PlayerTask(serializableTask.Question);
             playerTask.SetAnswers(serializableTask.CorrectAnswer, serializableTask.Answers);
-            playerTask.audioClipTag = serializableTask.AudioClipTag;
+           
             return playerTask;
         }
 

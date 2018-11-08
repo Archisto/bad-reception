@@ -7,7 +7,7 @@ public class PlayerTask
     public string question;
     public List<string> answers;
     public int correctAnswer = -1;
-    public string audioClipTag;
+    public int id;
 
     public PlayerTask(string question)
     {

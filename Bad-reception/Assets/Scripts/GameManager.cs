@@ -253,6 +253,10 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("DAY OVER ***************");
             DayOver = true;
+            if(RadioManager.Running)
+                RadioManager.allowStart = false;
+            RadioManager.Running = false;
+            
             TaskController.taskPanel.Activate(true);
             TaskController.ActivateAnswerPhase(true);
         }
@@ -317,10 +321,22 @@ public class GameManager : MonoBehaviour
         }
 
         List<PlayerTask> tasks = new List<PlayerTask>();
+        for (int i = 0; i < 4; i++)
+        {
+            var n = Resources.Load<TextAsset>("news_"+i);
+            var d = JsonUtility.FromJson<PlayerTask>(n.ToString());
+            d.id = i;
+            tasks.Add(d);
+
+        }
+        
+        
+
+        /*
         foreach (PlayerTask task in data.PlayerTasks)
         {
             tasks.Add(task);
-        }
+        }*/
         //for (int i = 0; i < data.TaskQuestions.Count; i++)
         //{
         //    PlayerTask task = new PlayerTask(data.TaskQuestions[i]);

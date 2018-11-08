@@ -10,7 +10,7 @@
         "CorrectAnswer":0},
     {"Question":"Kuinka pitkä matka juostiin?",
         "Answers":["5000 m","10 000 m","3500 m","400 m"],
-        "CorrectAnswer":1}
+        "CorrectAnswer":1},
     {"Question":"Mistä maasta ainoa ei-suomalainen mitalisti oli?",
         "Answers":["Tanska","Norja","Ruotsi","Neuvostoliitto"],
         "CorrectAnswer":2}
