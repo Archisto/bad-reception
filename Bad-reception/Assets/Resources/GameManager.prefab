@@ -67,3 +67,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1325c09a3bd975b41b1f837a563ea928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _days: 3
+  _dayLengthMinutes: 0.01
+  _tasksPerDay: 2

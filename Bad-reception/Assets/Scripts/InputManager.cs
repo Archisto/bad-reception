@@ -106,6 +106,9 @@ public class InputManager : MonoBehaviour {
 
         previousLeftAngle = leftAngle;
         previousRightAngle = rightAngle;
+
+        AnswerInput();
+        DebugInput();
     }
 
     float smallestAngleBetween(float a1, float a2)
@@ -116,4 +119,57 @@ public class InputManager : MonoBehaviour {
         return d - (mp * max);
     }
 
+    private void AnswerInput()
+    {
+        PlayerTaskController taskController = GameManager.Instance.TaskController;
+
+        if (Input.GetButtonDown("answerA") ||
+            Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            taskController.Answer(0);
+        }
+        if (Input.GetButtonDown("answerB") ||
+            Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            taskController.Answer(1);
+        }
+        if (Input.GetButtonDown("answerY") ||
+            Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            taskController.Answer(2);
+        }
+        if (Input.GetButtonDown("answerX") ||
+            Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            taskController.Answer(3);
+        }
+    }
+
+    private void DebugInput()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            GameManager.Instance.Fade.StartNextFade();
+        }
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            GameManager.Instance.TaskController.StartNextTask();
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            GameManager.Instance.UIController.ToggleCreditsScreen();
+        }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            GameManager.Instance.StartSceneReset();
+        }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            GameManager.Instance.LoadDebugScene("SampleScene");
+        }
+    }
 }

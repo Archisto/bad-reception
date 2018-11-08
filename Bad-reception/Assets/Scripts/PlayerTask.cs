@@ -7,6 +7,7 @@ public class PlayerTask
     public string question;
     public List<string> answers;
     public int correctAnswer = -1;
+    public string audioClipTag;
 
     public PlayerTask(string question)
     {
@@ -30,13 +31,31 @@ public class PlayerTask
         this.correctAnswer = correctAnswer;
     }
 
-    public bool CheckAnswer(int answer)
+    public bool CheckAnswer(int answerNum)
     {
         if (correctAnswer < 0)
         {
             Debug.LogError("Correct answer has not been set.");
         }
 
-        return answer == correctAnswer;
+        return answerNum == correctAnswer;
+    }
+
+    public string GetAnswer(int answerNum)
+    {
+        if (IsValidAnswer(answerNum))
+        {
+            return answers[answerNum];
+        }
+        else
+        {
+            Debug.LogError("Invalid answer number.");
+            return "[Error]";
+        }
+    }
+
+    public bool IsValidAnswer(int answerNum)
+    {
+        return answerNum >= 0 && answerNum < answers.Count;
     }
 }

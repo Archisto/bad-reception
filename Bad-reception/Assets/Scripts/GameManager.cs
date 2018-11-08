@@ -55,15 +55,23 @@ public class GameManager : MonoBehaviour
 
     #region Fields
 
-    private UIController _ui;
-    private FadeToColor _fade;
-    private PlayerTaskController _taskController;
+    [SerializeField]
+    private int _days = 3;
+
+    [SerializeField]
+    private float _dayLengthMinutes = 2f;
+
+    [SerializeField]
+    private int _tasksPerDay = 3;
+
     private SaveSystem _saveSystem;
 
     private bool _freshGameStart;
     private bool _updateAtSceneStart;
     private string _nextSceneName;
     private List<string> _levelSceneNames;
+    private int _elapsedDays;
+    private float _elapsedDayTime;
 
     public State GameState { get; set; }
 
@@ -78,7 +86,15 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public bool DayOver { get; private set; }
+
     public int CurrentLevel { get; private set; }
+
+    public PlayerTaskController TaskController { get; private set; }
+
+    public UIController UIController { get; private set; }
+
+    public FadeToColor Fade { get; private set; }
 
     #endregion Fields
 
@@ -121,8 +137,8 @@ public class GameManager : MonoBehaviour
             GameState = State.Play;
         }
 
-        _taskController = FindObjectOfType<PlayerTaskController>();
-        _taskController.Init();
+        TaskController = FindObjectOfType<PlayerTaskController>();
+        TaskController.Init();
         _saveSystem = new SaveSystem(new JSONPersistence(SavePath));
         LoadTasks();
         InitLevels();
@@ -143,12 +159,13 @@ public class GameManager : MonoBehaviour
     {
         if (GameState == State.Play)
         {
+            Debug.Log("Level scene initialized");
             _freshGameStart = false;
-            Debug.Log("Level starts");
+            StartLevel();
         }
         else
         {
-            Debug.Log("Menu starts");
+            Debug.Log("Menu scene initialized");
         }
 
         _updateAtSceneStart = false;
@@ -172,7 +189,11 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void InitUI()
     {
-        _ui = FindObjectOfType<UIController>();
+        UIController = FindObjectOfType<UIController>();
+        if (UIController == null)
+        {
+            Debug.LogError("A UIController object could not be found in the scene.");
+        }
     }
 
     /// <summary>
@@ -180,19 +201,64 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void InitFade()
     {
-        _fade = FindObjectOfType<FadeToColor>();
-        if (_fade != null)
+        Fade = FindObjectOfType<FadeToColor>();
+        if (Fade != null)
         {
-            _fade.Init(_ui.fadeScreen);
+            Fade.Init(UIController.fadeScreen);
 
             if (SceneTransition == TransitionPhase.StartingScene)
             {
-                _fade.StartFadeIn(true);
+                Fade.StartFadeIn(true);
             }
         }
     }
 
     #endregion Initialization
+
+    #region Updating
+
+    // Update is called once per frame
+    private void Update()
+    {
+        if (SceneTransition == TransitionPhase.ExitingScene
+                && Fade.FadedOut)
+        {
+            LoadScene(_nextSceneName);
+        }
+        else if (SceneTransition == TransitionPhase.ResetingScene
+                 && Fade.FadedOut)
+        {
+            SceneTransition = TransitionPhase.None;
+            ResetScene();
+        }
+        else if (SceneTransition == TransitionPhase.None &&
+                 GameState == State.Play)
+        {
+            if (!DayOver)
+            {
+                UpdateDayTime();
+            }
+        }
+
+        if (_updateAtSceneStart)
+        {
+            LevelStartInit();
+        }
+    }
+
+    private void UpdateDayTime()
+    {
+        _elapsedDayTime += Time.deltaTime;
+        if (_elapsedDayTime >= _dayLengthMinutes * 60)
+        {
+            Debug.Log("DAY OVER ***************");
+            DayOver = true;
+            TaskController.taskPanel.Activate(true);
+            TaskController.ActivateAnswerPhase(true);
+        }
+    }
+
+    #endregion Updating
 
     #region Persistence
 
@@ -215,7 +281,7 @@ public class GameManager : MonoBehaviour
     {
         GameData data = new GameData();
 
-        foreach (PlayerTask task in _taskController.tasks)
+        foreach (PlayerTask task in TaskController.tasks)
         {
             data.PlayerTasks.Add(task);
         }
@@ -261,52 +327,23 @@ public class GameManager : MonoBehaviour
         //    task.SetAnswers(data.TaskCorrectAnswers[i], data.TaskAnswers[i]);
         //    tasks.Add(task);
         //}
-        _taskController.SetTasks(tasks);
+        TaskController.SetTasks(tasks);
 
         return data;
     }
 
     #endregion Persistence
 
-    #region Updating
-
-    // Update is called once per frame
-    private void Update()
-    {
-        if (SceneTransition == TransitionPhase.ExitingScene
-                && _fade.FadedOut)
-        {
-            LoadScene(_nextSceneName);
-        }
-        else if (SceneTransition == TransitionPhase.ResetingScene
-                 && _fade.FadedOut)
-        {
-            SceneTransition = TransitionPhase.None;
-            ResetScene();
-        }
-        else if (!SceneChanging)
-        {
-            DebugInput();
-        }
-
-        if (_updateAtSceneStart)
-        {
-            LevelStartInit();
-        }
-    }
-
-    #endregion Updating
-
     #region Scene Management
 
     /// <summary>
-    /// Starts reseting level with a fade-out.
+    /// Starts reseting the level with a fade-out.
     /// </summary>
     public void StartSceneReset()
     {
         SceneTransition = TransitionPhase.ResetingScene;
-        _fade.StartFadeOut(false);
-        Debug.Log("Restarting level");
+        Fade.StartFadeOut(false);
+        Debug.Log("Restarting game");
     }
 
     /// <summary>
@@ -314,7 +351,9 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void ResetScene()
     {
-        _fade.StartFadeIn(true);
+        Fade.StartFadeIn(true);
+        ResetGame();
+        StartLevel();
     }
 
     /// <summary>
@@ -365,18 +404,9 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Testing.
-    /// Loads a debug level: Lauri's Colosseum.
-    /// </summary>
-    public void LoadDebugLevel()
-    {
-        LoadDebugLevel("SampleScene");
-    }
-
-    /// <summary>
     /// Testing. Loads a debug level.
     /// </summary>
-    public void LoadDebugLevel(string sceneName)
+    public void LoadDebugScene(string sceneName)
     {
         CurrentLevel = 0;
         StartLoadingScene(sceneName);
@@ -400,7 +430,7 @@ public class GameManager : MonoBehaviour
 
             SceneTransition = TransitionPhase.ExitingScene;
             _nextSceneName = sceneName;
-            _fade.StartFadeOut(false);
+            Fade.StartFadeOut(false);
         }
     }
 
@@ -426,37 +456,40 @@ public class GameManager : MonoBehaviour
 
     #endregion Scene Management
 
-    public void WinGame()
+    public void StartLevel()
     {
-        // TODO
+        TaskController.ChooseRandomTasks(_tasksPerDay, false);
+        TaskController.StartFirstTask();
+        Debug.Log("Day begins");
     }
 
-    public void LoseGame()
+    public void EndLevel()
     {
-        // TODO
+        Debug.Log("Day ends");
+        _elapsedDays++;
+        if (_elapsedDays == _days)
+        {
+            Debug.Log("GAME COMPLETED");
+        }
+        else
+        {
+            ResetLevel();
+            StartLevel();
+        }
     }
 
-    private void DebugInput()
+    public void ResetLevel()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            _fade.StartNextFade();
-        }
+        Debug.Log("Reseting day");
+        DayOver = false;
+        _elapsedDayTime = 0f;
+        TaskController.ActivateAnswerPhase(false);
+    }
 
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            _taskController.NextTask();
-        }
-
-        //if (Input.GetKeyDown(KeyCode.F5))
-        //{
-        //    SaveGame();
-        //}
-
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            _ui.ToggleCreditsScreen();
-        }
+    public void ResetGame()
+    {
+        ResetLevel();
+        _elapsedDays = 0;
     }
 
     private void OnDisable()

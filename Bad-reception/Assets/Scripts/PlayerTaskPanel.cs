@@ -16,6 +16,7 @@ public class PlayerTaskPanel : MonoBehaviour
     {
         _questionText = GetComponentInChildren<Text>();
         _answerTexts = answerPanel.GetComponentsInChildren<Text>();
+        ActivateAnswerPanel(false);
     }
 
     public void UpdateTask(PlayerTask task)
@@ -47,5 +48,15 @@ public class PlayerTaskPanel : MonoBehaviour
                 _answerTexts[i].color = Color.black;
             }
         }
+    }
+
+    public void Activate(bool activate)
+    {
+        gameObject.SetActive(activate);
+    }
+
+    public void ActivateAnswerPanel(bool activate)
+    {
+        answerPanel.SetActive(activate);
     }
 }
