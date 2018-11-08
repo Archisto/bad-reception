@@ -282,11 +282,8 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("DAY OVER - Tasks begin");
             DayOver = true;
-            if (RadioManager.Running)
-            {
-                RadioManager.allowStart = false;
-                RadioManager.Running = false;
-            }
+            RadioManager.Running = false;
+            RadioManager.allowStart = false;
             TaskController.taskPanel.Activate(true);
             TaskController.ActivateAnswerPhase(true);
         }
