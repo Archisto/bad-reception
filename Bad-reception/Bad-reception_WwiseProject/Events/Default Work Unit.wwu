@@ -235,6 +235,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Paperi" ID="{0D3D95A8-EF48-4CAC-B914-DBDE7D2C8427}">
+					<ChildrenList>
+						<Action Name="" ID="{8731FAE3-9B9B-496E-AE6A-2E4C59492808}" ShortID="546470849">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Paperi" ID="{9F81EF87-80FB-4CA6-8F5C-84916EF8D5DD}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

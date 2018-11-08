@@ -22,6 +22,7 @@
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2338373231" Name="MuteRadio" ObjectPath="\Events\Default Work Unit\MuteRadio" MaxAttenuation="0.000000"/>
+				<Event Id="2048874034" Name="Paperi" ObjectPath="\Events\Default Work Unit\Paperi"/>
 				<Event Id="2507646724" Name="PlayRadio" ObjectPath="\Events\Default Work Unit\PlayRadio"/>
 				<Event Id="1269015798" Name="StopRadio" ObjectPath="\Events\Default Work Unit\StopRadio"/>
 			</IncludedEvents>
@@ -86,6 +87,10 @@
 					<ShortName>Faust_Aino_Ackte.wav</ShortName>
 					<Path>SFX/Faust_Aino_Ackte_7943F88B.wem</Path>
 				</File>
+				<File Id="347829956" Language="SFX">
+					<ShortName>paperi3.wav</ShortName>
+					<Path>SFX/paperi3_8800A15D.wem</Path>
+				</File>
 				<File Id="380768617" Language="SFX">
 					<ShortName>349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s.wav</ShortName>
 					<Path>SFX/349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s_BC421D61.wem</Path>
@@ -101,6 +106,10 @@
 				<File Id="484830930" Language="SFX">
 					<ShortName>Tullit.wav</ShortName>
 					<Path>SFX/Tullit_8800A15D.wem</Path>
+				</File>
+				<File Id="495923836" Language="SFX">
+					<ShortName>paperi1.wav</ShortName>
+					<Path>SFX/paperi1_8800A15D.wem</Path>
 				</File>
 				<File Id="526692800" Language="SFX">
 					<ShortName>Maamme.wav</ShortName>
@@ -165,6 +174,10 @@
 				<File Id="971992029" Language="SFX">
 					<ShortName>BlimBlom.wav</ShortName>
 					<Path>SFX/BlimBlom_8800A15D.wem</Path>
+				</File>
+				<File Id="1011218798" Language="SFX">
+					<ShortName>paperi2.wav</ShortName>
+					<Path>SFX/paperi2_8800A15D.wem</Path>
 				</File>
 				<File Id="1047536226" Language="SFX">
 					<ShortName>radio_static_loop.wav</ShortName>

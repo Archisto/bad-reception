@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1269015798	StopRadio			\Default Work Unit\StopRadio	
+	2048874034	Paperi			\Default Work Unit\Paperi	
 	2338373231	MuteRadio			\Default Work Unit\MuteRadio	
 	2507646724	PlayRadio			\Default Work Unit\PlayRadio	
 
@@ -45,10 +46,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	303511594	DuGamlaDuFria	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\DuGamlaDuFria_8800A15D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\DuGamlaDuFria		1587661
 	324652965	RAI-Gramophone282796-01-1-001	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\RAI-Gramophone282796-01-1-001_C0A6F583.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\RAI-Gramophone282796-01-1-001		1431913
 	340283207	Faust_Aino_Ackte	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Faust_Aino_Ackte_7943F88B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Faust_Aino_Ackte		264156
+	347829956	paperi3	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\paperi3_8800A15D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Paperi\paperi3		7940
 	380768617	Radio_On	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s_BC421D61.wem		\Actor-Mixer Hierarchy\Default Work Unit\RadioSFX\Radio_On		154482
 	439688502	Isotalon_Antti	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Isotalon_Antti_jazz_EDB69CAF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Isotalon_Antti		335583
 	453063245	BuddyBurton_JohnnyDodds	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\BuddyBurton_JohnnyDodds_B6E9D2F9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lontoo\Lontoo-virta\Lontoo-musat\BuddyBurton_JohnnyDodds		1742039
 	484830930	Uutinen_Tullit	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Tullit_8800A15D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Uutiset\Uutinen_Tullit		312366
+	495923836	paperi1	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\paperi1_8800A15D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Paperi\paperi1		9765
 	526692800	Maamme	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Maamme_4CA5356E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Maamme\Maamme		380849
 	551731891	Russian5	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Russian5_8800A15D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Moskova\Moskova-virta\Venaja-biisit\Russian5		1854641
 	579549146	Russian3	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Russian3_8800A15D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Moskova\Moskova-virta\Venaja-biisit\Russian3		1828641
@@ -65,6 +68,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	927013688	DoctorJazz_Jelly-Roll	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\DoctorJazz_Jelly-Roll_23A74358.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lontoo\Lontoo-virta\Lontoo-musat\DoctorJazz_Jelly-Roll		1952288
 	958184055	Russian	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Russian_8800A15D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Moskova\Moskova-virta\Russian		224625
 	971992029	BlimBlom	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\BlimBlom_8800A15D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\BlimBlom		65615
+	1011218798	paperi2	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\paperi2_8800A15D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Paperi\paperi2		10218
 	1047536226	radio_static_loop	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\radio_static_loop_7A6B792B.wem		\Actor-Mixer Hierarchy\Default Work Unit\RadioSFX\radio_static_loop		100978
 	1048002417	TakeMeToTheLandOfJazz	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\TakeMeToTheLandOfJazz_D00B8B85.wem		\Actor-Mixer Hierarchy\Default Work Unit\Lontoo\Lontoo-virta\Lontoo-musat\TakeMeToTheLandOfJazz		1526955
 	1071556064	Russian2	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Russian2_8800A15D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Moskova\Moskova-virta\Venaja-biisit\Russian2		2013212
