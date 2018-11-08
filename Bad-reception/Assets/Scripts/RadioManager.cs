@@ -62,6 +62,8 @@ public class RadioManager : MonoBehaviour {
     public float distortTarget = 0.1f;
     public float userDistortLevel = 0.5f;
 
+    public int program;
+
     // Use this for initialization
     void Start () {
         AkSoundEngine.PostEvent("PlayRadio", gameObject);
@@ -70,6 +72,7 @@ public class RadioManager : MonoBehaviour {
 
     private void Awake()
     {
+        program = (int)Mathf.Floor(Random.value * 4f);
         distortTarget = Random.value;
         this.frequency = Random.value * (RadioManager.maxFrequency - RadioManager.minFrequency) + RadioManager.minFrequency;
     }
@@ -78,7 +81,7 @@ public class RadioManager : MonoBehaviour {
     void Update () {
         distortTarget += (Random.value-0.5f)*0.6f*Time.deltaTime + Mathf.Sin(Time.time*0.6f)*0.000f;
         distortTarget = Mathf.Clamp(distortTarget, 0f, 1f);
-        userDistortLevel = Mathf.Clamp(userDistortLevel, 0f, 1f);
+        userDistortLevel = Mathf.Clamp(userDistortLevel, -1f, 2f);
         updateWWValues();
 	}
 
@@ -98,15 +101,15 @@ public class RadioManager : MonoBehaviour {
                 nearestDistance = distance;
             }
         }
-        _tuning = Mathf.Clamp( (12f-nearestDistance)/12f, 0f,1f);
-        _tuning = getPowIn(2, _tuning);
+        _tuning = Mathf.Clamp( (10f-nearestDistance)/10f, 0f,1f);
+        _tuning = getPowIn(0.8f, _tuning);
         _channelA = nearest.channelId;
 
         var angle = smallestAngleBetween(nearest.angle, this.angle);
-        this._noise = Mathf.Min(1f,Mathf.Abs( Mathf.Sin(Time.time*0.25f)+Mathf.Sin(Time.time*0.1f)))*(1.0f-_tuning*0.5f);
+        this._noise = Mathf.Min(1f,Mathf.Abs( Mathf.Sin(Time.time*0.25f)+Mathf.Sin(Time.time*0.1f)))*(1.0f-_tuning*0.3f);
 
         distortObject.transform.localRotation = Quaternion.Euler(0f, 0f, (userDistortLevel - distortTarget)*60f);
-        _distort = Mathf.Clamp( getPowIn(2.1f,  Mathf.Abs(userDistortLevel - distortTarget)) , 0f, 1f)+0.5f;
+        _distort = Mathf.Clamp( getPowIn(2.05f,  Mathf.Abs(userDistortLevel - distortTarget)) , 0f, 1f)+0.5f;
 
         
 
@@ -116,7 +119,7 @@ public class RadioManager : MonoBehaviour {
         AkSoundEngine.SetRTPCValue("Noise", _noise);
         AkSoundEngine.SetRTPCValue("Distort", _distort);
         AkSoundEngine.SetRTPCValue("Volume", _tuning);
-        AkSoundEngine.SetRTPCValue("Program", _tuning);
+        AkSoundEngine.SetRTPCValue("Program", program);
 
 
         Debug.Log("Update: channel " + _channelA + ", tuning " + _tuning + " noise " + _noise +" "+ "distort "+  _distort + " target " + distortTarget + " user " + userDistortLevel);
