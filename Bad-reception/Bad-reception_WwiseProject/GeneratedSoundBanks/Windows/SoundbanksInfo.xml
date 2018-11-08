@@ -28,139 +28,159 @@
 			<IncludedMemoryFiles>
 				<File Id="9939817" Language="SFX">
 					<ShortName>Juna.wav</ShortName>
-					<Path>SFX/Juna_A1793BE9.wem</Path>
+					<Path>SFX/Juna_8800A15D.wem</Path>
 				</File>
 				<File Id="17168663" Language="SFX">
 					<ShortName>Lontoon_Jenny.wav</ShortName>
-					<Path>SFX/Lontoon_Jenny_224453E6.wem</Path>
+					<Path>SFX/Lontoon_Jenny_3D24332A.wem</Path>
+				</File>
+				<File Id="18552206" Language="SFX">
+					<ShortName>FilckanGangarSigTillBrunnen.wav</ShortName>
+					<Path>SFX/FilckanGangarSigTillBrunnen_8800A15D.wem</Path>
+				</File>
+				<File Id="184872660" Language="SFX">
+					<ShortName>IchHabMeinHerzin.wav</ShortName>
+					<Path>SFX/IchHabMeinHerzin_687F998F.wem</Path>
 				</File>
 				<File Id="188239427" Language="SFX">
 					<ShortName>HuomioHuomio3NBTampere.wav</ShortName>
-					<Path>SFX/HuomioHuomio3NBTampere_A1793BE9.wem</Path>
+					<Path>SFX/HuomioHuomio3NBTampere_8800A15D.wem</Path>
 				</File>
 				<File Id="191356147" Language="SFX">
 					<ShortName>RAI-OdeonA228064-01-1-001.wav</ShortName>
-					<Path>SFX/RAI-OdeonA228064-01-1-001_A1793BE9.wem</Path>
+					<Path>SFX/RAI-OdeonA228064-01-1-001_2AD9EC0B.wem</Path>
 				</File>
 				<File Id="223650898" Language="SFX">
 					<ShortName>Kalliolle_kukkulalle.wav</ShortName>
-					<Path>SFX/Kalliolle_kukkulalle_F422F77F.wem</Path>
+					<Path>SFX/Kalliolle_kukkulalle_8E613883.wem</Path>
 				</File>
 				<File Id="250462957" Language="SFX">
 					<ShortName>RAI-HMVX3136-01-2-001.wav</ShortName>
-					<Path>SFX/RAI-HMVX3136-01-2-001_03B9C0D8.wem</Path>
+					<Path>SFX/RAI-HMVX3136-01-2-001_F454410C.wem</Path>
 				</File>
 				<File Id="262269641" Language="SFX">
 					<ShortName>Teatteri.wav</ShortName>
-					<Path>SFX/Teatteri_A1793BE9.wem</Path>
+					<Path>SFX/Teatteri_8800A15D.wem</Path>
 				</File>
 				<File Id="270229281" Language="SFX">
 					<ShortName>Jos_täytätte_mun_lasini.wav</ShortName>
-					<Path>SFX/Jos_täytätte_mun_lasini_C03604EC.wem</Path>
+					<Path>SFX/Jos_täytätte_mun_lasini_36EB6BC8.wem</Path>
 				</File>
 				<File Id="286778392" Language="SFX">
 					<ShortName>Enkä_minä_ryyppää.wav</ShortName>
-					<Path>SFX/Enkä_minä_ryyppää_BF8D387D.wem</Path>
+					<Path>SFX/Enkä_minä_ryyppää_16EAC7D1.wem</Path>
 				</File>
 				<File Id="290576465" Language="SFX">
 					<ShortName>Russian1.wav</ShortName>
-					<Path>SFX/Russian1_A1793BE9.wem</Path>
+					<Path>SFX/Russian1_8800A15D.wem</Path>
+				</File>
+				<File Id="303511594" Language="SFX">
+					<ShortName>DuGamlaDuFria.wav</ShortName>
+					<Path>SFX/DuGamlaDuFria_8800A15D.wem</Path>
 				</File>
 				<File Id="324652965" Language="SFX">
 					<ShortName>RAI-Gramophone282796-01-1-001.wav</ShortName>
-					<Path>SFX/RAI-Gramophone282796-01-1-001_7A6B169F.wem</Path>
+					<Path>SFX/RAI-Gramophone282796-01-1-001_C0A6F583.wem</Path>
 				</File>
 				<File Id="340283207" Language="SFX">
 					<ShortName>Faust_Aino_Ackte.wav</ShortName>
-					<Path>SFX/Faust_Aino_Ackte_9BC16157.wem</Path>
+					<Path>SFX/Faust_Aino_Ackte_7943F88B.wem</Path>
 				</File>
 				<File Id="380768617" Language="SFX">
 					<ShortName>349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s.wav</ShortName>
-					<Path>SFX/349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s_F3F4A2DD.wem</Path>
+					<Path>SFX/349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s_BC421D61.wem</Path>
 				</File>
 				<File Id="439688502" Language="SFX">
 					<ShortName>Isotalon_Antti_jazz.wav</ShortName>
-					<Path>SFX/Isotalon_Antti_jazz_8750058B.wem</Path>
+					<Path>SFX/Isotalon_Antti_jazz_EDB69CAF.wem</Path>
 				</File>
 				<File Id="453063245" Language="SFX">
 					<ShortName>BuddyBurton_JohnnyDodds.wav</ShortName>
-					<Path>SFX/BuddyBurton_JohnnyDodds_765C608D.wem</Path>
+					<Path>SFX/BuddyBurton_JohnnyDodds_B6E9D2F9.wem</Path>
 				</File>
 				<File Id="484830930" Language="SFX">
 					<ShortName>Tullit.wav</ShortName>
-					<Path>SFX/Tullit_A1793BE9.wem</Path>
+					<Path>SFX/Tullit_8800A15D.wem</Path>
+				</File>
+				<File Id="526692800" Language="SFX">
+					<ShortName>Maamme.wav</ShortName>
+					<Path>SFX/Maamme_4CA5356E.wem</Path>
 				</File>
 				<File Id="551731891" Language="SFX">
 					<ShortName>Russian5.wav</ShortName>
-					<Path>SFX/Russian5_A1793BE9.wem</Path>
+					<Path>SFX/Russian5_8800A15D.wem</Path>
 				</File>
 				<File Id="579549146" Language="SFX">
 					<ShortName>Russian3.wav</ShortName>
-					<Path>SFX/Russian3_A1793BE9.wem</Path>
+					<Path>SFX/Russian3_8800A15D.wem</Path>
 				</File>
 				<File Id="608550253" Language="SFX">
 					<ShortName>SeuraaMusiikkia.wav</ShortName>
-					<Path>SFX/SeuraaMusiikkia_A1793BE9.wem</Path>
+					<Path>SFX/SeuraaMusiikkia_8800A15D.wem</Path>
 				</File>
 				<File Id="632588341" Language="SFX">
 					<ShortName>RAI-Gramophone2-42134-01-1-001.wav</ShortName>
-					<Path>SFX/RAI-Gramophone2-42134-01-1-001_A1793BE9.wem</Path>
+					<Path>SFX/RAI-Gramophone2-42134-01-1-001_8800A15D.wem</Path>
 				</File>
 				<File Id="649016906" Language="SFX">
 					<ShortName>radio_static_weather_loop.wav</ShortName>
-					<Path>SFX/radio_static_weather_loop_CB1F3167.wem</Path>
+					<Path>SFX/radio_static_weather_loop_7A6B792B.wem</Path>
 				</File>
 				<File Id="701909898" Language="SFX">
 					<ShortName>Russian4.wav</ShortName>
-					<Path>SFX/Russian4_A1793BE9.wem</Path>
+					<Path>SFX/Russian4_8800A15D.wem</Path>
+				</File>
+				<File Id="850879433" Language="SFX">
+					<ShortName>DasDeutscheVolklied.wav</ShortName>
+					<Path>SFX/DasDeutscheVolklied_8800A15D.wem</Path>
 				</File>
 				<File Id="867146824" Language="SFX">
 					<ShortName>RAI-Gramophone7-282154-01-2-001.wav</ShortName>
-					<Path>SFX/RAI-Gramophone7-282154-01-2-001_7E525D10.wem</Path>
+					<Path>SFX/RAI-Gramophone7-282154-01-2-001_97C22364.wem</Path>
 				</File>
 				<File Id="872212260" Language="SFX">
 					<ShortName>Jannen_hanuripolkka.wav</ShortName>
-					<Path>SFX/Jannen_hanuripolkka_4A5A7BED.wem</Path>
+					<Path>SFX/Jannen_hanuripolkka_70A06391.wem</Path>
 				</File>
 				<File Id="885642112" Language="SFX">
 					<ShortName>Pariisin olympialaiset.wav</ShortName>
-					<Path>SFX/Pariisin olympialaiset_A1793BE9.wem</Path>
+					<Path>SFX/Pariisin olympialaiset_8800A15D.wem</Path>
 				</File>
 				<File Id="910310310" Language="SFX">
 					<ShortName>RAI-Victor69646-01-2-001.wav</ShortName>
-					<Path>SFX/RAI-Victor69646-01-2-001_A1793BE9.wem</Path>
+					<Path>SFX/RAI-Victor69646-01-2-001_8800A15D.wem</Path>
 				</File>
 				<File Id="914707181" Language="SFX">
 					<ShortName>349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s.wav</ShortName>
-					<Path>SFX/349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s_6B18E7BF.wem</Path>
+					<Path>SFX/349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s_B989E173.wem</Path>
 				</File>
 				<File Id="927013688" Language="SFX">
 					<ShortName>DoctorJazz_Jelly-Roll.wav</ShortName>
-					<Path>SFX/DoctorJazz_Jelly-Roll_DD4DF15C.wem</Path>
+					<Path>SFX/DoctorJazz_Jelly-Roll_23A74358.wem</Path>
 				</File>
 				<File Id="958184055" Language="SFX">
 					<ShortName>Russian.wav</ShortName>
-					<Path>SFX/Russian_A1793BE9.wem</Path>
+					<Path>SFX/Russian_8800A15D.wem</Path>
 				</File>
 				<File Id="971992029" Language="SFX">
 					<ShortName>BlimBlom.wav</ShortName>
-					<Path>SFX/BlimBlom_A1793BE9.wem</Path>
+					<Path>SFX/BlimBlom_8800A15D.wem</Path>
 				</File>
 				<File Id="1047536226" Language="SFX">
 					<ShortName>radio_static_loop.wav</ShortName>
-					<Path>SFX/radio_static_loop_CB1F3167.wem</Path>
+					<Path>SFX/radio_static_loop_7A6B792B.wem</Path>
 				</File>
 				<File Id="1048002417" Language="SFX">
 					<ShortName>TakeMeToTheLandOfJazz.wav</ShortName>
-					<Path>SFX/TakeMeToTheLandOfJazz_F7B8F599.wem</Path>
+					<Path>SFX/TakeMeToTheLandOfJazz_D00B8B85.wem</Path>
 				</File>
 				<File Id="1071556064" Language="SFX">
 					<ShortName>Russian2.wav</ShortName>
-					<Path>SFX/Russian2_A1793BE9.wem</Path>
+					<Path>SFX/Russian2_8800A15D.wem</Path>
 				</File>
 				<File Id="1072169702" Language="SFX">
 					<ShortName>IHateToLeaveYouNow_LouisArmstrong.wav</ShortName>
-					<Path>SFX/IHateToLeaveYouNow_LouisArmstrong_31F17A64.wem</Path>
+					<Path>SFX/IHateToLeaveYouNow_LouisArmstrong_644F97F8.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

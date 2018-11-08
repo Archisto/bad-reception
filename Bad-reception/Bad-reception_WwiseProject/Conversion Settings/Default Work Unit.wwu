@@ -31,8 +31,8 @@
 						</Property>
 						<Property Name="SampleRate" Type="int32">
 							<ValueList>
-								<Value Platform="Mac">0</Value>
-								<Value Platform="Windows">0</Value>
+								<Value Platform="Mac">36000</Value>
+								<Value Platform="Windows">36000</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
