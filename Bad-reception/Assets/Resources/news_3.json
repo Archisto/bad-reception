@@ -1,0 +1,23 @@
+﻿{"PlayerTasks":[
+    {"Question":"Mitkä näytelmät Tampereella esitetään?",
+        "Answers":["Villikissa ja Tukkijoella","Villikissa ja Sysmäläiset","Pohjalaiset ja Sysmäläiset","Tukkijoella ja Pohjalaiset"],
+        "CorrectAnswer":0},
+    {"Question":"Minä päivänä näytelmät esitetään?",
+        "Answers":["Perjantaina","Lauantaina","Sunnuntaina","Kaikkina ylläolevista"],
+        "CorrectAnswer":2},
+    {"Question":"Moneltako näytelmät esitetään?",
+        "Answers":["Klo 18.00","Klo 18.30","Klo 19.00","Klo 19.30"],
+        "CorrectAnswer":3},
+    {"Question":"Kuka on kirjoittanut näytelmän 'Tukkijoella'?",
+        "Answers":["Teuvo Pakkala","Teuvo Pahkala","Toivo Pakkala","Toivo Pahkala"],
+        "CorrectAnswer":0}
+    {"Question":"Missä 'Tukkijoella' esitetään?",
+        "Answers":["Tampereen teatterissa","Työväen teatterissa"],
+        "CorrectAnswer":0}
+    {"Question":"Missä 'Villikissa' esitetään?",
+        "Answers":["Työväen teatterissa","Tampereen teatterissa"],
+        "CorrectAnswer":0}
+    {"Question":"Moneltako Työväen teatterin kassa aukeaa?",
+        "Answers":["Klo 10","Klo 11","Klo 12","Klo 13"],
+        "CorrectAnswer":1}
+]}
