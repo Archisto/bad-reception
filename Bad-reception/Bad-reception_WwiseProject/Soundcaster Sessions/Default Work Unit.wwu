@@ -10,6 +10,10 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="MuteRadio" ID="{A14F0D67-E9A0-4243-84D1-BD43725F633F}" WorkUnitID="{9D232DBB-92FC-4DF7-8085-4F2D5CAA6FBA}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="StopRadio" ID="{DE72592C-49DC-4AA5-843A-7F0ED50D1532}" WorkUnitID="{9D232DBB-92FC-4DF7-8085-4F2D5CAA6FBA}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -21,7 +25,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}"/>
-							<Value>0</Value>
+							<Value>6</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Program" ID="{2BAA839B-329A-4342-AE45-CEC1A708B111}"/>
