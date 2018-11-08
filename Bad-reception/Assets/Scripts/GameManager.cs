@@ -72,6 +72,8 @@ public class GameManager : MonoBehaviour
     private List<string> _levelSceneNames;
     private int _elapsedDays;
     public float elapsedDayTime;
+    public bool radioActivated;
+    public bool radioDeactivated;
 
     public State GameState { get; set; }
 
@@ -88,7 +90,13 @@ public class GameManager : MonoBehaviour
 
     public bool DayOver { get; private set; }
 
-    public int CurrentLevel { get; private set; }
+    public float DayLengthSeconds
+    {
+        get
+        {
+            return _dayLengthMinutes * 60;
+        }
+    }
 
     public PlayerTaskController TaskController { get; private set; }
 
@@ -123,8 +131,9 @@ public class GameManager : MonoBehaviour
     private void Init()
     {
         SceneManager.activeSceneChanged += InitScene;
+        InitUI();
 
-        if (SceneManager.GetActiveScene().name.Equals(MainMenuKey))
+        if (UIController.MainMenuActive)
         {
             GameState = State.MainMenu;
         }
@@ -155,7 +164,7 @@ public class GameManager : MonoBehaviour
         };
     }
 
-    private void LevelStartInit()
+    public void LevelStartInit()
     {
         if (GameState == State.Play)
         {
@@ -234,22 +243,44 @@ public class GameManager : MonoBehaviour
         else if (SceneTransition == TransitionPhase.None &&
                  GameState == State.Play)
         {
-            if (!DayOver)
-            {
-                UpdateDayTime();
-            }
+            UpdatePlayState();
         }
 
-        if (_updateAtSceneStart)
+        //if (_updateAtSceneStart)
+        //{
+        //    LevelStartInit();
+        //}
+    }
+
+    private void UpdatePlayState()
+    {
+        if (!radioActivated && RadioManager.Running)
         {
-            LevelStartInit();
+            Debug.Log("radio Activated");
+            radioActivated = true;
+        }
+        else if (radioActivated && !radioDeactivated && !RadioManager.Running)
+        {
+            Debug.Log("radio Deactivated");
+            radioDeactivated = true;
+        }
+
+        if (radioDeactivated)
+        {
+            elapsedDayTime = DayLengthSeconds;
+        }
+
+        if (!DayOver && RadioManager.Running)
+        {
+            Debug.Log("Time runs");
+            UpdateDayTime();
         }
     }
 
     private void UpdateDayTime()
     {
         elapsedDayTime += Time.deltaTime;
-        if (elapsedDayTime >= _dayLengthMinutes * 60)
+        if (elapsedDayTime >= DayLengthSeconds)
         {
             Debug.Log("DAY OVER ***************");
             DayOver = true;
@@ -366,51 +397,12 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Loads a level.
-    /// </summary>
-    /// <param name="levelNum"></param>
-    /// <returns></returns>
-    public void LoadLevel(int levelNum)
-    {
-        CurrentLevel = levelNum;
-        Debug.Log(string.Format("Going to level {0}",
-            CurrentLevel));
-        string sceneName = _levelSceneNames[CurrentLevel - 1];
-        StartLoadingScene(sceneName);
-        GameState = State.Play;
-    }
-
-    /// <summary>
-    /// Tries to load a level.
-    /// </summary>
-    /// <param name="levelNum"></param>
-    public void TryLoadLevel(int levelNum)
-    {
-        if (!SceneChanging)
-        {
-            if (levelNum >= 1 && levelNum <= _levelSceneNames.Count)
-            {
-                LoadLevel(levelNum);
-            }
-            else
-            {
-                Debug.LogError(string.Format("Invalid level number ({0}).", levelNum));
-            }
-        }
-        else
-        {
-            Debug.LogWarning("Scene is already changing.");
-        }
-    }
-
-    /// <summary>
     /// Testing. Loads a debug level.
     /// </summary>
     public void LoadDebugScene(string sceneName)
     {
-        CurrentLevel = 0;
         StartLoadingScene(sceneName);
-        GameState = State.Play;
+        StartLevel();
     }
 
     /// <summary>
@@ -458,6 +450,9 @@ public class GameManager : MonoBehaviour
 
     public void StartLevel()
     {
+        radioActivated = false;
+        radioDeactivated = false;
+        GameState = State.Play;
         TaskController.ChooseRandomTasks(_tasksPerDay, false);
         TaskController.StartFirstTask();
         Debug.Log("Day begins");

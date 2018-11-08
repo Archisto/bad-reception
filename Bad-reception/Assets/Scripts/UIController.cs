@@ -6,16 +6,21 @@ using UnityEngine.UI;
 public class UIController : MonoBehaviour
 {
     public Image fadeScreen;
+    public MainMenuScreen mainMenuScreen;
     public GameObject creditsScreen;
 
-    private void Start()
+
+    public bool MainMenuActive
     {
-        
+        get
+        {
+            return mainMenuScreen.gameObject.activeSelf;
+        }
     }
 
-    private void Update()
+    public void ToggleMainMenuScreen()
     {
-        
+        mainMenuScreen.SetActive(!MainMenuActive);
     }
 
     public void ToggleCreditsScreen()
