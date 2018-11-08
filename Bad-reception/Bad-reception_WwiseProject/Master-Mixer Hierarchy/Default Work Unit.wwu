@@ -10,14 +10,70 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Radio_static" ID="{E4128DF6-7D90-4E42-8028-BEE7F8EEB52F}"/>
+						<Bus Name="Radio_static" ID="{E4128DF6-7D90-4E42-8028-BEE7F8EEB52F}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>16641</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 						<Bus Name="Radio_reception" ID="{FA421D48-6361-47AC-9F01-820418E2E4F4}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>16641</Value>
+									</ValueList>
+								</Property>
+								<Property Name="BypassEffect1" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{A480D3C0-C8C4-4005-972C-329129C7D4DB}" ShortID="499833361">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Distort" ID="{52188068-60D0-4A0C-8356-39BC5BB20F5F}" WorkUnitID="{23328E90-0473-4C83-840B-C0D1456EB9BD}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{0888AE56-D209-44BE-8E18-C37FF69C1660}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.5</XPos>
+														<YPos>0</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>-200</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<ObjectRef Name="Low_Pass_20KHz" ID="{830124FB-B9D5-4AE8-846E-E94A74652666}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="Effect1" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
 									<ObjectRef Name="Very_Bad_Connection" ID="{0C5A674D-5EC0-45A6-87A7-3885B3196DCD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect2" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+									<ObjectRef Name="Rhythmic_Talk" ID="{F0F27454-4BCC-4302-A61D-C324E7187DD0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -63,7 +119,58 @@
 										</Property>
 									</PropertyList>
 								</Bus>
-								<Bus Name="Lontoo" ID="{D285F763-40AB-4A75-A98D-715CE88BEFFF}"/>
+								<Bus Name="Lontoo" ID="{D285F763-40AB-4A75-A98D-715CE88BEFFF}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{89963867-D59F-4AC7-90F7-46CB72E08FDE}" ShortID="597272737">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}" WorkUnitID="{23328E90-0473-4C83-840B-C0D1456EB9BD}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{ED092A4F-D6BF-4456-96E1-C2C3FB9EF4B9}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>4.5</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>4.6</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>5.5</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>5.6</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Bus>
 								<Bus Name="Tukholma" ID="{8A7161FA-6D77-4151-9670-EB65D098D838}">
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64">
@@ -75,6 +182,163 @@
 														</Reference>
 													</ReferenceList>
 													<Curve Name="" ID="{1F3B5507-CAB0-4F08-AB3E-0CC39C35F0F3}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>2.5</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>2.6</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>3.5</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>3.6</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList/>
+								</Bus>
+								<Bus Name="Berliini" ID="{3D46D173-F6F3-4B86-946D-B7B211CBC4B3}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{DB4A6FFB-F81E-4CF6-AB90-85AD1D467BDD}" ShortID="917527930">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}" WorkUnitID="{23328E90-0473-4C83-840B-C0D1456EB9BD}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{9C03F8DE-AB09-4301-B0F3-9B3689040455}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>3.5</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>3.6</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>4.5</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>4.6</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Lahti" ID="{4717212B-3E0D-4B8B-BC61-59C0A0211E34}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{8FF67CD1-FEB6-48B6-9734-8E15E4B9C4D2}" ShortID="679505216">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}" WorkUnitID="{23328E90-0473-4C83-840B-C0D1456EB9BD}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{B7B8B2EC-3CA3-41A8-A978-82457973A2ED}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>1.5</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>1.6</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>2.5</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>2.6</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Bus>
+								<Bus Name="Helsinki" ID="{506C5EBE-757F-4A29-B0F3-50FF3FEF03AD}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{4BB86E63-FFB7-4924-837C-A3D9EA176E8B}" ShortID="22506823">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}" WorkUnitID="{23328E90-0473-4C83-840B-C0D1456EB9BD}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{20FD1741-BB0E-4B37-91B6-5DC5ED41ACB2}">
 														<PropertyList>
 															<Property Name="Flags" Type="int32" Value="3"/>
 														</PropertyList>
@@ -100,8 +364,8 @@
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>2.10014</XPos>
-																<YPos>-38.43373</YPos>
+																<XPos>1.6</XPos>
+																<YPos>-200</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -116,12 +380,62 @@
 										</Property>
 									</PropertyList>
 								</Bus>
-								<Bus Name="Berliini" ID="{3D46D173-F6F3-4B86-946D-B7B211CBC4B3}"/>
-								<Bus Name="Lahti" ID="{4717212B-3E0D-4B8B-BC61-59C0A0211E34}"/>
-								<Bus Name="Helsinki" ID="{506C5EBE-757F-4A29-B0F3-50FF3FEF03AD}"/>
 								<Bus Name="Turku" ID="{4DBF76C4-6D65-419D-B91F-0FFA97D430F1}"/>
+								<Bus Name="Moskova" ID="{3C579F18-DE73-4C53-891E-66C2D3CCC300}">
+									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{6CBB120B-B117-4D6E-831C-9AF1222D0855}" ShortID="981005420">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}" WorkUnitID="{23328E90-0473-4C83-840B-C0D1456EB9BD}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{293AE03D-F9DF-462F-90F1-4656C2FFB51C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>5.5</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>5.6</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>6.5</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>6.6</XPos>
+																<YPos>-200</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>20</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Bus>
 							</ChildrenList>
 						</Bus>
+						<Bus Name="Radio_distort" ID="{26C91A80-0CDD-41CA-8198-D27D145F0DA7}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

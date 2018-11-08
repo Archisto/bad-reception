@@ -1,6 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9F18978D-11EF-4300-B615-509F8A6F61B8}" SchemaVersion="89">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{9F18978D-11EF-4300-B615-509F8A6F61B8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9F18978D-11EF-4300-B615-509F8A6F61B8}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="PatkimisLFO" ID="{88755829-6E9D-4AA9-BE78-F4CCACA00185}" ShortID="1051262136">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.4">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{FB84B5EF-5F95-4C96-A713-70A19A0D611A}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="RadioInterferenceLFO" ID="{6CF1F975-F496-44E7-87C2-C9BADA1B7F2E}" ShortID="601564545">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.2">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{BF1AA971-4F16-4D00-8FDE-CB9BCA4B4696}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="0.3"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="New Modulator LFO" ID="{81EDADD5-1B6B-4F60-83B4-124579D1AD1C}" ShortID="670313573">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="1.58"/>
+					</PropertyList>
+				</ModulatorLfo>
+				<ModulatorLfo Name="New Modulator LFO_01" ID="{3B709F50-3C68-4944-B91A-EF2A1B239FD4}" ShortID="169819904">
+					<PropertyList>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.14"/>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>
