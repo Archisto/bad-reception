@@ -118,9 +118,18 @@
 													<Language>SFX</Language>
 													<AudioFile>Isotalon_Antti.wav</AudioFile>
 												</AudioFileSource>
+												<AudioFileSource Name="Isotalon_Antti_jazz" ID="{FEFCFA4D-F448-4BC2-AFB7-8AF29619CC46}" ShortID="439688502">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.380920273714207"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.444406985999906"/>
+														<Property Name="TrimEnd" Type="Real64" Value="32.3544157486003"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Isotalon_Antti_jazz.wav</AudioFile>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Isotalon_Antti" ID="{363E17AE-73E6-494D-A523-86A7CBE5FA81}" Platform="Linked"/>
+												<ActiveSource Name="Isotalon_Antti_jazz" ID="{FEFCFA4D-F448-4BC2-AFB7-8AF29619CC46}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Jannen_hanuripolkka" ID="{85089448-FB1B-4E3D-8706-BD44337FA1B6}" ShortID="949363415">
@@ -499,11 +508,6 @@
 						<Sound Name="radio_static_weather_loop" ID="{0D75390C-CCA7-4224-9C08-59DDFBC95DAD}" ShortID="724516897">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>9</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
