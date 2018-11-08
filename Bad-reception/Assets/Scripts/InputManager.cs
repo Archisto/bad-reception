@@ -107,7 +107,14 @@ public class InputManager : MonoBehaviour {
         previousLeftAngle = leftAngle;
         previousRightAngle = rightAngle;
 
-        AnswerInput();
+        if (GameManager.Instance.GameState == GameManager.State.MainMenu)
+        {
+            MenuInput();
+        }
+        else
+        {
+            AnswerInput();
+        }
         DebugInput();
     }
 
@@ -117,6 +124,30 @@ public class InputManager : MonoBehaviour {
         float max = Mathf.PI * 2;
         float mp = Mathf.Floor((d - -Mathf.PI) / max);
         return d - (mp * max);
+    }
+
+    private void MenuInput()
+    {
+        if (Input.GetButtonDown("answerA") ||
+            Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            GameManager.Instance.UIController.mainMenuScreen.StartGame();
+        }
+        if (Input.GetButtonDown("answerB") ||
+            Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            GameManager.Instance.UIController.mainMenuScreen.ToggleDisplayCredits();
+        }
+        if (Input.GetButtonDown("answerY") ||
+            Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            // Does nothing
+        }
+        if (Input.GetButtonDown("answerX") ||
+            Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            GameManager.Instance.UIController.mainMenuScreen.QuitGame();
+        }
     }
 
     private void AnswerInput()
