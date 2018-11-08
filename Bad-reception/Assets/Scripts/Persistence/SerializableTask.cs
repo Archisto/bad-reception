@@ -26,7 +26,7 @@ namespace Persistence
             Question = playerTask.question;
             Answers = playerTask.answers;
             CorrectAnswer = playerTask.correctAnswer;
-           
+            id = playerTask.id;
         }
 
         public static implicit operator SerializableTask(PlayerTask playerTask)
@@ -38,7 +38,7 @@ namespace Persistence
         {
             PlayerTask playerTask = new PlayerTask(serializableTask.Question);
             playerTask.SetAnswers(serializableTask.CorrectAnswer, serializableTask.Answers);
-           
+            playerTask.id = serializableTask.id;
             return playerTask;
         }
 

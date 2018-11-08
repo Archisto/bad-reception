@@ -8,6 +8,7 @@ public class PlayerTaskController : MonoBehaviour
     public List<PlayerTask> tasks;
     public List<PlayerTask> chosenTasks;
 
+    
     private int _currentTaskNum;
     private bool _answerPhaseActive;
 
@@ -19,7 +20,12 @@ public class PlayerTaskController : MonoBehaviour
 
     public PlayerTask CurrentTask
     {
-        get { return chosenTasks[_currentTaskNum]; }
+        get {
+            if (_currentTaskNum >= 0 && _currentTaskNum < chosenTasks.Count)
+                return chosenTasks[_currentTaskNum];
+            else
+                return null;
+        }
     }
 
     public void Init()
@@ -55,7 +61,7 @@ public class PlayerTaskController : MonoBehaviour
         taskTotal = this.tasks.Count;
     }
 
-    public void ChooseRandomTasks(int taskCount, bool forceShuffle)
+    public void ChooseRandomTasks(int taskCount, bool forceShuffle, int programId)
     {
         if (chosenTasks.Count == 0 || forceShuffle)
         {
@@ -67,14 +73,18 @@ public class PlayerTaskController : MonoBehaviour
         chosenTaskNumbers = new int[taskCount];
 
         chosenTasks.Clear();
-
         var temp = new List<PlayerTask>();
         foreach(PlayerTask tsk in this.tasks)
         {
-            temp.Add(tsk);
+            Debug.Log("task qq " + tsk.question + " id " + tsk.id);
+            if(tsk.id == programId)
+            {
+                temp.Add(tsk);
+            }
         }
+        Debug.Log("use program " + programId + " tasks " + temp.Count);
 
-        for(int i = 0; i < (int)Mathf.Min(temp.Count,taskCount); i++)
+        for (int i = 0; i < (int)Mathf.Min(temp.Count,taskCount); i++)
         {
             var rnd =(int) Mathf.Floor( Random.value * temp.Count);
             chosenTasks.Add(temp[rnd]);
@@ -116,8 +126,9 @@ public class PlayerTaskController : MonoBehaviour
         }
     }
 
-    public void SetTasks(PlayerTask[] tasks)
+    public void SetTasks(PlayerTask[] tasks, int programId)
     {
+        
         this.tasks = new List<PlayerTask>();
         foreach (PlayerTask item in tasks)
         {

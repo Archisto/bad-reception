@@ -10,6 +10,7 @@ public class RadioManager : MonoBehaviour {
     public static float minFrequency = 148.5f;
     public static float maxFrequency = 283.5f;
 
+    public GameObject taskmanager;
     public Channels channels;
     public GameObject distortObject;
 
@@ -98,10 +99,17 @@ public class RadioManager : MonoBehaviour {
             AkSoundEngine.PostEvent("StopRadio", gameObject);
         }
 
+        var curtask = taskmanager.GetComponent<PlayerTaskController>().CurrentTask;
+        if(curtask != null)
+        {
+            
+            program = curtask.id;
+        }
+            
         this.switchon.SetActive(RadioManager.Running);
         this.switchoff.SetActive(!RadioManager.Running);
 
-        distortTarget += (Random.value-0.5f)*0.6f*Time.deltaTime + Mathf.Sin(Time.time*0.6f)*0.000f;
+        distortTarget += (Random.value-0.5f)*1.2f*Time.deltaTime + Mathf.Sin(Time.time*0.6f)*0.002f;
         distortTarget = Mathf.Clamp(distortTarget, 0f, 1f);
         userDistortLevel = Mathf.Clamp(userDistortLevel, -1f, 2f);
         if(!RadioManager.Running)
