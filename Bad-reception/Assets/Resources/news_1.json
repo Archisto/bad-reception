@@ -1,17 +1,11 @@
 ﻿{"PlayerTasks":[
-    {"Question":"Mikä ennätys rikottiin?",
-        "Answers":["Suomen ennätys","Pohjoismaiden ennätys","Euroopan ennätys","Maailman ennätys"],
-        "CorrectAnswer":3},
-    {"Question":"Kuka jäi pois juoksusta?",
-        "Answers":["Ville Ritola","Eero Berg","Edvin Wide","Paavo Nurmi"],
-        "CorrectAnswer":3},
-    {"Question":"Kuka tuli ensimmäiseksi?",
-        "Answers":["Ville Ritola","Eero Berg","Edvin Wide","Paavo Nurmi"],
-        "CorrectAnswer":0},
-    {"Question":"Kuinka pitkä matka juostiin?",
-        "Answers":["5000 m","10 000 m","3500 m","400 m"],
+    {"Question":"Minkä maahatuontitullit nousevat vuodenvaihteessa?",
+        "Answers":["Suolan ja sokerin","Suolan ja kahvin","Kahvin ja sokerin","Kahvin ja teen"],
+        "CorrectAnswer":2},
+    {"Question":"Mitä on jo tapahtunut?",
+        "Answers":["Maahantuonti on vähentynyt","Maahantuonti on lisääntynyt","Saatavuus on pienentynyt","Ihmiset ovat alkaneet varastoimaan"],
         "CorrectAnswer":1},
-    {"Question":"Mistä maasta ainoa ei-suomalainen mitalisti oli?",
-        "Answers":["Tanska","Norja","Ruotsi","Neuvostoliitto"],
-        "CorrectAnswer":2}
+    {"Question":"Paljonko hinta on jo noussut kilolta?",
+        "Answers":["30 penniä","70 penniä","1 markan","50 penniä"],
+        "CorrectAnswer":3}
 ]}
