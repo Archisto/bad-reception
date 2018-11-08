@@ -105,7 +105,9 @@ public class RadioManager : MonoBehaviour {
         this._noise = Mathf.Min(1f,Mathf.Abs( Mathf.Sin(Time.time*0.25f)+Mathf.Sin(Time.time*0.1f)));
 
         distortObject.transform.localRotation = Quaternion.Euler(0f, 0f, (userDistortLevel - distortTarget)*60f);
-        _distort = Mathf.Clamp( Mathf.Abs(userDistortLevel - distortTarget), 0f, 1f)+0.5f;
+        _distort = Mathf.Clamp( getPowIn(2.2f,  Mathf.Abs(userDistortLevel - distortTarget)) , 0f, 1f)+0.5f;
+
+        
 
         AkSoundEngine.SetRTPCValue("ChannelA", _channelA);
         //AkSoundEngine.SetRTPCValue("ChannelB", _channelB);
@@ -117,8 +119,16 @@ public class RadioManager : MonoBehaviour {
 
 
         // Debug.Log("Update: channel " + _channelA + ", tuning " + _tuning + " noise " + _noise);
-        Debug.Log("distort " + _distort + " target " + distortTarget + " user " + userDistortLevel);
+        //Debug.Log("distort " + _distort + " target " + distortTarget + " user " + userDistortLevel);
     }
+
+
+
+    float getPowIn(float pow, float t)
+    {
+        return Mathf.Pow(t, pow);
+    }
+
 
     float smallestAngleBetween(float a1, float a2)
     {
