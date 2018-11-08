@@ -264,7 +264,7 @@ Prefab:
     - target: {fileID: 114911673785642078, guid: a8ea622e8e7f8b941af38524c08ab5d5,
         type: 2}
       propertyPath: _dayLengthMinutes
-      value: 3
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8ea622e8e7f8b941af38524c08ab5d5, type: 2}
@@ -1500,12 +1500,12 @@ Prefab:
         type: 2}
       propertyPath: switchon
       value: 
-      objectReference: {fileID: 856803900}
+      objectReference: {fileID: 449054502}
     - target: {fileID: 114576282120796680, guid: fcbc819b9e2213445a6692128c0bff3b,
         type: 2}
       propertyPath: switchoff
       value: 
-      objectReference: {fileID: 449054502}
+      objectReference: {fileID: 856803900}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcbc819b9e2213445a6692128c0bff3b, type: 2}
   m_IsPrefabAsset: 0
