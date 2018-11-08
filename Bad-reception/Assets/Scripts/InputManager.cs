@@ -33,10 +33,10 @@ public class InputManager : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //Read xbox controller.
-        var leftValX = Input.GetAxis("left axis x");
-        var leftValY = Input.GetAxis("left axis y");
-        var rightValX = Input.GetAxis("right axis x");
-        var rightValY = Input.GetAxis("right axis y");
+        var leftValX = Input.GetAxis("right axis x");
+        var leftValY = Input.GetAxis("right axis y");
+        var rightValX = Input.GetAxis("left axis x");
+        var rightValY = Input.GetAxis("left axis y");
         
         var leftAngle = Mathf.Atan2(leftValY, leftValX);
         var rightAngle = Mathf.Atan2(rightValY, rightValX);
@@ -88,19 +88,20 @@ public class InputManager : MonoBehaviour {
         {
             var speed = Input.GetAxis("left trigger") > 0 ? 0.5f : 0.05f;
             var d = smallestAngleBetween(previousLeftAngle.Value, leftAngle) * speed;
-            this.leftAngle += d * 180 / Mathf.PI;
+            this.leftAngle -= d * 180 / Mathf.PI;
 
-            rm.frequency -= d*20f;
+            rm.frequency += d*20f;
         }
 
         if(previousRightAngle != null)
         {
             var speed = Input.GetAxis("right trigger") > 0 ? 1.6f : 0.2f;
             var d = smallestAngleBetween(previousRightAngle.Value, rightAngle) * speed;
-            this.rightAngle += d * 180 / Mathf.PI;
+            this.rightAngle -= d * 180 / Mathf.PI;
+            rm.userDistortLevel -= d * 0.1f;
         }
         
-        leftTemp.transform.localRotation = Quaternion.Euler(new Vector3(0,0,this.leftAngle));
+        leftTemp.transform.localRotation = Quaternion.Euler(new Vector3(this.leftAngle,-90f, -90f));
         rightTemp.transform.localRotation = Quaternion.Euler(new Vector3(0,0,this.rightAngle));
 
         previousLeftAngle = leftAngle;

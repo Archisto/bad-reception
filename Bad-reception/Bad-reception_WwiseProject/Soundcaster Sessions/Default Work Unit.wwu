@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{59761540-3157-48C0-8B77-C816A6D2BF27}" SchemaVersion="89">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{59761540-3157-48C0-8B77-C816A6D2BF27}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{59761540-3157-48C0-8B77-C816A6D2BF27}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{E70F4D16-A7A5-4CAB-A37F-9B1A6721FEE5}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PlayRadio" ID="{36361417-CF95-4C41-B1D4-63F2600F36B1}" WorkUnitID="{9D232DBB-92FC-4DF7-8085-4F2D5CAA6FBA}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StopRadio" ID="{DE72592C-49DC-4AA5-843A-7F0ED50D1532}" WorkUnitID="{9D232DBB-92FC-4DF7-8085-4F2D5CAA6FBA}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Noise" ID="{3D6AD504-05AB-42AF-BCFB-5C2BD7C1C4F6}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Program" ID="{2BAA839B-329A-4342-AE45-CEC1A708B111}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="ChannelB" ID="{29FAD576-80BF-4393-B28B-4C4C9EA73960}"/>
+							<Value>20</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Tuning" ID="{D67CB19F-735D-49DF-BCF0-B3C5CF156C5A}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Distort" ID="{52188068-60D0-4A0C-8356-39BC5BB20F5F}"/>
+							<Value>0.5</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Juna" ID="{674C0176-5087-4C9D-B9AF-D32718C4D226}"/>
+						<CurrentSwitchRef Name="Berliini" ID="{0689A5B5-D151-4F1E-9D16-5A875C6F171F}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

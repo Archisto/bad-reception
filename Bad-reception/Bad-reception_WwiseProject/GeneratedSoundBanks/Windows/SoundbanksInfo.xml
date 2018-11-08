@@ -22,27 +22,100 @@
 			<Path>SoundBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2507646724" Name="PlayRadio" ObjectPath="\Events\Default Work Unit\PlayRadio"/>
+				<Event Id="1269015798" Name="StopRadio" ObjectPath="\Events\Default Work Unit\StopRadio"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="9939817" Language="SFX">
+					<ShortName>Juna.wav</ShortName>
+					<Path>SFX/Juna_A1793BE9.wem</Path>
+				</File>
+				<File Id="17168663" Language="SFX">
+					<ShortName>Lontoon_Jenny.wav</ShortName>
+					<Path>SFX/Lontoon_Jenny_224453E6.wem</Path>
+				</File>
+				<File Id="188239427" Language="SFX">
+					<ShortName>HuomioHuomio3NBTampere.wav</ShortName>
+					<Path>SFX/HuomioHuomio3NBTampere_A1793BE9.wem</Path>
+				</File>
+				<File Id="191356147" Language="SFX">
+					<ShortName>RAI-OdeonA228064-01-1-001.wav</ShortName>
+					<Path>SFX/RAI-OdeonA228064-01-1-001_A1793BE9.wem</Path>
+				</File>
+				<File Id="223650898" Language="SFX">
+					<ShortName>Kalliolle_kukkulalle.wav</ShortName>
+					<Path>SFX/Kalliolle_kukkulalle_F422F77F.wem</Path>
+				</File>
 				<File Id="250462957" Language="SFX">
 					<ShortName>RAI-HMVX3136-01-2-001.wav</ShortName>
-					<Path>SFX/RAI-HMVX3136-01-2-001_54840529.wem</Path>
+					<Path>SFX/RAI-HMVX3136-01-2-001_03B9C0D8.wem</Path>
+				</File>
+				<File Id="262269641" Language="SFX">
+					<ShortName>Teatteri.wav</ShortName>
+					<Path>SFX/Teatteri_A1793BE9.wem</Path>
+				</File>
+				<File Id="270229281" Language="SFX">
+					<ShortName>Jos_täytätte_mun_lasini.wav</ShortName>
+					<Path>SFX/Jos_täytätte_mun_lasini_C03604EC.wem</Path>
+				</File>
+				<File Id="286778392" Language="SFX">
+					<ShortName>Enkä_minä_ryyppää.wav</ShortName>
+					<Path>SFX/Enkä_minä_ryyppää_BF8D387D.wem</Path>
 				</File>
 				<File Id="324652965" Language="SFX">
 					<ShortName>RAI-Gramophone282796-01-1-001.wav</ShortName>
-					<Path>SFX/RAI-Gramophone282796-01-1-001_18A61914.wem</Path>
+					<Path>SFX/RAI-Gramophone282796-01-1-001_7A6B169F.wem</Path>
 				</File>
 				<File Id="340283207" Language="SFX">
 					<ShortName>Faust_Aino_Ackte.wav</ShortName>
 					<Path>SFX/Faust_Aino_Ackte_9BC16157.wem</Path>
 				</File>
-				<File Id="486792087" Language="SFX">
-					<ShortName>Ääninäyte_1_Radiolähetysten_Alkujuonto.wav</ShortName>
-					<Path>SFX/Ääninäyte_1_Radiolähetysten_Alkujuonto_A1793BE9.wem</Path>
+				<File Id="380768617" Language="SFX">
+					<ShortName>349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s.wav</ShortName>
+					<Path>SFX/349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s_F3F4A2DD.wem</Path>
+				</File>
+				<File Id="439688502" Language="SFX">
+					<ShortName>Isotalon_Antti_jazz.wav</ShortName>
+					<Path>SFX/Isotalon_Antti_jazz_8750058B.wem</Path>
+				</File>
+				<File Id="484830930" Language="SFX">
+					<ShortName>Tullit.wav</ShortName>
+					<Path>SFX/Tullit_A1793BE9.wem</Path>
+				</File>
+				<File Id="608550253" Language="SFX">
+					<ShortName>SeuraaMusiikkia.wav</ShortName>
+					<Path>SFX/SeuraaMusiikkia_A1793BE9.wem</Path>
+				</File>
+				<File Id="632588341" Language="SFX">
+					<ShortName>RAI-Gramophone2-42134-01-1-001.wav</ShortName>
+					<Path>SFX/RAI-Gramophone2-42134-01-1-001_A1793BE9.wem</Path>
+				</File>
+				<File Id="649016906" Language="SFX">
+					<ShortName>radio_static_weather_loop.wav</ShortName>
+					<Path>SFX/radio_static_weather_loop_CB1F3167.wem</Path>
 				</File>
 				<File Id="867146824" Language="SFX">
 					<ShortName>RAI-Gramophone7-282154-01-2-001.wav</ShortName>
-					<Path>SFX/RAI-Gramophone7-282154-01-2-001_4EF7152B.wem</Path>
+					<Path>SFX/RAI-Gramophone7-282154-01-2-001_7E525D10.wem</Path>
+				</File>
+				<File Id="872212260" Language="SFX">
+					<ShortName>Jannen_hanuripolkka.wav</ShortName>
+					<Path>SFX/Jannen_hanuripolkka_4A5A7BED.wem</Path>
+				</File>
+				<File Id="885642112" Language="SFX">
+					<ShortName>Pariisin olympialaiset.wav</ShortName>
+					<Path>SFX/Pariisin olympialaiset_A1793BE9.wem</Path>
+				</File>
+				<File Id="910310310" Language="SFX">
+					<ShortName>RAI-Victor69646-01-2-001.wav</ShortName>
+					<Path>SFX/RAI-Victor69646-01-2-001_A1793BE9.wem</Path>
+				</File>
+				<File Id="914707181" Language="SFX">
+					<ShortName>349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s.wav</ShortName>
+					<Path>SFX/349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s_6B18E7BF.wem</Path>
+				</File>
+				<File Id="971992029" Language="SFX">
+					<ShortName>BlimBlom.wav</ShortName>
+					<Path>SFX/BlimBlom_A1793BE9.wem</Path>
 				</File>
 				<File Id="1047536226" Language="SFX">
 					<ShortName>radio_static_loop.wav</ShortName>

@@ -12,12 +12,12 @@ public class Channels : MonoBehaviour {
 	void Start () {
         this.channels = new List<Channel>();
         this.channels.Add(new Channel(0, 210, 0, "Tampereen Radio"));
-        this.channels.Add(new Channel(1, 170, 70, "Tukholma"));
-        this.channels.Add(new Channel(1, 240, 140, "Helsinki"));
-        this.channels.Add(new Channel(1, 280, 270, "Ruotsi"));
-        this.channels.Add(new Channel(1, 150, 300, "Lahti"));
+        this.channels.Add(new Channel(3, 280, 270, "Tukholma"));
+        this.channels.Add(new Channel(4, 150, 300, "Berliini"));
+        this.channels.Add(new Channel(5, 150, 300, "Lontoo"));
+        this.channels.Add(new Channel(6, 150, 300, "Moskova"));
 
-        if(showChannels)
+        if (showChannels)
         {
             foreach(Channel chnl in channels)
             {
@@ -38,7 +38,6 @@ public class Channels : MonoBehaviour {
         {
             var rnd = (Random.value-0.5f)*5f + i;
             var f = Mathf.Clamp(rnd, RadioManager.minFrequency, RadioManager.maxFrequency);
-            Debug.Log(f + " vs " + i);
             availableFrequencies.Add(f);
         }
 

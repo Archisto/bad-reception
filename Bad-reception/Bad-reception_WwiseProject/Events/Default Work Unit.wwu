@@ -5,13 +5,58 @@
 			<ChildrenList>
 				<Event Name="PlayRadio" ID="{36361417-CF95-4C41-B1D4-63F2600F36B1}">
 					<ChildrenList>
-						<Action Name="" ID="{36F69FDB-A5D8-4CC2-9DF7-0FF4F9118638}" ShortID="538564302">
+						<Action Name="" ID="{80D7A53D-1C0D-4A21-A9C1-A7F6428B2B1E}" ShortID="263983259">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="Volume" Type="Real64" Value="-200"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio_reception" ID="{FA421D48-6361-47AC-9F01-820418E2E4F4}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F04F3888-5D9A-4E72-818B-39AA5C2A2178}" ShortID="532720961">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="Volume" Type="Real64" Value="-200"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio" ID="{361D1526-18EE-4045-883D-D98A25456BF2}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8AA5EEFC-6497-4B8D-B57B-5C260D2BF2DD}" ShortID="532106955">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Tampere-virta" ID="{E61B3179-5C47-4168-88AB-98BBA83AB42D}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+									<ObjectRef Name="Radio_On" ID="{9CB12A76-3510-490F-89E4-230452E3A94B}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{41407091-3196-4117-AB4B-EFB914EEE322}" ShortID="57015162">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio_reception" ID="{FA421D48-6361-47AC-9F01-820418E2E4F4}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A0B3D35F-95FD-4F9F-A4B5-DEA26A017C96}" ShortID="614331836">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio" ID="{361D1526-18EE-4045-883D-D98A25456BF2}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -24,6 +69,119 @@
 									<ObjectRef Name="radio_static_loop" ID="{99BE1B34-9816-4256-BFC1-2BF5495ACF34}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
 								</Reference>
 							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FD2DD9E1-6D13-4F9B-9213-2832201FFB9F}" ShortID="964129519">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="radio_static_weather_loop" ID="{0D75390C-CCA7-4224-9C08-59DDFBC95DAD}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DDA01498-B714-4F21-B25C-7D68F785A49A}" ShortID="109175486">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whistle" ID="{21A2D506-B8B1-4C5A-B306-B60067CDCD22}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2C9A88C7-467D-459C-A145-9CB380A65EB4}" ShortID="323206415">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whistle_01" ID="{10CF7755-A6F6-4821-A57A-2F7D125414EF}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{36F69FDB-A5D8-4CC2-9DF7-0FF4F9118638}" ShortID="538564302">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tampere-virta" ID="{E61B3179-5C47-4168-88AB-98BBA83AB42D}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{719968BB-72A5-4A1D-97DE-52F93637D292}" ShortID="900176354">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tukholma-virta" ID="{FBBA4398-3280-4A10-88E5-911FA476F0BB}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1F48AAF5-CBD5-451A-B221-D3D5F243B737}" ShortID="266148058">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Berliini-virta" ID="{4FF2A951-2349-412F-8585-B24AED157944}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B9A18E5E-60CD-4599-B155-75F838E0C07A}" ShortID="186064062">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lontoo-virta" ID="{BD5E5CAF-C475-4A5D-91E2-E306860D117D}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D7FB1794-D9E8-4F6A-ADBB-1C42EF170CA4}" ShortID="906419151">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Moskova-virta" ID="{404F7A02-07FC-49CB-910E-C74C8910416E}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopRadio" ID="{DE72592C-49DC-4AA5-843A-7F0ED50D1532}">
+					<ChildrenList>
+						<Action Name="" ID="{30C18FF8-BDDD-433A-BDD7-083F0F770AF6}" ShortID="587000308">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio_Off" ID="{16487F1D-5CFC-4393-9F68-93765BCF4E63}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D80996B4-7298-48D0-B394-A1946A1B1033}" ShortID="745795359">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-200"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio" ID="{361D1526-18EE-4045-883D-D98A25456BF2}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{31BD7224-69AF-4CE5-B783-C359E735C63C}" ShortID="313223009">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>
