@@ -91,6 +91,7 @@ public class RadioManager : MonoBehaviour {
 
     private void startTimeDelayDone()
     {
+        channels.randomizeChannels();
         waitingStart = false;
         Debug.Log("start time delay done");
         RadioManager.Running = true;

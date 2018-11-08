@@ -31,7 +31,7 @@ public class Channels : MonoBehaviour {
 
     }
 
-    void randomizeChannels()
+    public void randomizeChannels()
     {
         List<float> availableFrequencies = new List<float>();
         for(float i = RadioManager.minFrequency; i < RadioManager.maxFrequency; i+=20)
