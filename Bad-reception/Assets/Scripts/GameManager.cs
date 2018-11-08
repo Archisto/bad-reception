@@ -298,6 +298,7 @@ public class GameManager : MonoBehaviour
             DayOver = true;
             RadioManager.Running = false;
             RadioManager.allowStart = false;
+            AkSoundEngine.PostEvent("StopRadio", gameObject);
             TaskController.taskPanel.Activate(true);
             TaskController.ActivateAnswerPhase(true);
         }
