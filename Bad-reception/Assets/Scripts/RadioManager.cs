@@ -5,7 +5,8 @@ using UnityEngine;
 public class RadioManager : MonoBehaviour {
     
     public static bool Running = false;
-    public static bool allowStart = true;
+    public static bool allowStart = false;
+    public static bool waitingStart = false;
 
     public static float minFrequency = 148.5f;
     public static float maxFrequency = 283.5f;
@@ -16,6 +17,8 @@ public class RadioManager : MonoBehaviour {
 
     public GameObject switchon;
     public GameObject switchoff;
+
+    public bool audiostarted = false;
 
     private float _volume = 1f;
     public float volume
@@ -86,16 +89,33 @@ public class RadioManager : MonoBehaviour {
         this.frequency = Random.value * (RadioManager.maxFrequency - RadioManager.minFrequency) + RadioManager.minFrequency;
     }
 
+    private void startTimeDelayDone()
+    {
+        waitingStart = false;
+        Debug.Log("start time delay done");
+        RadioManager.Running = true;
+    }
+
     // Update is called once per frame
     void Update () {
-        if(!RadioManager.Running && Input.GetButtonDown("start") && allowStart)
+        if(!RadioManager.Running && allowStart)
         {
-            RadioManager.Running = true;
-            AkSoundEngine.PostEvent("PlayRadio", gameObject);
+            if(!waitingStart)
+                Invoke("startTimeDelayDone", 1f);
+            waitingStart = true;
+            //Auto start with timer
+            allowStart = false;
+            //RadioManager.Running = true;
+            if(!audiostarted)
+            {
+                audiostarted = true;
+                AkSoundEngine.PostEvent("PlayRadio", gameObject);
+            }
         }
         else if(RadioManager.Running && Input.GetButtonDown("start"))
         {
             RadioManager.Running = false;
+            audiostarted = false;
             AkSoundEngine.PostEvent("StopRadio", gameObject);
         }
 

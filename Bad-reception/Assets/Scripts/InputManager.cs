@@ -102,7 +102,7 @@ public class InputManager : MonoBehaviour {
         }
         
         leftTemp.transform.localRotation = Quaternion.Euler(new Vector3(this.leftAngle,-90f, -90f));
-        rightTemp.transform.localRotation = Quaternion.Euler(new Vector3(0,0,this.rightAngle));
+        rightTemp.transform.localRotation = Quaternion.Euler(new Vector3(this.rightAngle,-90f,-90f));
 
         previousLeftAngle = leftAngle;
         previousRightAngle = rightAngle;

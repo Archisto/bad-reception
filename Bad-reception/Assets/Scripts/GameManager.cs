@@ -284,7 +284,7 @@ public class GameManager : MonoBehaviour
 
         if (!DayOver && (RadioManager.Running || radioDeactivated))
         {
-            Debug.Log("Time runs");
+            
             UpdateDayTime();
         }
     }

@@ -185,6 +185,8 @@ public class PlayerTaskController : MonoBehaviour
         }
 
         UpdateTaskUI();
+        taskPanel.UpdateIntroTasks(chosenTasks);
+
     }
 
     public void ActivateAnswerPhase(bool activate)
