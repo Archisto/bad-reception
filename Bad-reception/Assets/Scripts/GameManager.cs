@@ -97,6 +97,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public float TotalTasksToComplete
+    {
+        get
+        {
+            return _days * _tasksPerDay;
+        }
+    }
+
     public PlayerTaskController TaskController { get; private set; }
 
     public UIController UIController { get; private set; }
@@ -475,6 +483,8 @@ public class GameManager : MonoBehaviour
         if (_elapsedDays == _days)
         {
             Debug.Log("GAME COMPLETED");
+            UIController.gameEndScreen.SetResultText(0);
+            UIController.gameEndScreen.SetActive(true);
         }
         else
         {

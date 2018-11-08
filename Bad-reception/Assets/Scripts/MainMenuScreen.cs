@@ -5,19 +5,8 @@ using UnityEngine.UI;
 
 public class MainMenuScreen : MonoBehaviour
 {
-    private void Start()
-    {
-        
-    }
-
-    private void Update()
-    {
-        
-    }
-
     public void StartGame()
     {
-        // TODO
         Debug.Log("StartGame");
         SetActive(false);
         GameManager.Instance.StartLevel();
