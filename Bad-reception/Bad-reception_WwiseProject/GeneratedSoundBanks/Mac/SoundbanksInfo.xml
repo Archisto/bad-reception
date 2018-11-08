@@ -77,6 +77,10 @@
 					<ShortName>Isotalon_Antti_jazz.wav</ShortName>
 					<Path>SFX/Isotalon_Antti_jazz_8750058B.wem</Path>
 				</File>
+				<File Id="453063245" Language="SFX">
+					<ShortName>BuddyBurton_JohnnyDodds.wav</ShortName>
+					<Path>SFX/BuddyBurton_JohnnyDodds_765C608D.wem</Path>
+				</File>
 				<File Id="484830930" Language="SFX">
 					<ShortName>Tullit.wav</ShortName>
 					<Path>SFX/Tullit_A1793BE9.wem</Path>
@@ -113,6 +117,10 @@
 					<ShortName>349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s.wav</ShortName>
 					<Path>SFX/349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s_6B18E7BF.wem</Path>
 				</File>
+				<File Id="927013688" Language="SFX">
+					<ShortName>DoctorJazz_Jelly-Roll.wav</ShortName>
+					<Path>SFX/DoctorJazz_Jelly-Roll_DD4DF15C.wem</Path>
+				</File>
 				<File Id="971992029" Language="SFX">
 					<ShortName>BlimBlom.wav</ShortName>
 					<Path>SFX/BlimBlom_A1793BE9.wem</Path>
@@ -120,6 +128,14 @@
 				<File Id="1047536226" Language="SFX">
 					<ShortName>radio_static_loop.wav</ShortName>
 					<Path>SFX/radio_static_loop_CB1F3167.wem</Path>
+				</File>
+				<File Id="1048002417" Language="SFX">
+					<ShortName>TakeMeToTheLandOfJazz.wav</ShortName>
+					<Path>SFX/TakeMeToTheLandOfJazz_F7B8F599.wem</Path>
+				</File>
+				<File Id="1072169702" Language="SFX">
+					<ShortName>IHateToLeaveYouNow_LouisArmstrong.wav</ShortName>
+					<Path>SFX/IHateToLeaveYouNow_LouisArmstrong_31F17A64.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
