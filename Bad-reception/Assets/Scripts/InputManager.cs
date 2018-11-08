@@ -138,15 +138,15 @@ public class InputManager : MonoBehaviour {
         {
             GameManager.Instance.UIController.mainMenuScreen.ToggleDisplayCredits();
         }
-        if (Input.GetButtonDown("answerY") ||
+        if (Input.GetButtonDown("answerX") ||
             Input.GetKeyDown(KeyCode.Alpha3))
         {
-            // Does nothing
+            GameManager.Instance.UIController.mainMenuScreen.QuitGame();
         }
-        if (Input.GetButtonDown("answerX") ||
+        if (Input.GetButtonDown("answerY") ||
             Input.GetKeyDown(KeyCode.Alpha4))
         {
-            GameManager.Instance.UIController.mainMenuScreen.QuitGame();
+            // Does nothing
         }
     }
 
@@ -164,12 +164,12 @@ public class InputManager : MonoBehaviour {
         {
             taskController.Answer(1);
         }
-        if (Input.GetButtonDown("answerY") ||
+        if (Input.GetButtonDown("answerX") ||
             Input.GetKeyDown(KeyCode.Alpha3))
         {
             taskController.Answer(2);
         }
-        if (Input.GetButtonDown("answerX") ||
+        if (Input.GetButtonDown("answerY") ||
             Input.GetKeyDown(KeyCode.Alpha4))
         {
             taskController.Answer(3);
