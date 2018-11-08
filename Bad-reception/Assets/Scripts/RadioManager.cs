@@ -78,6 +78,7 @@ public class RadioManager : MonoBehaviour {
     void Update () {
         distortTarget += (Random.value-0.5f)*0.6f*Time.deltaTime + Mathf.Sin(Time.time*0.6f)*0.000f;
         distortTarget = Mathf.Clamp(distortTarget, 0f, 1f);
+        userDistortLevel = Mathf.Clamp(userDistortLevel, 0f, 1f);
         updateWWValues();
 	}
 

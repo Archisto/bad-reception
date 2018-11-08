@@ -33,10 +33,10 @@ public class InputManager : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //Read xbox controller.
-        var leftValX = Input.GetAxis("left axis x");
-        var leftValY = Input.GetAxis("left axis y");
-        var rightValX = Input.GetAxis("right axis x");
-        var rightValY = Input.GetAxis("right axis y");
+        var leftValX = Input.GetAxis("right axis x");
+        var leftValY = Input.GetAxis("right axis y");
+        var rightValX = Input.GetAxis("left axis x");
+        var rightValY = Input.GetAxis("left axis y");
         
         var leftAngle = Mathf.Atan2(leftValY, leftValX);
         var rightAngle = Mathf.Atan2(rightValY, rightValX);
@@ -101,7 +101,7 @@ public class InputManager : MonoBehaviour {
             rm.userDistortLevel -= d * 0.1f;
         }
         
-        leftTemp.transform.localRotation = Quaternion.Euler(new Vector3(0,0,this.leftAngle));
+        leftTemp.transform.localRotation = Quaternion.Euler(new Vector3(this.leftAngle,-90f, -90f));
         rightTemp.transform.localRotation = Quaternion.Euler(new Vector3(0,0,this.rightAngle));
 
         previousLeftAngle = leftAngle;
