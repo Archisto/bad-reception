@@ -11,7 +11,7 @@ namespace Persistence
         public List<string> Answers;
         public int CorrectAnswer;
         public string AudioClipTag;
-
+        public int id;
         
         public SerializableTask(string question, List<string> answers, int correctAnswer, string audioClipTag)
         {

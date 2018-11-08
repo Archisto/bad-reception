@@ -354,9 +354,10 @@ public class GameManager : MonoBehaviour
         for(int i = 0; i < 4; i++)
         {
             var d = Resources.Load<TextAsset>("news_" + i);
-            var j = JsonUtility.FromJson<PlayerTask>(d.ToString());
-            j.id = i;
-            tasks.Add(j);
+            var j = JsonUtility.FromJson<GameData>(d.ToString());
+            Debug.Log(j.PlayerTasks[0].Question);
+            j.PlayerTasks[0].id = i;
+            tasks.Add(j.PlayerTasks[0]);
         }
         /*
         foreach (PlayerTask task in data.PlayerTasks)
