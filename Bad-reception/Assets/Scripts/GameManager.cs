@@ -66,7 +66,6 @@ public class GameManager : MonoBehaviour
 
     private SaveSystem _saveSystem;
 
-    private bool _freshGameStart;
     private bool _updateAtSceneStart;
     private string _nextSceneName;
     private List<string> _levelSceneNames;
@@ -169,7 +168,6 @@ public class GameManager : MonoBehaviour
         if (GameState == State.Play)
         {
             Debug.Log("Level scene initialized");
-            _freshGameStart = false;
             StartLevel();
         }
         else
@@ -270,7 +268,7 @@ public class GameManager : MonoBehaviour
             elapsedDayTime = DayLengthSeconds;
         }
 
-        if (!DayOver && RadioManager.Running)
+        if (!DayOver && (RadioManager.Running || radioDeactivated))
         {
             Debug.Log("Time runs");
             UpdateDayTime();
@@ -282,8 +280,13 @@ public class GameManager : MonoBehaviour
         elapsedDayTime += Time.deltaTime;
         if (elapsedDayTime >= DayLengthSeconds)
         {
-            Debug.Log("DAY OVER ***************");
+            Debug.Log("DAY OVER - Tasks begin");
             DayOver = true;
+            if (RadioManager.Running)
+            {
+                RadioManager.allowStart = false;
+                RadioManager.Running = false;
+            }
             TaskController.taskPanel.Activate(true);
             TaskController.ActivateAnswerPhase(true);
         }
@@ -455,12 +458,13 @@ public class GameManager : MonoBehaviour
         GameState = State.Play;
         TaskController.ChooseRandomTasks(_tasksPerDay, false);
         TaskController.StartFirstTask();
+        RadioManager.allowStart = true;
         Debug.Log("Day begins");
     }
 
     public void EndLevel()
     {
-        Debug.Log("Day ends");
+        Debug.Log("All tasks completed");
         _elapsedDays++;
         if (_elapsedDays == _days)
         {
