@@ -5,6 +5,26 @@
 			<ChildrenList>
 				<Event Name="PlayRadio" ID="{36361417-CF95-4C41-B1D4-63F2600F36B1}">
 					<ChildrenList>
+						<Action Name="" ID="{2F6C6BEC-4D28-4D97-A4CD-D26B97D0D50C}" ShortID="122528468">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="radio_static_loop" ID="{99BE1B34-9816-4256-BFC1-2BF5495ACF34}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FD2DD9E1-6D13-4F9B-9213-2832201FFB9F}" ShortID="964129519">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="radio_static_weather_loop" ID="{0D75390C-CCA7-4224-9C08-59DDFBC95DAD}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{36F69FDB-A5D8-4CC2-9DF7-0FF4F9118638}" ShortID="538564302">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -15,13 +35,33 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{2F6C6BEC-4D28-4D97-A4CD-D26B97D0D50C}" ShortID="122528468">
+						<Action Name="" ID="{719968BB-72A5-4A1D-97DE-52F93637D292}" ShortID="900176354">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="radio_static_loop" ID="{99BE1B34-9816-4256-BFC1-2BF5495ACF34}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+									<ObjectRef Name="Tukholma-virta" ID="{FBBA4398-3280-4A10-88E5-911FA476F0BB}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DDA01498-B714-4F21-B25C-7D68F785A49A}" ShortID="109175486">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whistle" ID="{21A2D506-B8B1-4C5A-B306-B60067CDCD22}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2C9A88C7-467D-459C-A145-9CB380A65EB4}" ShortID="323206415">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whistle_01" ID="{10CF7755-A6F6-4821-A57A-2F7D125414EF}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

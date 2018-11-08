@@ -1,11 +1,50 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2507646724	PlayRadio			\Default Work Unit\PlayRadio	
 
+Switch Group	ID	Name			Wwise Object Path	Notes
+	935417675	Program			\Default Work Unit\Program	
+
+Switch	ID	Name	Switch Group			Notes
+	2438405806	Olympialaiset	Program			
+	3067246211	Tullit	Program			
+	3783318561	Juna	Program			
+	4284978261	Teatteri	Program			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	33408553	Noise			\Default Work Unit\Noise	
+	935417675	Program			\Default Work Unit\Program	
+	1670571890	Distort			\Default Work Unit\Distort	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	601564545	RadioInterferenceLFO			\Default Work Unit\RadioInterferenceLFO	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2667647788	Single_Band_1Khz_Wide	Wwise Parametric EQ			
+	2952825346	Dual_Filters_Radio_Comm	Wwise Parametric EQ			
+	3497757918	Fast_LF_Tremolo_No_Smoothing	Wwise Tremolo			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	589043491	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Static\Whistle_01\Wwise Sine	
+	1042564636	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\Static\Whistle\Wwise Sine	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	250462957	RAI-HMVX3136-01-2-001	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\RAI-HMVX3136-01-2-001_54840529.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\RAI-HMVX3136-01-2-001		1438779
-	324652965	RAI-Gramophone282796-01-1-001	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\RAI-Gramophone282796-01-1-001_18A61914.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\RAI-Gramophone282796-01-1-001		1511988
+	17168663	Lontoon_Jenny	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Lontoon_Jenny_224453E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Lontoon_Jenny		339237
+	188239427	HuomioHuomio	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\HuomioHuomio3NBTampere_A1793BE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\HuomioHuomio		76815
+	223650898	Kalliolle_kukkulalle	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Kalliolle_kukkulalle_F422F77F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Kalliolle_kukkulalle		258793
+	250462957	RAI-HMVX3136-01-2-001	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\RAI-HMVX3136-01-2-001_03B9C0D8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\RAI-HMVX3136-01-2-001		1438779
+	270229281	Jos_t‰yt‰tte_mun_lasini	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Jos_t‰yt‰tte_mun_lasini_C03604EC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Jos_t‰yt‰tte_mun_lasini		320844
+	286778392	Enk‰_min‰_ryypp‰‰	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Enk‰_min‰_ryypp‰‰_BF8D387D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Enk‰_min‰_ryypp‰‰		202911
+	324652965	RAI-Gramophone282796-01-1-001	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\RAI-Gramophone282796-01-1-001_7A6B169F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\RAI-Gramophone282796-01-1-001		1511988
 	340283207	Faust_Aino_Ackte	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Faust_Aino_Ackte_9BC16157.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Faust_Aino_Ackte		269627
-	486792087	Tampere-jingle	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\ƒ‰nin‰yte_1_Radiol‰hetysten_Alkujuonto_A1793BE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-jingle		359846
-	867146824	RAI-Gramophone7-282154-01-2-001	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\RAI-Gramophone7-282154-01-2-001_4EF7152B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\RAI-Gramophone7-282154-01-2-001		1419874
+	547384457	Isotalon_Antti	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Isotalon_Antti_1393AC4C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Isotalon_Antti		298286
+	608550253	SeuraaMusiikkia	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\SeuraaMusiikkia_A1793BE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\SeuraaMusiikkia		67784
+	641888413	Uutinen_Tullit	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Uutinen_Tullit_A1793BE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Uutiset\Uutinen_Tullit		343748
+	649016906	radio_static_weather_loop	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\radio_static_weather_loop_CB1F3167.wem		\Actor-Mixer Hierarchy\Default Work Unit\Static\radio_static_weather_loop		73320
+	691765747	Uutinen_Juna	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Uutinen_Juna_A1793BE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Uutiset\Uutinen_Juna		389138
+	765466216	Uutinen_Teatteri	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Uutinen_Teatteri_A1793BE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Uutiset\Uutinen_Teatteri		438057
+	867146824	RAI-Gramophone7-282154-01-2-001	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\RAI-Gramophone7-282154-01-2-001_7E525D10.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tukholma\Tukholma-virta\RAI-Gramophone7-282154-01-2-001		1419874
+	872212260	Jannen_hanuripolkka	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Jannen_hanuripolkka_4A5A7BED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Tampere-musiikit\Jannen_hanuripolkka		250937
+	971992029	BlimBlom	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\BlimBlom_A1793BE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\BlimBlom		67784
+	1026393945	Uutinen_Pariisin_olympialaiset	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\Uutinen_Pariisin_olympialaiset_A1793BE9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tampere\Tampere-virta\Uutiset\Uutinen_Pariisin_olympialaiset		614869
 	1047536226	radio_static_loop	Y:\Documents\Projektit\MuseoGameJam\bad-reception\Bad-reception\Bad-reception_WwiseProject\.cache\Windows\SFX\radio_static_loop_CB1F3167.wem		\Actor-Mixer Hierarchy\Default Work Unit\Static\radio_static_loop		102996
 

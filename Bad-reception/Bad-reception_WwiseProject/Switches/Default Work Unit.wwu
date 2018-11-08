@@ -10,6 +10,8 @@
 					<ChildrenList>
 						<Switch Name="Tampere" ID="{73561A3D-BEA9-4155-A548-7EAE9A746E4C}"/>
 						<Switch Name="Tukholma" ID="{CEC531D2-1E76-4058-B1D8-68F7DD95D0C8}"/>
+						<Switch Name="Berliini" ID="{0689A5B5-D151-4F1E-9D16-5A875C6F171F}"/>
+						<Switch Name="Lontoo" ID="{BEAC26FC-9880-4A23-BCE6-F7A2D8D9DA34}"/>
 					</ChildrenList>
 					<SwitchOnRTPC>
 						<GameParameterRef Name="ChannelA" ID="{32353634-B61D-4306-BC57-C2F1B6B40A7B}"/>
@@ -24,17 +26,73 @@
 									<Flags>5</Flags>
 								</Point>
 								<Point>
+									<XPos>0.001</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
 									<XPos>1</XPos>
 									<YPos>2</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
 									<XPos>2</XPos>
-									<YPos>2</YPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>4</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
 									<XPos>20</XPos>
+									<YPos>0</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="Program" ID="{B2331270-1912-4382-9A2B-C44EBD9BA7A7}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Juna" ID="{674C0176-5087-4C9D-B9AF-D32718C4D226}"/>
+						<Switch Name="Teatteri" ID="{4325508A-A5F2-4561-8760-B552F9F03593}"/>
+						<Switch Name="Olympialaiset" ID="{73838719-522B-48CF-9942-F67D502BF6A6}"/>
+						<Switch Name="Tullit" ID="{692D2034-E0D5-467B-8ED8-3E3756574A4E}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Program" ID="{2BAA839B-329A-4342-AE45-CEC1A708B111}"/>
+						<Curve Name="" ID="{D0717D46-D983-48B6-AC01-A2165D035EB8}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>3</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
 									<YPos>0</YPos>
 									<Flags>37</Flags>
 								</Point>

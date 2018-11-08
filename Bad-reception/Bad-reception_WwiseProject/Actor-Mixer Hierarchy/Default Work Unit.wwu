@@ -8,6 +8,10 @@
 						<RandomSequenceContainer Name="Tampere-virta" ID="{E61B3179-5C47-4168-88AB-98BBA83AB42D}" ShortID="628353369">
 							<PropertyList>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.3"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 							</PropertyList>
@@ -51,7 +55,7 @@
 														<Property Name="TrimEnd" Type="Real64" Value="34.8106547869885"/>
 														<Property Name="VolumeOffset" Type="Real64">
 															<ValueList>
-																<Value>6</Value>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -64,13 +68,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Enkä_minä_ryyppää" ID="{0E511A81-DEED-4214-A4B7-22553F0065E6}" ShortID="1015860257">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -81,6 +78,15 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Enkä_minä_ryyppää" ID="{8E1F5BF0-37BD-48B1-98CC-5E42A91BF733}" ShortID="286778392">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.319884413942567"/>
+														<Property Name="TrimEnd" Type="Real64" Value="23.5648184937692"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Enkä_minä_ryyppää.wav</AudioFile>
 												</AudioFileSource>
@@ -90,13 +96,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Isotalon_Antti" ID="{E42B5502-BEE8-4730-9EB9-93536A3D9750}" ShortID="334214128">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -107,6 +106,15 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Isotalon_Antti" ID="{363E17AE-73E6-494D-A523-86A7CBE5FA81}" ShortID="547384457">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.364378624606186"/>
+														<Property Name="TrimEnd" Type="Real64" Value="35.9343114446697"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Isotalon_Antti.wav</AudioFile>
 												</AudioFileSource>
@@ -116,13 +124,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Jannen_hanuripolkka" ID="{85089448-FB1B-4E3D-8706-BD44337FA1B6}" ShortID="949363415">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -133,6 +134,17 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Jannen_hanuripolkka" ID="{0022F521-ED26-4F79-A075-EA632FBF4B08}" ShortID="872212260">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.368719523207512"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.109250229098521"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.737439046415027"/>
+														<Property Name="TrimEnd" Type="Real64" Value="27.8519802808045"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Jannen_hanuripolkka.wav</AudioFile>
 												</AudioFileSource>
@@ -142,13 +154,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Jos_täytätte_mun_lasini" ID="{35496CD8-3B8B-4EE0-8E2E-3FE3BA2578AC}" ShortID="1047457098">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -159,6 +164,17 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Jos_täytätte_mun_lasini" ID="{E1E6167C-93B5-44A7-9AF7-48180028BA47}" ShortID="270229281">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.249240255044441"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.841185860774992"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.11550318805551"/>
+														<Property Name="TrimEnd" Type="Real64" Value="39.6292005520661"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Jos_täytätte_mun_lasini.wav</AudioFile>
 												</AudioFileSource>
@@ -168,13 +184,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Kalliolle_kukkulalle" ID="{8D11D1BC-4A9E-4F8D-B703-8D4D3295AF11}" ShortID="129223549">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -185,6 +194,16 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Kalliolle_kukkulalle" ID="{45B97FA0-0177-4357-871B-00C986FA8153}" ShortID="223650898">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.453559689362471"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.0539064475348"/>
+														<Property Name="TrimEnd" Type="Real64" Value="43.0314755282644"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Kalliolle_kukkulalle.wav</AudioFile>
 												</AudioFileSource>
@@ -194,13 +213,6 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Lontoon_Jenny" ID="{D6A74D50-1835-48DF-9CEF-A90E7F6D5DDC}" ShortID="333083079">
-											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -211,6 +223,17 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Lontoon_Jenny" ID="{EEF4E902-2573-4E84-83C3-2277C4BD1C64}" ShortID="17168663">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0852083291527039"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.255624987458106"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.69475666503901"/>
+														<Property Name="TrimEnd" Type="Real64" Value="46.4278883470792"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Lontoon_Jenny.wav</AudioFile>
 												</AudioFileSource>
@@ -221,7 +244,7 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<Sound Name="Tampere-jingle" ID="{BA7D63F8-18E7-4388-8877-9600C7EC97BF}" ShortID="117580426">
+								<Sound Name="BlimBlom" ID="{BA7D63F8-18E7-4388-8877-9600C7EC97BF}" ShortID="117580426">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -232,18 +255,214 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Ääninäyte_1_Radiolähetysten_Alkujuonto" ID="{1B94E895-1ABD-4AB4-8015-1FC3E73E248B}" ShortID="486792087">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.123008849557522"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.143510324483776"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.143510324483776"/>
+												<Property Name="TrimEnd" Type="Real64" Value="16.5203922211297"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Ääninäyte_1_Radiolähetysten_Alkujuonto.wav</AudioFile>
 										</AudioFileSource>
+										<AudioFileSource Name="BlimBlom" ID="{CFD5F985-32BC-4B6E-9213-036D45C0D2EF}" ShortID="971992029">
+											<Language>SFX</Language>
+											<AudioFile>BlimBlom.wav</AudioFile>
+										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Ääninäyte_1_Radiolähetysten_Alkujuonto" ID="{1B94E895-1ABD-4AB4-8015-1FC3E73E248B}" Platform="Linked"/>
+										<ActiveSource Name="BlimBlom" ID="{CFD5F985-32BC-4B6E-9213-036D45C0D2EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<SwitchContainer Name="Uutiset" ID="{911AF37F-311E-49B6-AC80-F542136B7436}" ShortID="143255511">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Juna" ID="{674C0176-5087-4C9D-B9AF-D32718C4D226}" WorkUnitID="{D2E88659-2FD8-4BB4-8691-E74910FBC560}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Program" ID="{B2331270-1912-4382-9A2B-C44EBD9BA7A7}" WorkUnitID="{D2E88659-2FD8-4BB4-8691-E74910FBC560}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Uutinen_Juna" ID="{54419104-330F-4517-9380-A3DCD4994E18}" ShortID="325262694">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Uutinen_Juna" ID="{2741D3E5-D86E-4162-8804-40D5303F7F66}" ShortID="691765747">
+													<Language>SFX</Language>
+													<AudioFile>Uutinen_Juna.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Uutinen_Juna" ID="{2741D3E5-D86E-4162-8804-40D5303F7F66}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Uutinen_Pariisin_olympialaiset" ID="{28BB224E-6640-404F-90FB-0FBB4D4B6ECE}" ShortID="72426668">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Uutinen_Pariisin_olympialaiset" ID="{8CB1AEBE-3883-494C-B792-737F5E2F7FC8}" ShortID="1026393945">
+													<Language>SFX</Language>
+													<AudioFile>Uutinen_Pariisin_olympialaiset.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Uutinen_Pariisin_olympialaiset" ID="{8CB1AEBE-3883-494C-B792-737F5E2F7FC8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Uutinen_Teatteri" ID="{D34E93EE-B7F9-42DB-9CD0-FE36C2C22EB0}" ShortID="408718156">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Uutinen_Teatteri" ID="{5C31AE32-1C4F-466F-8234-CF4E09607DB2}" ShortID="765466216">
+													<Language>SFX</Language>
+													<AudioFile>Uutinen_Teatteri.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Uutinen_Teatteri" ID="{5C31AE32-1C4F-466F-8234-CF4E09607DB2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Uutinen_Tullit" ID="{74B8124E-D5FA-43A4-8044-42C1184807D1}" ShortID="446230130">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Uutinen_Tullit" ID="{0BF3958D-B9A5-47F9-93FA-F4B3687EB2E9}" ShortID="641888413">
+													<Language>SFX</Language>
+													<AudioFile>Uutinen_Tullit.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Uutinen_Tullit" ID="{0BF3958D-B9A5-47F9-93FA-F4B3687EB2E9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Uutinen_Juna" ID="{54419104-330F-4517-9380-A3DCD4994E18}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Uutinen_Tullit" ID="{74B8124E-D5FA-43A4-8044-42C1184807D1}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Uutinen_Pariisin_olympialaiset" ID="{28BB224E-6640-404F-90FB-0FBB4D4B6ECE}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Uutinen_Teatteri" ID="{D34E93EE-B7F9-42DB-9CD0-FE36C2C22EB0}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Olympialaiset" ID="{73838719-522B-48CF-9942-F67D502BF6A6}"/>
+												<ItemList>
+													<ItemRef Name="Uutinen_Pariisin_olympialaiset" ID="{28BB224E-6640-404F-90FB-0FBB4D4B6ECE}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Tullit" ID="{692D2034-E0D5-467B-8ED8-3E3756574A4E}"/>
+												<ItemList>
+													<ItemRef Name="Uutinen_Tullit" ID="{74B8124E-D5FA-43A4-8044-42C1184807D1}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Juna" ID="{674C0176-5087-4C9D-B9AF-D32718C4D226}"/>
+												<ItemList>
+													<ItemRef Name="Uutinen_Juna" ID="{54419104-330F-4517-9380-A3DCD4994E18}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Teatteri" ID="{4325508A-A5F2-4561-8760-B552F9F03593}"/>
+												<ItemList>
+													<ItemRef Name="Uutinen_Teatteri" ID="{D34E93EE-B7F9-42DB-9CD0-FE36C2C22EB0}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<Sound Name="HuomioHuomio" ID="{F701D394-B87E-443A-B578-36709B9AEDDE}" ShortID="547611578">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ääninäyte_1_Radiolähetysten_Alkujuonto" ID="{1BE5130B-BD6F-42A6-8501-6F7CE7232DE6}" ShortID="905547183">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.123008849557522"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.143510324483776"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ääninäyte_1_Radiolähetysten_Alkujuonto.wav</AudioFile>
+										</AudioFileSource>
+										<AudioFileSource Name="HuomioHuomio3NBTampere" ID="{4C0DBF7A-47FE-4353-B9D4-216E870F2198}" ShortID="188239427">
+											<Language>SFX</Language>
+											<AudioFile>HuomioHuomio3NBTampere.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="HuomioHuomio3NBTampere" ID="{4C0DBF7A-47FE-4353-B9D4-216E870F2198}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SeuraaMusiikkia" ID="{C225A343-ED0E-47FF-9450-ADC21429B71A}" ShortID="905399138">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SeuraaMusiikkia" ID="{3622FE31-920B-484E-B5E8-1D5F686DC766}" ShortID="608550253">
+											<Language>SFX</Language>
+											<AudioFile>SeuraaMusiikkia.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SeuraaMusiikkia" ID="{3622FE31-920B-484E-B5E8-1D5F686DC766}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 							<Playlist>
-								<ItemRef Name="Tampere-jingle" ID="{BA7D63F8-18E7-4388-8877-9600C7EC97BF}"/>
+								<ItemRef Name="BlimBlom" ID="{BA7D63F8-18E7-4388-8877-9600C7EC97BF}"/>
+								<ItemRef Name="HuomioHuomio" ID="{F701D394-B87E-443A-B578-36709B9AEDDE}"/>
+								<ItemRef Name="SeuraaMusiikkia" ID="{C225A343-ED0E-47FF-9450-ADC21429B71A}"/>
 								<ItemRef Name="Tampere-musiikit" ID="{A472B311-CA1D-41B2-9410-7FFC856D4CD7}"/>
+								<ItemRef Name="HuomioHuomio" ID="{F701D394-B87E-443A-B578-36709B9AEDDE}"/>
+								<ItemRef Name="Uutiset" ID="{911AF37F-311E-49B6-AC80-F542136B7436}"/>
 							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
@@ -255,7 +474,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-19</Value>
+										<Value>-11</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -277,6 +496,367 @@
 								<ActiveSource Name="radio_static_loop" ID="{776725E9-F028-412C-9392-C181725C2B94}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="radio_static_weather_loop" ID="{0D75390C-CCA7-4224-9C08-59DDFBC95DAD}" ShortID="724516897">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Single_Band_1Khz_Wide" ID="{9B6A1D1B-F90F-4EAC-B796-2943413957FE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Radio_static" ID="{E4128DF6-7D90-4E42-8028-BEE7F8EEB52F}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="radio_static_weather_loop" ID="{E0CB50A4-2CF9-4A31-B292-E9BF76C604C2}" ShortID="649016906">
+									<Language>SFX</Language>
+									<AudioFile>radio_static_weather_loop.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="radio_static_weather_loop" ID="{E0CB50A4-2CF9-4A31-B292-E9BF76C604C2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Whistle" ID="{21A2D506-B8B1-4C5A-B306-B60067CDCD22}" ShortID="129894631">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{0817F0F9-A63D-41D2-82CC-82E0B690FA7E}" ShortID="1017643848">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Distort" ID="{52188068-60D0-4A0C-8356-39BC5BB20F5F}" WorkUnitID="{23328E90-0473-4C83-840B-C0D1456EB9BD}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{B0DFA2E4-04A1-4B16-B877-A688A4F0C6D6}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.5</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dual_Filters_Radio_Comm" ID="{69479ACD-2C87-4007-B83E-55210A3B36B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Radio_static" ID="{E4128DF6-7D90-4E42-8028-BEE7F8EEB52F}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Sine" ID="{52BC5F2E-3F47-46A6-B881-CADAEB896C20}" ShortID="1042564636" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+									<PropertyList>
+										<Property Name="SineFrequency" Type="Real32">
+											<RTPCList>
+												<RTPC Name="" ID="{6A2D3614-FE3F-439F-8D85-975B8C8E8B85}" ShortID="8528338">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="RadioInterferenceLFO" ID="{6CF1F975-F496-44E7-87C2-C9BADA1B7F2E}" WorkUnitID="{9F18978D-11EF-4300-B615-509F8A6F61B8}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{6FBA4672-2133-4ABF-AC83-68B251614373}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="5"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>238.30555</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>3086.06934</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Sine" ID="{52BC5F2E-3F47-46A6-B881-CADAEB896C20}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Whistle_01" ID="{10CF7755-A6F6-4821-A57A-2F7D125414EF}" ShortID="143511328">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{BD842278-F152-4FA9-945C-9026DB1EAC33}" ShortID="481089243">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="Distort" ID="{52188068-60D0-4A0C-8356-39BC5BB20F5F}" WorkUnitID="{23328E90-0473-4C83-840B-C0D1456EB9BD}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{50188CC0-89B2-44D1-90E5-B6A3615A57D3}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0.5</XPos>
+														<YPos>-200</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Dual_Filters_Radio_Comm" ID="{69479ACD-2C87-4007-B83E-55210A3B36B7}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Tremolo" CompanyID="0" PluginID="131" PluginType="3">
+									<ObjectRef Name="Fast_LF_Tremolo_No_Smoothing" ID="{D972718E-231C-4DBF-9288-FCAF4BF47B50}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Radio_static" ID="{E4128DF6-7D90-4E42-8028-BEE7F8EEB52F}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Sine" ID="{E680C670-F00D-43C5-A81E-9624D7AABD04}" ShortID="589043491" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Sine" ID="{E680C670-F00D-43C5-A81E-9624D7AABD04}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Berliini" ID="{ACB1035B-F44E-42BB-BB3D-432A71D0622F}" ShortID="264048324">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Berliini-virta" ID="{4FF2A951-2349-412F-8585-B24AED157944}" ShortID="254362912">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Berliini" ID="{3D46D173-F6F3-4B86-946D-B7B211CBC4B3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="RAI-Victor69646-01-2-001" ID="{01BA8080-E023-4B64-AAAE-D4B4D1648C5A}" ShortID="900067837">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RAI-Victor69646-01-2-001" ID="{BF569ECA-1EDB-40BB-9F4D-326AD0FB8918}" ShortID="910310310">
+											<Language>SFX</Language>
+											<AudioFile>RAI-Victor69646-01-2-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RAI-Victor69646-01-2-001" ID="{BF569ECA-1EDB-40BB-9F4D-326AD0FB8918}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="RAI-OdeonA228064-01-1-001" ID="{2F44C34D-299F-4518-BDFE-2D0917F9B384}" ShortID="803277249">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RAI-OdeonA228064-01-1-001" ID="{A23A7AE2-999D-46F8-9C39-163099C7EEB7}" ShortID="191356147">
+											<Language>SFX</Language>
+											<AudioFile>RAI-OdeonA228064-01-1-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RAI-OdeonA228064-01-1-001" ID="{A23A7AE2-999D-46F8-9C39-163099C7EEB7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="RAI-Gramophone2-42134-01-1-001" ID="{BCF5DD65-57AE-4413-8494-B8EABA0DF997}" ShortID="831726056">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RAI-Gramophone2-42134-01-1-001" ID="{8FC9B6DF-4153-4DD0-ACC8-8AADDA4FA543}" ShortID="632588341">
+											<Language>SFX</Language>
+											<AudioFile>RAI-Gramophone2-42134-01-1-001.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RAI-Gramophone2-42134-01-1-001" ID="{8FC9B6DF-4153-4DD0-ACC8-8AADDA4FA543}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Lontoo" ID="{725F97F4-087C-4BE7-BB3D-3101DAE70649}" ShortID="5477467">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Lontoo-virta" ID="{BD5E5CAF-C475-4A5D-91E2-E306860D117D}" ShortID="576789219">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Lontoo" ID="{D285F763-40AB-4A75-A98D-715CE88BEFFF}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="RAI-Victor69646-01-2-001" ID="{76C845DB-23EA-4E10-B004-981FF0A46AE7}" ShortID="906288393">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RAI-Victor69646-01-2-001" ID="{410FAC63-E4F9-4572-9261-3AA59689B774}" ShortID="677959707">
+											<Language>SFX</Language>
+											<AudioFile>RAI-Victor69646-01-2-001.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="910310310"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RAI-Victor69646-01-2-001" ID="{410FAC63-E4F9-4572-9261-3AA59689B774}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Moskova" ID="{9459D410-B837-422B-B5F0-218C79B4EE0E}" ShortID="485814257">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Moskova-virta" ID="{404F7A02-07FC-49CB-910E-C74C8910416E}" ShortID="76712035">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Moskova" ID="{3C579F18-DE73-4C53-891E-66C2D3CCC300}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="RAI-OdeonA228064-01-1-001" ID="{213EC065-1380-4926-BE41-885F0CBFED77}" ShortID="297455656">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RAI-OdeonA228064-01-1-001" ID="{E7D37112-B48F-4FD8-A523-D7723AC85DD9}" ShortID="632165566">
+											<Language>SFX</Language>
+											<AudioFile>RAI-OdeonA228064-01-1-001.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="191356147"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RAI-OdeonA228064-01-1-001" ID="{E7D37112-B48F-4FD8-A523-D7723AC85DD9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Tukholma" ID="{C33705A8-8E5B-4AAA-AA0A-B9A54E8C957B}" ShortID="154427134">
@@ -378,6 +958,494 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="RAI-Gramophone282796-01-1-001" ID="{1BA546B1-3E0F-4AD7-B3C4-E1CD40796021}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Lahti" ID="{DDA8F125-BE45-4E63-A8B1-59088D643963}" ShortID="298931707">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Lahti-virta" ID="{38C09F8A-C265-4A78-8CF4-B682B56C591B}" ShortID="127171698">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Lahti" ID="{4717212B-3E0D-4B8B-BC61-59C0A0211E34}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Enkä_minä_ryyppää" ID="{7A6A0CCB-682B-4668-80CC-80892C1FB261}" ShortID="647492879">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Enkä_minä_ryyppää" ID="{6FDF44E1-FFE5-4273-B053-CE40F0FC05B5}" ShortID="165011521">
+											<Language>SFX</Language>
+											<AudioFile>Enkä_minä_ryyppää.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Enkä_minä_ryyppää" ID="{6FDF44E1-FFE5-4273-B053-CE40F0FC05B5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Faust_Aino_Ackte" ID="{A2D205E4-4BC4-4236-817D-D0369F52F1F4}" ShortID="1052304143">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Faust_Aino_Ackte" ID="{9BEF7C05-EDA8-46A8-9F7C-D18503D4FF34}" ShortID="979727979">
+											<Language>SFX</Language>
+											<AudioFile>Faust_Aino_Ackte.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Faust_Aino_Ackte" ID="{9BEF7C05-EDA8-46A8-9F7C-D18503D4FF34}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Isotalon_Antti" ID="{7E14E621-BAC8-4DEC-B1D2-995216E4C569}" ShortID="951714885">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Isotalon_Antti" ID="{C2C54F86-5A0B-446E-AAE7-CBF0461590C3}" ShortID="913535258">
+											<Language>SFX</Language>
+											<AudioFile>Isotalon_Antti.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Isotalon_Antti" ID="{C2C54F86-5A0B-446E-AAE7-CBF0461590C3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Jannen_hanuripolkka" ID="{407C942A-31E6-4826-AB7A-3606C9243A81}" ShortID="295213112">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Jannen_hanuripolkka" ID="{F40E84FD-5318-43B5-9502-C1C1C559B193}" ShortID="590978195">
+											<Language>SFX</Language>
+											<AudioFile>Jannen_hanuripolkka.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Jannen_hanuripolkka" ID="{F40E84FD-5318-43B5-9502-C1C1C559B193}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Jos_täytätte_mun_lasini" ID="{3037CF14-4E14-4CCA-B483-BB7DCAB85556}" ShortID="243286418">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Jos_täytätte_mun_lasini" ID="{A642F91E-CAE7-400F-A8AD-4F17ACF1DF00}" ShortID="956887670">
+											<Language>SFX</Language>
+											<AudioFile>Jos_täytätte_mun_lasini.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Jos_täytätte_mun_lasini" ID="{A642F91E-CAE7-400F-A8AD-4F17ACF1DF00}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kalliolle_kukkulalle" ID="{E813AF11-C65D-4F18-B52E-E9C194E6C60D}" ShortID="873352390">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kalliolle_kukkulalle" ID="{5F219E92-17A9-46CB-B346-A43CCE207C8D}" ShortID="941620570">
+											<Language>SFX</Language>
+											<AudioFile>Kalliolle_kukkulalle.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kalliolle_kukkulalle" ID="{5F219E92-17A9-46CB-B346-A43CCE207C8D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Lontoon_Jenny" ID="{3D82845A-F929-4F6F-B7B5-4B2DAF3D1880}" ShortID="162909694">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lontoon_Jenny" ID="{E9C04B24-A0FF-4551-8772-FA0E17104797}" ShortID="614635772">
+											<Language>SFX</Language>
+											<AudioFile>Lontoon_Jenny.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lontoon_Jenny" ID="{E9C04B24-A0FF-4551-8772-FA0E17104797}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Muistoja_Pohjolasta" ID="{F53F0DBA-0043-40A4-AFD4-8C6204F83827}" ShortID="471140916">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Muistoja_Pohjolasta" ID="{931CFFD7-6684-4D2E-96C5-C21FDF9EB995}" ShortID="14245021">
+											<Language>SFX</Language>
+											<AudioFile>Muistoja_Pohjolasta.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Muistoja_Pohjolasta" ID="{931CFFD7-6684-4D2E-96C5-C21FDF9EB995}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pai-pai-paitaressu" ID="{8B50C4CF-4D4B-428C-AC80-8EE5A0B552C4}" ShortID="318168973">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pai-pai-paitaressu" ID="{C054E17A-62F8-4DC7-9DBF-60D7ABB31EEF}" ShortID="563266515">
+											<Language>SFX</Language>
+											<AudioFile>Pai-pai-paitaressu.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pai-pai-paitaressu" ID="{C054E17A-62F8-4DC7-9DBF-60D7ABB31EEF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Helsinki" ID="{55E1A964-757F-4624-9112-CA98FF3251F6}" ShortID="322440207">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Helsinki-virta" ID="{D55138AA-40D3-4BCC-BB14-17127D015E57}" ShortID="545726855">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Lahti" ID="{4717212B-3E0D-4B8B-BC61-59C0A0211E34}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Enkä_minä_ryyppää" ID="{924FF874-0BE6-46DC-8FFA-EC8E7EBA025B}" ShortID="940357671">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Enkä_minä_ryyppää" ID="{033F00F4-23FB-4CA7-91C1-C31A64492738}" ShortID="102314253">
+											<Language>SFX</Language>
+											<AudioFile>Enkä_minä_ryyppää.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="165011521"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Enkä_minä_ryyppää" ID="{033F00F4-23FB-4CA7-91C1-C31A64492738}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Faust_Aino_Ackte" ID="{DD557E00-6F1F-4F5E-9C7B-1C714DC62849}" ShortID="304757050">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Faust_Aino_Ackte" ID="{75885832-E1E0-4287-B9D5-47DFAC2E504E}" ShortID="232128636">
+											<Language>SFX</Language>
+											<AudioFile>Faust_Aino_Ackte.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="979727979"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Faust_Aino_Ackte" ID="{75885832-E1E0-4287-B9D5-47DFAC2E504E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Isotalon_Antti" ID="{5A913552-F3EC-4FAE-BFBC-846534EC0BFD}" ShortID="155248699">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Isotalon_Antti" ID="{03B896F6-2367-4F9E-9D10-70355EBBAB61}" ShortID="592201308">
+											<Language>SFX</Language>
+											<AudioFile>Isotalon_Antti.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="913535258"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Isotalon_Antti" ID="{03B896F6-2367-4F9E-9D10-70355EBBAB61}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Jannen_hanuripolkka" ID="{859D6095-7869-4D64-BD14-1452B30840A6}" ShortID="865213770">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Jannen_hanuripolkka" ID="{488BFA72-3033-4015-B387-5C307773B640}" ShortID="1019411863">
+											<Language>SFX</Language>
+											<AudioFile>Jannen_hanuripolkka.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="590978195"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Jannen_hanuripolkka" ID="{488BFA72-3033-4015-B387-5C307773B640}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Jos_täytätte_mun_lasini" ID="{8A20BD24-8E1F-4B4A-844D-67D788F318BE}" ShortID="670033621">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Jos_täytätte_mun_lasini" ID="{4B97414A-BCB2-420A-80D9-C558419ABDBB}" ShortID="1037391127">
+											<Language>SFX</Language>
+											<AudioFile>Jos_täytätte_mun_lasini.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="956887670"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Jos_täytätte_mun_lasini" ID="{4B97414A-BCB2-420A-80D9-C558419ABDBB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Kalliolle_kukkulalle" ID="{740D9ABB-6F2E-4B82-842A-70EDA76AD2C9}" ShortID="401942572">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kalliolle_kukkulalle" ID="{6BAF1EA9-8D98-49E6-9017-3A9BA5BDEA94}" ShortID="511287786">
+											<Language>SFX</Language>
+											<AudioFile>Kalliolle_kukkulalle.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="941620570"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kalliolle_kukkulalle" ID="{6BAF1EA9-8D98-49E6-9017-3A9BA5BDEA94}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Lontoon_Jenny" ID="{C83BDB6C-64C3-481E-A24D-75F08B546266}" ShortID="638293458">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Lontoon_Jenny" ID="{196E3F53-B47A-41AC-9F41-C7B373DCDDD0}" ShortID="876504106">
+											<Language>SFX</Language>
+											<AudioFile>Lontoon_Jenny.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="614635772"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Lontoon_Jenny" ID="{196E3F53-B47A-41AC-9F41-C7B373DCDDD0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Muistoja_Pohjolasta" ID="{FF3A0C2D-0539-4B2C-B79B-3CFD445756A6}" ShortID="946984789">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Muistoja_Pohjolasta" ID="{0C8904FD-F8E7-4042-9D4D-336F348AF430}" ShortID="881593458">
+											<Language>SFX</Language>
+											<AudioFile>Muistoja_Pohjolasta.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="14245021"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Muistoja_Pohjolasta" ID="{0C8904FD-F8E7-4042-9D4D-336F348AF430}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Pai-pai-paitaressu" ID="{74962C48-6078-48A7-BD17-4A538CDAF59C}" ShortID="1047855209">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Pai-pai-paitaressu" ID="{C3996B01-6E43-4FFF-9F02-F1A406A224E7}" ShortID="499043479">
+											<Language>SFX</Language>
+											<AudioFile>Pai-pai-paitaressu.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="563266515"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Pai-pai-paitaressu" ID="{C3996B01-6E43-4FFF-9F02-F1A406A224E7}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
