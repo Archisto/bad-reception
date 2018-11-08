@@ -98,12 +98,12 @@ public class RadioManager : MonoBehaviour {
                 nearestDistance = distance;
             }
         }
-        _tuning = Mathf.Clamp( (8f-nearestDistance)/8f, 0f,1f);
+        _tuning = Mathf.Clamp( (12f-nearestDistance)/12f, 0f,1f);
         _tuning = getPowIn(2, _tuning);
         _channelA = nearest.channelId;
 
         var angle = smallestAngleBetween(nearest.angle, this.angle);
-        this._noise = Mathf.Min(1f,Mathf.Abs( Mathf.Sin(Time.time*0.25f)+Mathf.Sin(Time.time*0.1f)));
+        this._noise = Mathf.Min(1f,Mathf.Abs( Mathf.Sin(Time.time*0.25f)+Mathf.Sin(Time.time*0.1f)))*(1.0f-_tuning*0.5f);
 
         distortObject.transform.localRotation = Quaternion.Euler(0f, 0f, (userDistortLevel - distortTarget)*60f);
         _distort = Mathf.Clamp( getPowIn(2.1f,  Mathf.Abs(userDistortLevel - distortTarget)) , 0f, 1f)+0.5f;
@@ -119,8 +119,7 @@ public class RadioManager : MonoBehaviour {
         AkSoundEngine.SetRTPCValue("Program", _tuning);
 
 
-        // Debug.Log("Update: channel " + _channelA + ", tuning " + _tuning + " noise " + _noise);
-        Debug.Log("distort " + _distort + " target " + distortTarget + " user " + userDistortLevel);
+        Debug.Log("Update: channel " + _channelA + ", tuning " + _tuning + " noise " + _noise +" "+ "distort "+  _distort + " target " + distortTarget + " user " + userDistortLevel);
     }
 
 
