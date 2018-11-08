@@ -5,6 +5,61 @@
 			<ChildrenList>
 				<Event Name="PlayRadio" ID="{36361417-CF95-4C41-B1D4-63F2600F36B1}">
 					<ChildrenList>
+						<Action Name="" ID="{80D7A53D-1C0D-4A21-A9C1-A7F6428B2B1E}" ShortID="263983259">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="Volume" Type="Real64" Value="-200"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio_reception" ID="{FA421D48-6361-47AC-9F01-820418E2E4F4}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F04F3888-5D9A-4E72-818B-39AA5C2A2178}" ShortID="532720961">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="Volume" Type="Real64" Value="-200"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio" ID="{361D1526-18EE-4045-883D-D98A25456BF2}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8AA5EEFC-6497-4B8D-B57B-5C260D2BF2DD}" ShortID="532106955">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio_On" ID="{9CB12A76-3510-490F-89E4-230452E3A94B}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{41407091-3196-4117-AB4B-EFB914EEE322}" ShortID="57015162">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="8"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio_reception" ID="{FA421D48-6361-47AC-9F01-820418E2E4F4}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A0B3D35F-95FD-4F9F-A4B5-DEA26A017C96}" ShortID="614331836">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio" ID="{361D1526-18EE-4045-883D-D98A25456BF2}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{2F6C6BEC-4D28-4D97-A4CD-D26B97D0D50C}" ShortID="122528468">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
@@ -94,6 +149,39 @@
 									<ObjectRef Name="Moskova-virta" ID="{404F7A02-07FC-49CB-910E-C74C8910416E}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
 								</Reference>
 							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="StopRadio" ID="{DE72592C-49DC-4AA5-843A-7F0ED50D1532}">
+					<ChildrenList>
+						<Action Name="" ID="{30C18FF8-BDDD-433A-BDD7-083F0F770AF6}" ShortID="587000308">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio_Off" ID="{16487F1D-5CFC-4393-9F68-93765BCF4E63}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D80996B4-7298-48D0-B394-A1946A1B1033}" ShortID="745795359">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-200"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio" ID="{361D1526-18EE-4045-883D-D98A25456BF2}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{31BD7224-69AF-4CE5-B783-C359E735C63C}" ShortID="313223009">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList/>
 						</Action>
 					</ChildrenList>
 				</Event>

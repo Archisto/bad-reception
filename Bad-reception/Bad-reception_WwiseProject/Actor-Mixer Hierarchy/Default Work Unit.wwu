@@ -312,9 +312,13 @@
 													<Language>SFX</Language>
 													<AudioFile>Uutinen_Juna.wav</AudioFile>
 												</AudioFileSource>
+												<AudioFileSource Name="Juna" ID="{24231390-D1F3-43DB-A0E0-059AF8457137}" ShortID="9939817">
+													<Language>SFX</Language>
+													<AudioFile>Juna.wav</AudioFile>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Uutinen_Juna" ID="{2741D3E5-D86E-4162-8804-40D5303F7F66}" Platform="Linked"/>
+												<ActiveSource Name="Juna" ID="{24231390-D1F3-43DB-A0E0-059AF8457137}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Uutinen_Pariisin_olympialaiset" ID="{28BB224E-6640-404F-90FB-0FBB4D4B6ECE}" ShortID="72426668">
@@ -331,9 +335,13 @@
 													<Language>SFX</Language>
 													<AudioFile>Uutinen_Pariisin_olympialaiset.wav</AudioFile>
 												</AudioFileSource>
+												<AudioFileSource Name="Pariisin olympialaiset" ID="{C42BD461-DCCC-4274-BF5A-32CE6BCA6177}" ShortID="885642112">
+													<Language>SFX</Language>
+													<AudioFile>Pariisin olympialaiset.wav</AudioFile>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Uutinen_Pariisin_olympialaiset" ID="{8CB1AEBE-3883-494C-B792-737F5E2F7FC8}" Platform="Linked"/>
+												<ActiveSource Name="Pariisin olympialaiset" ID="{C42BD461-DCCC-4274-BF5A-32CE6BCA6177}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Uutinen_Teatteri" ID="{D34E93EE-B7F9-42DB-9CD0-FE36C2C22EB0}" ShortID="408718156">
@@ -350,9 +358,13 @@
 													<Language>SFX</Language>
 													<AudioFile>Uutinen_Teatteri.wav</AudioFile>
 												</AudioFileSource>
+												<AudioFileSource Name="Teatteri" ID="{7C554218-1FCC-47A7-B830-C648680ED520}" ShortID="262269641">
+													<Language>SFX</Language>
+													<AudioFile>Teatteri.wav</AudioFile>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Uutinen_Teatteri" ID="{5C31AE32-1C4F-466F-8234-CF4E09607DB2}" Platform="Linked"/>
+												<ActiveSource Name="Teatteri" ID="{7C554218-1FCC-47A7-B830-C648680ED520}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Uutinen_Tullit" ID="{74B8124E-D5FA-43A4-8044-42C1184807D1}" ShortID="446230130">
@@ -369,9 +381,13 @@
 													<Language>SFX</Language>
 													<AudioFile>Uutinen_Tullit.wav</AudioFile>
 												</AudioFileSource>
+												<AudioFileSource Name="Tullit" ID="{AD0AF73D-8737-448F-8C99-79F1FF7504CE}" ShortID="484830930">
+													<Language>SFX</Language>
+													<AudioFile>Tullit.wav</AudioFile>
+												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="Uutinen_Tullit" ID="{0BF3958D-B9A5-47F9-93FA-F4B3687EB2E9}" Platform="Linked"/>
+												<ActiveSource Name="Tullit" ID="{AD0AF73D-8737-448F-8C99-79F1FF7504CE}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
@@ -695,15 +711,45 @@
 							<ChildrenList>
 								<AudioFileSource Name="349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s" ID="{98936DA6-26FB-4489-AB00-704E2DD1E971}" ShortID="914707181">
 									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="13.5234171807143"/>
 										<Property Name="TrimBegin" Type="Real64" Value="0.665795364224845"/>
-										<Property Name="TrimEnd" Type="Real64" Value="24.4274697352046"/>
+										<Property Name="TrimEnd" Type="Real64" Value="16.3618659603153"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="380768617"/>
+									</ConvertedFileIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s" ID="{98936DA6-26FB-4489-AB00-704E2DD1E971}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Radio_Off" ID="{16487F1D-5CFC-4393-9F68-93765BCF4E63}" ShortID="248073924">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s" ID="{E983AA4D-93DF-4A1B-845C-DD6A9AD601E7}" ShortID="380768617">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.88715507210751"/>
+										<Property Name="TrimBegin" Type="Real64" Value="24.5671875537734"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="914707181"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="349912__ylearkisto__radio-putkiradio-old-radio-switch-on-humming-warming-up-noise-switch-off-1950s-1960s" ID="{E983AA4D-93DF-4A1B-845C-DD6A9AD601E7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAYRADIO = 2507646724U;
+        static const AkUniqueID STOPRADIO = 1269015798U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -68,6 +69,7 @@ namespace AK
         static const AkUniqueID LONTOO = 2433866642U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MOSKOVA = 2155446061U;
+        static const AkUniqueID RADIO = 2548238350U;
         static const AkUniqueID RADIO_DISTORT = 373183650U;
         static const AkUniqueID RADIO_RECEPTION = 554678636U;
         static const AkUniqueID RADIO_STATIC = 376964263U;
