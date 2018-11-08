@@ -351,10 +351,18 @@ public class GameManager : MonoBehaviour
         }
 
         List<PlayerTask> tasks = new List<PlayerTask>();
+        for(int i = 0; i < 4; i++)
+        {
+            var d = Resources.Load<TextAsset>("news_" + i);
+            var j = JsonUtility.FromJson<PlayerTask>(d.ToString());
+            j.id = i;
+            tasks.Add(j);
+        }
+        /*
         foreach (PlayerTask task in data.PlayerTasks)
         {
             tasks.Add(task);
-        }
+        }*/
         //for (int i = 0; i < data.TaskQuestions.Count; i++)
         //{
         //    PlayerTask task = new PlayerTask(data.TaskQuestions[i]);

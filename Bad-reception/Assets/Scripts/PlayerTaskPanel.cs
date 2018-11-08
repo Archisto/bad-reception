@@ -19,6 +19,16 @@ public class PlayerTaskPanel : MonoBehaviour
         ActivateAnswerPanel(false);
     }
 
+    public void UpdateIntroTasks(List<PlayerTask> tasks)
+    {
+        string q = "";
+        foreach(PlayerTask task in tasks)
+        {
+            q += task.question + "\n";
+        }
+        _questionText.text = q;
+    }
+
     public void UpdateTask(PlayerTask task)
     {
         _task = task;
