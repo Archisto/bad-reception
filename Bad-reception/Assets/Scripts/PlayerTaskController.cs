@@ -33,6 +33,7 @@ public class PlayerTaskController : MonoBehaviour
         taskPanel.Init();
         _currentTaskNum = startTaskNum;
         chosenTasks = new List<PlayerTask>();
+        taskPanel.Activate(false);
     }
 
     private void CreateDebugTasks()
@@ -70,6 +71,7 @@ public class PlayerTaskController : MonoBehaviour
         }
 
         // Debug
+        Debug.Log("taskCount: " + taskCount);
         chosenTaskNumbers = new int[taskCount];
 
         chosenTasks.Clear();
@@ -156,6 +158,7 @@ public class PlayerTaskController : MonoBehaviour
         }
 
         _currentTaskNum = 0;
+        taskPanel.Activate(true);
         UpdateTaskUI();
         taskPanel.UpdateIntroTasks(chosenTasks);
     }
