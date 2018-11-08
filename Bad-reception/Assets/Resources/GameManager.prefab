@@ -68,5 +68,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _days: 3
-  _dayLengthMinutes: 0.01
+  _dayLengthMinutes: 0.05
   _tasksPerDay: 2
+  elapsedDayTime: 0
