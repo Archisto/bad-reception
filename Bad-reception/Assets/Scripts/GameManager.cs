@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
     private string _nextSceneName;
     private List<string> _levelSceneNames;
     private int _elapsedDays;
-    private float _elapsedDayTime;
+    public float elapsedDayTime;
 
     public State GameState { get; set; }
 
@@ -248,8 +248,8 @@ public class GameManager : MonoBehaviour
 
     private void UpdateDayTime()
     {
-        _elapsedDayTime += Time.deltaTime;
-        if (_elapsedDayTime >= _dayLengthMinutes * 60)
+        elapsedDayTime += Time.deltaTime;
+        if (elapsedDayTime >= _dayLengthMinutes * 60)
         {
             Debug.Log("DAY OVER ***************");
             DayOver = true;
@@ -482,7 +482,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Reseting day");
         DayOver = false;
-        _elapsedDayTime = 0f;
+        elapsedDayTime = 0f;
         TaskController.ActivateAnswerPhase(false);
     }
 

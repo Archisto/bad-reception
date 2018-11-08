@@ -53,6 +53,8 @@ public class Channels : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        if (!RadioManager.Running)
+            return;
 		foreach(Channel chnl in channels)
         {
             chnl.randomizeChannelPosition();

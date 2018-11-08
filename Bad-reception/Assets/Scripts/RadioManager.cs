@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class RadioManager : MonoBehaviour {
     
+    public static bool Running = false;
+    public static bool allowStart = true;
+
     public static float minFrequency = 148.5f;
     public static float maxFrequency = 283.5f;
 
@@ -66,9 +69,11 @@ public class RadioManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        AkSoundEngine.PostEvent("PlayRadio", gameObject);
 
-	}
+        //AkSoundEngine.PostEvent("PlayRadio", gameObject);
+        AkSoundEngine.PostEvent("MuteRadio", gameObject);
+        //AkSoundEngine.PostEvent("StopRadio", gameObject);
+    }
 
     private void Awake()
     {
@@ -79,6 +84,17 @@ public class RadioManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+        if(!RadioManager.Running && Input.GetButtonDown("start") && allowStart)
+        {
+            RadioManager.Running = true;
+            AkSoundEngine.PostEvent("PlayRadio", gameObject);
+        }
+        else if(RadioManager.Running && Input.GetButtonDown("start"))
+        {
+            RadioManager.Running = false;
+            AkSoundEngine.PostEvent("StopRadio", gameObject);
+        }
+
         distortTarget += (Random.value-0.5f)*0.6f*Time.deltaTime + Mathf.Sin(Time.time*0.6f)*0.000f;
         distortTarget = Mathf.Clamp(distortTarget, 0f, 1f);
         userDistortLevel = Mathf.Clamp(userDistortLevel, -1f, 2f);

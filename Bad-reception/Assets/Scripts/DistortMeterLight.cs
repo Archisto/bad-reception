@@ -18,7 +18,14 @@ public class DistortMeterLight : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        spotlight.intensity += (Random.value-0.5f) * 1.35f;
-        spotlight.intensity = Mathf.Clamp(spotlight.intensity, 0.2f, 5f);
-	}
+        if(!RadioManager.Running)
+        {
+            spotlight.intensity = 0f;
+        }
+        else
+        {
+            spotlight.intensity += (Random.value - 0.5f) * 1.35f;
+            spotlight.intensity = Mathf.Clamp(spotlight.intensity, 0.2f, 5f);
+        }
+    }
 }
