@@ -71,9 +71,7 @@
 							<PropertyList>
 								<Property Name="AttackTime" Type="Real32" Value="0.001">
 									<RTPCList>
-										<RTPC Name="" ID="{5801FEA4-73AC-4A33-BA88-A9E216B3E7A7}" ShortID="752608868">
-											<ReferenceList/>
-										</RTPC>
+										<RTPC Name="" ID="{5801FEA4-73AC-4A33-BA88-A9E216B3E7A7}" ShortID="752608868"/>
 									</RTPCList>
 								</Property>
 								<Property Name="OutputGain" Type="Real32" Value="12"/>
@@ -592,7 +590,7 @@
 								<Effect Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
-										<Property Name="FrequencyBand1" Type="Real32" Value="60"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="120"/>
 										<Property Name="OnOffBand2" Type="bool" Value="False"/>
 										<Property Name="OnOffBand3" Type="bool" Value="False"/>
 									</PropertyList>
