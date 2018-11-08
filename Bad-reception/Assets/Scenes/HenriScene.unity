@@ -333,12 +333,12 @@ Prefab:
         type: 2}
       propertyPath: leftTemp
       value: 
-      objectReference: {fileID: 372504003}
+      objectReference: {fileID: 1599526472}
     - target: {fileID: 114824615788411452, guid: d6c8f919b39c79642b8427e457135c7a,
         type: 2}
       propertyPath: rightTemp
       value: 
-      objectReference: {fileID: 1599526472}
+      objectReference: {fileID: 372504003}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6c8f919b39c79642b8427e457135c7a, type: 2}
   m_IsPrefabAsset: 0
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 372504005}
   - component: {fileID: 372504004}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: leftknob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1195,6 +1195,11 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.05
       objectReference: {fileID: 0}
+    - target: {fileID: 114717756159139078, guid: e023e8d84b87a7049b360c02e24c80be,
+        type: 2}
+      propertyPath: showChannels
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e023e8d84b87a7049b360c02e24c80be, type: 2}
   m_IsPrefabAsset: 0
@@ -1632,7 +1637,7 @@ GameObject:
   - component: {fileID: 1599526474}
   - component: {fileID: 1599526473}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: rightknob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1691,7 +1696,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1599526472}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &1599526476
 Transform:
   m_ObjectHideFlags: 0
@@ -1699,8 +1704,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1599526472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.557, y: -0.128, z: 0.05}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.1}
+  m_LocalPosition: {x: -0.557, y: -0.128, z: 0.003}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.017899001}
   m_Children:
   - {fileID: 2139039608}
   m_Father: {fileID: 1166466832}

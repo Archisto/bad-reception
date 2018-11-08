@@ -100,8 +100,8 @@ public class InputManager : MonoBehaviour {
             this.rightAngle += d * 180 / Mathf.PI;
         }
         
-        leftTemp.transform.rotation = Quaternion.Euler(new Vector3(0,0,this.leftAngle));
-        rightTemp.transform.rotation = Quaternion.Euler(new Vector3(0,0,this.rightAngle));
+        leftTemp.transform.localRotation = Quaternion.Euler(new Vector3(0,0,this.leftAngle));
+        rightTemp.transform.localRotation = Quaternion.Euler(new Vector3(0,0,this.rightAngle));
 
         previousLeftAngle = leftAngle;
         previousRightAngle = rightAngle;

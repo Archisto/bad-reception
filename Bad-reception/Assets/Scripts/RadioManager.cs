@@ -13,49 +13,49 @@ public class RadioManager : MonoBehaviour {
     public float volume
     {
         get { return _volume; }
-        set { _volume = Mathf.Clamp(value, 0f, 1f); updateWWValues(); }
+        set { _volume = Mathf.Clamp(value, 0f, 1f);  }
     }
 
     private int _channelA = 0;
     public int channelA
     {
         get { return _channelA; }
-        set { _channelA = value; updateWWValues(); }
+        set { _channelA = value;  }
     }
 
     private float _frequency = 148.0f;
     public float frequency
     {
         get{ return _frequency; }
-        set{ _frequency = Mathf.Clamp(value, RadioManager.minFrequency, RadioManager.maxFrequency); updateWWValues(); }
+        set{ _frequency = Mathf.Clamp(value, RadioManager.minFrequency, RadioManager.maxFrequency); }
     }
 
     private float _tuning = 0f;
     public float tuning
     {
         get { return _tuning; }
-        set { _tuning = Mathf.Clamp(value, 0, 1f); updateWWValues(); }
+        set { _tuning = Mathf.Clamp(value, 0, 1f);}
     }
 
     private float _noise = 0f;
     public float noise
     {
         get { return _noise; }
-        set { _noise = Mathf.Clamp(value, 0, 1f); updateWWValues(); }
+        set { _noise = Mathf.Clamp(value, 0, 1f);  }
     }
 
     private float _distort = 0f;
     public float distort
     {
         get { return _distort; }
-        set { _distort = Mathf.Clamp(value, 0, 1f); updateWWValues(); }
+        set { _distort = Mathf.Clamp(value, 0, 1f); }
     }
 
     private float _angle = 0f;
     public float angle
     {
         get { return _angle; }
-        set { _angle = value; updateWWValues(); }
+        set { _angle = value;  }
     }
 
     // Use this for initialization
@@ -66,7 +66,7 @@ public class RadioManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        updateWWValues();
 	}
 
     void updateWWValues()
@@ -85,7 +85,7 @@ public class RadioManager : MonoBehaviour {
                 nearestDistance = distance;
             }
         }
-        _tuning = Mathf.Clamp( (5f-nearestDistance)/5f, 0f,1f);
+        _tuning = Mathf.Clamp( (8f-nearestDistance)/8f, 0f,1f);
         _channelA = nearest.channelId;
 
         var angle = smallestAngleBetween(nearest.angle, this.angle);

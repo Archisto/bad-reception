@@ -27,17 +27,38 @@ public class Channels : MonoBehaviour {
                 chnl.updateChannelIndicatorPosition();
             }
         }
+        randomizeChannels();
+
     }
 
     void randomizeChannels()
     {
         List<float> availableFrequencies = new List<float>();
-        
+        for(float i = RadioManager.minFrequency; i < RadioManager.maxFrequency; i+=20)
+        {
+            var rnd = (Random.value-0.5f)*5f + i;
+            var f = Mathf.Clamp(rnd, RadioManager.minFrequency, RadioManager.maxFrequency);
+            Debug.Log(f + " vs " + i);
+            availableFrequencies.Add(f);
+        }
+
+        //Set the channel frequencies
+        foreach(Channel chnl in channels)
+        {
+            int rnd = (int)Mathf.Floor(Random.value * availableFrequencies.Count);
+            chnl.frequency = availableFrequencies[rnd];
+            availableFrequencies.RemoveAt(rnd);
+            Debug.Log(chnl.frequency);
+        }
     }
 
     // Update is called once per frame
     void Update () {
-		
+		foreach(Channel chnl in channels)
+        {
+            chnl.randomizeChannelPosition();
+            chnl.updateChannelIndicatorPosition();
+        }
 	}
 }
 
@@ -49,13 +70,19 @@ public class Channel
     public GameObject channelIndicator;
     public string name;
     public int channelId;
+
+    private float _baseFrequency;
     private float _frequency;
     public float frequency {
         get{ return _frequency; }
         set{
+            this._baseFrequency = value;
             this._frequency = value;
+            this.updateChannelIndicatorPosition();
         }
     }
+
+    private float phase = 0f;
 
     public float angle;
 
@@ -67,12 +94,19 @@ public class Channel
         this.angle = angle;
     }
 
+    public void randomizeChannelPosition()
+    {
+        phase += (float)Mathf.Sin(_baseFrequency + Time.time*0.15f)*0.015f + (float)Mathf.Cos( _baseFrequency/3.0f + Time.time*0.073f)*0.007f;
+        phase = Mathf.Clamp(phase, -7f, 7f);
+        this._frequency =Mathf.Clamp(_baseFrequency + phase, RadioManager.minFrequency, RadioManager.maxFrequency);
+    }
+
     public void updateChannelIndicatorPosition()
     {
         if(channelIndicator)
         {
             var position = -1.5f + (this._frequency - RadioManager.minFrequency) / (RadioManager.maxFrequency - RadioManager.minFrequency) * 3f;
-            this.channelIndicator.transform.localPosition = new Vector3(position, 0f, -0.1f);
+            this.channelIndicator.transform.localPosition = new Vector3(position, 0f, 0.1f);
         }
     }
 }
