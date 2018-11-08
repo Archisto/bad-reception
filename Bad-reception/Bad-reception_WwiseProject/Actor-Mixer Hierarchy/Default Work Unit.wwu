@@ -9,7 +9,6 @@
 							<PropertyList>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.3"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -26,6 +25,11 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Tampere-musiikit" ID="{A472B311-CA1D-41B2-9410-7FFC856D4CD7}" ShortID="494898706">
 									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>1.5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 									</PropertyList>
@@ -254,6 +258,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<Sound Name="BlimBlom" ID="{BA7D63F8-18E7-4388-8877-9600C7EC97BF}" ShortID="117580426">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -283,6 +294,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<SwitchContainer Name="Uutiset" ID="{911AF37F-311E-49B6-AC80-F542136B7436}" ShortID="143255511">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -435,6 +453,13 @@
 									</GroupingInfo>
 								</SwitchContainer>
 								<Sound Name="HuomioHuomio" ID="{F701D394-B87E-443A-B578-36709B9AEDDE}" ShortID="547611578">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
@@ -480,6 +505,72 @@
 										<ActiveSource Name="SeuraaMusiikkia" ID="{3622FE31-920B-484E-B5E8-1D5F686DC766}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<SwitchContainer Name="Maamme" ID="{DB566549-600C-4741-82D4-1FDCF39A720B}" ShortID="123357010">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Program" ID="{B2331270-1912-4382-9A2B-C44EBD9BA7A7}" WorkUnitID="{D2E88659-2FD8-4BB4-8691-E74910FBC560}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Maamme" ID="{EFF230C8-A7EB-4B8F-86DC-DCC46B2A506B}" ShortID="548260759">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Maamme" ID="{4F27B3AE-D1ED-4188-945B-55C5EA0F07B6}" ShortID="526692800">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.846908080395963"/>
+														<Property Name="TrimBegin" Type="Real64" Value="136.996479649436"/>
+														<Property Name="TrimEnd" Type="Real64" Value="181.3375762454"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>9</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Maamme.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Maamme" ID="{4F27B3AE-D1ED-4188-945B-55C5EA0F07B6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Maamme" ID="{EFF230C8-A7EB-4B8F-86DC-DCC46B2A506B}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Olympialaiset" ID="{73838719-522B-48CF-9942-F67D502BF6A6}"/>
+												<ItemList>
+													<ItemRef Name="Maamme" ID="{EFF230C8-A7EB-4B8F-86DC-DCC46B2A506B}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 							<Playlist>
 								<ItemRef Name="BlimBlom" ID="{BA7D63F8-18E7-4388-8877-9600C7EC97BF}"/>
@@ -488,6 +579,7 @@
 								<ItemRef Name="Tampere-musiikit" ID="{A472B311-CA1D-41B2-9410-7FFC856D4CD7}"/>
 								<ItemRef Name="HuomioHuomio" ID="{F701D394-B87E-443A-B578-36709B9AEDDE}"/>
 								<ItemRef Name="Uutiset" ID="{911AF37F-311E-49B6-AC80-F542136B7436}"/>
+								<ItemRef Name="Maamme" ID="{DB566549-600C-4741-82D4-1FDCF39A720B}"/>
 							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
@@ -822,6 +914,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="RAI-OdeonA228064-01-1-001" ID="{A23A7AE2-999D-46F8-9C39-163099C7EEB7}" ShortID="191356147">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.221651248503333"/>
+												<Property Name="TrimBegin" Type="Real64" Value="9.70339910114598"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>RAI-OdeonA228064-01-1-001.wav</AudioFile>
 										</AudioFileSource>
@@ -854,6 +955,59 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="RAI-Gramophone2-42134-01-1-001" ID="{8FC9B6DF-4153-4DD0-ACC8-8AADDA4FA543}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="DasDeutscheVolklied" ID="{B2BA992F-E8BA-4864-B113-9EE574747E7A}" ShortID="668317412">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DasDeutscheVolklied" ID="{BCD94CE4-CD58-4C93-8FF6-CE5439CAEEDC}" ShortID="850879433">
+											<PropertyList>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>DasDeutscheVolklied.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DasDeutscheVolklied" ID="{BCD94CE4-CD58-4C93-8FF6-CE5439CAEEDC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="IchHabMeinHerzin" ID="{B6F5BE7D-2E3F-44D4-B4BA-85C37C16A6B1}" ShortID="605599531">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="IchHabMeinHerzin" ID="{C2E6B364-BE57-4AEE-8739-3F444474FF24}" ShortID="184872660">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="75.2317353448171"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>IchHabMeinHerzin.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="IchHabMeinHerzin" ID="{C2E6B364-BE57-4AEE-8739-3F444474FF24}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -1343,6 +1497,58 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="RAI-Gramophone282796-01-1-001" ID="{1BA546B1-3E0F-4AD7-B3C4-E1CD40796021}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="DuGamlaDuFria" ID="{DCC5CD6D-51B7-41F3-8092-8950CF3DB9B5}" ShortID="483627993">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DuGamlaDuFria" ID="{55DC3A74-6DD6-426A-9295-DF5F8C87DC01}" ShortID="303511594">
+											<PropertyList>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>DuGamlaDuFria.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="DuGamlaDuFria" ID="{55DC3A74-6DD6-426A-9295-DF5F8C87DC01}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FilckanGangarSigTillBrunnen" ID="{2CEF3928-AF39-47D8-9BA3-71A2D6D18E85}" ShortID="111162103">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{1F6B85E6-5D7B-44E3-84A1-53F1C8983A57}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="FilckanGangarSigTillBrunnen" ID="{C7FE453E-96FF-4128-9FED-361AA673AE51}" ShortID="18552206">
+											<PropertyList>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>FilckanGangarSigTillBrunnen.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="FilckanGangarSigTillBrunnen" ID="{C7FE453E-96FF-4128-9FED-361AA673AE51}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
