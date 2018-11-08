@@ -58,15 +58,15 @@ public class InputManager : MonoBehaviour {
         }
 
         //Read mouse as backup - right thumb
-        if (Input.GetMouseButtonDown(2))
+        if (Input.GetMouseButtonDown(2) || Input.GetMouseButtonDown(1))
         {
             previousMouseX2 = Input.mousePosition.x;
         }
-        if (Input.GetMouseButton(2))
+        if (Input.GetMouseButton(2) || Input.GetMouseButton(1))
         {
-            leftValX = 1f;
-            if (previousLeftAngle != null && previousMouseX2 != null)
-                leftAngle = previousLeftAngle.Value + (previousMouseX2.Value - Input.mousePosition.x) / 150f;
+            rightValX = 1f;
+            if (previousRightAngle != null && previousMouseX2 != null)
+                rightAngle = previousRightAngle.Value + (previousMouseX2.Value - Input.mousePosition.x) / 150f;
         }
         else
         {
