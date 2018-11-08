@@ -75,26 +75,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{A0CA71A4-8582-43B7-870C-159DA4CA4776}" ShortID="169872770">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Helsinki-virta" ID="{D55138AA-40D3-4BCC-BB14-17127D015E57}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{68301DB9-CB6F-4074-B887-23CF931E0391}" ShortID="659504061">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Lahti-virta" ID="{38C09F8A-C265-4A78-8CF4-B682B56C591B}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{B9A18E5E-60CD-4599-B155-75F838E0C07A}" ShortID="186064062">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="1"/>
