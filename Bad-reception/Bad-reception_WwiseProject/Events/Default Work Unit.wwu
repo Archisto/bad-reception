@@ -209,7 +209,7 @@
 						<Action Name="" ID="{31BD7224-69AF-4CE5-B783-C359E735C63C}" ShortID="313223009">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="3"/>
-								<Property Name="Delay" Type="Real64" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList/>
 						</Action>
