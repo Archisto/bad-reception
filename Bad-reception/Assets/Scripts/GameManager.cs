@@ -73,10 +73,14 @@ public class GameManager : MonoBehaviour
     public float elapsedDayTime;
     public bool radioActivated;
     public bool radioDeactivated;
+    public int score;
 
     public State GameState { get; set; }
 
     public TransitionPhase SceneTransition { get; set; }
+
+    private int programId = 0;
+    private List<int> programs;
 
     public bool SceneChanging
     {
@@ -97,6 +101,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public float TotalTasksToComplete
+    {
+        get
+        {
+            return _days * _tasksPerDay;
+        }
+    }
+
     public PlayerTaskController TaskController { get; private set; }
 
     public UIController UIController { get; private set; }
@@ -110,7 +122,9 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     private void Awake ()
     {
-		if (instance == null)
+        this.programs = new List<int>();
+        
+        if (instance == null)
         {
             instance = this;
         }
@@ -282,11 +296,8 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("DAY OVER - Tasks begin");
             DayOver = true;
-            if (RadioManager.Running)
-            {
-                RadioManager.allowStart = false;
-                RadioManager.Running = false;
-            }
+            RadioManager.Running = false;
+            RadioManager.allowStart = false;
             TaskController.taskPanel.Activate(true);
             TaskController.ActivateAnswerPhase(true);
         }
@@ -351,10 +362,23 @@ public class GameManager : MonoBehaviour
         }
 
         List<PlayerTask> tasks = new List<PlayerTask>();
+        for(int i = 0; i < 4; i++)
+        {
+            var d = Resources.Load<TextAsset>("news_" + i);
+            var j = JsonUtility.FromJson<GameData>(d.ToString());
+            for(int k = 0; k < j.PlayerTasks.Count; k++)
+            {
+                j.PlayerTasks[k].id = i;
+                Debug.Log("task " + j.PlayerTasks[k].Question + " to id " + i);
+                tasks.Add(j.PlayerTasks[k]);
+                Debug.Log(j.PlayerTasks[k].id);
+            }
+        }
+        /*
         foreach (PlayerTask task in data.PlayerTasks)
         {
             tasks.Add(task);
-        }
+        }*/
         //for (int i = 0; i < data.TaskQuestions.Count; i++)
         //{
         //    PlayerTask task = new PlayerTask(data.TaskQuestions[i]);
@@ -451,12 +475,36 @@ public class GameManager : MonoBehaviour
 
     #endregion Scene Management
 
+    public void ChangeScore(int scoreChange)
+    {
+        score += scoreChange;
+    }
+
     public void StartLevel()
     {
         radioActivated = false;
         radioDeactivated = false;
         GameState = State.Play;
-        TaskController.ChooseRandomTasks(_tasksPerDay, false);
+
+        if(programs.Count == 0)
+        {
+            var t = new List<int>();
+            t.Add(0);
+            t.Add(1);
+            t.Add(2);
+            t.Add(3);
+
+            this.programs = new List<int>();
+            for(int i = 0; i < 4; i++)
+            {
+                int rnd = (int)Mathf.Floor(t.Count*Random.value);
+                programs.Add(t[rnd]);
+                t.RemoveAt(rnd);
+            }
+        }
+        this.programId = programs[0];
+        programs.RemoveAt(0);
+        TaskController.ChooseRandomTasks(_tasksPerDay, false, this.programId);
         TaskController.StartFirstTask();
         RadioManager.allowStart = true;
         Debug.Log("Day begins");
@@ -469,6 +517,8 @@ public class GameManager : MonoBehaviour
         if (_elapsedDays == _days)
         {
             Debug.Log("GAME COMPLETED");
+            UIController.gameEndScreen.SetResultText(score);
+            UIController.gameEndScreen.SetActive(true);
         }
         else
         {
@@ -489,6 +539,7 @@ public class GameManager : MonoBehaviour
     {
         ResetLevel();
         _elapsedDays = 0;
+        score = 0;
     }
 
     private void OnDisable()

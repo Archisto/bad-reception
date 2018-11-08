@@ -19,6 +19,16 @@ public class PlayerTaskPanel : MonoBehaviour
         ActivateAnswerPanel(false);
     }
 
+    public void UpdateIntroTasks(List<PlayerTask> tasks)
+    {
+        string q = "";
+        foreach(PlayerTask task in tasks)
+        {
+            q += task.question + "\n";
+        }
+        _questionText.text = q;
+    }
+
     public void UpdateTask(PlayerTask task)
     {
         _task = task;
@@ -32,7 +42,7 @@ public class PlayerTaskPanel : MonoBehaviour
         {
             if (i < _task.answers.Count)
             {
-                _answerTexts[i].text = _task.answers[i];
+                _answerTexts[i].text = GetButtonPrompt(i) + _task.answers[i];
             }
             else
             {
@@ -41,13 +51,38 @@ public class PlayerTaskPanel : MonoBehaviour
 
             if (i == _task.correctAnswer)
             {
-                _answerTexts[i].color = Color.green;
+                //_answerTexts[i].color = Color.green;
             }
             else
             {
-                _answerTexts[i].color = Color.black;
+                //_answerTexts[i].color = Color.black;
             }
         }
+    }
+
+    private string GetButtonPrompt(int answerNum)
+    {
+        switch (answerNum)
+        {
+            case 0:
+            {
+                return "(A) ";
+            }
+            case 1:
+            {
+                return "(B) ";
+            }
+            case 2:
+            {
+                return "(X) ";
+            }
+            case 3:
+            {
+                return "(Y) ";
+            }
+        }
+
+        return "- ";
     }
 
     public void Activate(bool activate)

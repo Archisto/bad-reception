@@ -7,8 +7,13 @@ public class UIController : MonoBehaviour
 {
     public Image fadeScreen;
     public MainMenuScreen mainMenuScreen;
+    public GameEndScreen gameEndScreen;
     public GameObject creditsScreen;
 
+    private void Start()
+    {
+        gameEndScreen.Init(this);
+    }
 
     public bool MainMenuActive
     {
