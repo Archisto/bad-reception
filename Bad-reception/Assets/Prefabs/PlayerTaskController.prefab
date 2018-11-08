@@ -53,3 +53,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTaskNum: 0
   taskPanel: {fileID: 0}
+  maxTasks: 0
+  chosenTaskNumbers: 

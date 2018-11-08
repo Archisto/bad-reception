@@ -1,14 +1,18 @@
 ﻿{"PlayerTasks":[
     {"Question":"Question 1?",
         "Answers":["This","That"],
-        "CorrectAnswer":0},
+        "CorrectAnswer":0,
+        "AudioClipTag":"Tag0"},
     {"Question":"Question 2?",
         "Answers":["Today","Yesterday","Tomorrow"],
-        "CorrectAnswer":0},
+        "CorrectAnswer":0,
+        "AudioClipTag":"Tag0"},
     {"Question":"Question 3?",
         "Answers":["Me","You","Her","Him"],
-        "CorrectAnswer":0},
+        "CorrectAnswer":0,
+        "AudioClipTag":"Tag1"},
     {"Question":"Question 4?",
         "Answers":["Answer 0","Answer 1","Answer 2","Answer 3"],
-        "CorrectAnswer":2}
+        "CorrectAnswer":2,
+        "AudioClipTag":"Tag1"}
 ]}
