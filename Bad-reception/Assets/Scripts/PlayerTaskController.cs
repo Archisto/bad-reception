@@ -205,8 +205,10 @@ public class PlayerTaskController : MonoBehaviour
 
                 if (correct)
                 {
-                    StartNextTask();
+                    GameManager.Instance.ChangeScore(1);
                 }
+
+                StartNextTask();
             }
             else
             {

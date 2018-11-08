@@ -51,11 +51,11 @@ public class PlayerTaskPanel : MonoBehaviour
 
             if (i == _task.correctAnswer)
             {
-                _answerTexts[i].color = Color.green;
+                //_answerTexts[i].color = Color.green;
             }
             else
             {
-                _answerTexts[i].color = Color.black;
+                //_answerTexts[i].color = Color.black;
             }
         }
     }

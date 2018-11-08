@@ -25,11 +25,21 @@ public class GameEndScreen : MonoBehaviour
         Debug.Log("ReturnToMainMenu");
         SetActive(false);
         _ui.mainMenuScreen.SetActive(true);
+        GameManager.Instance.ResetGame();
         GameManager.Instance.GameState = GameManager.State.MainMenu;
     }
 
     public void SetActive(bool active)
     {
         gameObject.SetActive(active);
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("answerB") ||
+            Input.GetKeyDown(KeyCode.Return))
+        {
+            ReturnToMainMenu();
+        }
     }
 }

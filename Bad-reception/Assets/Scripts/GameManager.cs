@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
     public float elapsedDayTime;
     public bool radioActivated;
     public bool radioDeactivated;
+    public int score;
 
     public State GameState { get; set; }
 
@@ -474,6 +475,11 @@ public class GameManager : MonoBehaviour
 
     #endregion Scene Management
 
+    public void ChangeScore(int scoreChange)
+    {
+        score += scoreChange;
+    }
+
     public void StartLevel()
     {
         radioActivated = false;
@@ -511,7 +517,7 @@ public class GameManager : MonoBehaviour
         if (_elapsedDays == _days)
         {
             Debug.Log("GAME COMPLETED");
-            UIController.gameEndScreen.SetResultText(0);
+            UIController.gameEndScreen.SetResultText(score);
             UIController.gameEndScreen.SetActive(true);
         }
         else
@@ -533,6 +539,7 @@ public class GameManager : MonoBehaviour
     {
         ResetLevel();
         _elapsedDays = 0;
+        score = 0;
     }
 
     private void OnDisable()
