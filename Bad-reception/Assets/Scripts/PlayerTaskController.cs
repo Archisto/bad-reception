@@ -67,6 +67,21 @@ public class PlayerTaskController : MonoBehaviour
         chosenTaskNumbers = new int[taskCount];
 
         chosenTasks.Clear();
+
+        var temp = new List<PlayerTask>();
+        foreach(PlayerTask tsk in this.tasks)
+        {
+            temp.Add(tsk);
+        }
+
+        for(int i = 0; i < (int)Mathf.Min(temp.Count,taskCount); i++)
+        {
+            var rnd =(int) Mathf.Floor( Random.value * temp.Count);
+            chosenTasks.Add(temp[rnd]);
+            temp.RemoveAt(rnd);
+        }
+
+        /*
         int taskIndex = _nextRandomTaskIndex;
         for (int i = 0; i < taskCount; i++)
         {
@@ -87,7 +102,7 @@ public class PlayerTaskController : MonoBehaviour
 
             taskIndex++;
             _nextRandomTaskIndex = taskIndex;
-        }
+        }*/
     }
 
     private void ShuffleTasks()
@@ -131,6 +146,7 @@ public class PlayerTaskController : MonoBehaviour
 
         _currentTaskNum = 0;
         UpdateTaskUI();
+        taskPanel.UpdateIntroTasks(chosenTasks);
     }
 
     public void StartNextTask()
