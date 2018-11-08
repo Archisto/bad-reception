@@ -25,6 +25,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	2667647788	Single_Band_1Khz_Wide	Wwise Parametric EQ			
 	2952825346	Dual_Filters_Radio_Comm	Wwise Parametric EQ			
 	3497757918	Fast_LF_Tremolo_No_Smoothing	Wwise Tremolo			
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	589043491	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\RadioSFX\Whistle_01\Wwise Sine	
