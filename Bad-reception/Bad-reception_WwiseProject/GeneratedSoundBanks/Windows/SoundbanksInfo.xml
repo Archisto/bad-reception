@@ -62,6 +62,10 @@
 					<ShortName>Enkä_minä_ryyppää.wav</ShortName>
 					<Path>SFX/Enkä_minä_ryyppää_BF8D387D.wem</Path>
 				</File>
+				<File Id="290576465" Language="SFX">
+					<ShortName>Russian1.wav</ShortName>
+					<Path>SFX/Russian1_A1793BE9.wem</Path>
+				</File>
 				<File Id="324652965" Language="SFX">
 					<ShortName>RAI-Gramophone282796-01-1-001.wav</ShortName>
 					<Path>SFX/RAI-Gramophone282796-01-1-001_7A6B169F.wem</Path>
@@ -86,6 +90,14 @@
 					<ShortName>Tullit.wav</ShortName>
 					<Path>SFX/Tullit_A1793BE9.wem</Path>
 				</File>
+				<File Id="551731891" Language="SFX">
+					<ShortName>Russian5.wav</ShortName>
+					<Path>SFX/Russian5_A1793BE9.wem</Path>
+				</File>
+				<File Id="579549146" Language="SFX">
+					<ShortName>Russian3.wav</ShortName>
+					<Path>SFX/Russian3_A1793BE9.wem</Path>
+				</File>
 				<File Id="608550253" Language="SFX">
 					<ShortName>SeuraaMusiikkia.wav</ShortName>
 					<Path>SFX/SeuraaMusiikkia_A1793BE9.wem</Path>
@@ -97,6 +109,10 @@
 				<File Id="649016906" Language="SFX">
 					<ShortName>radio_static_weather_loop.wav</ShortName>
 					<Path>SFX/radio_static_weather_loop_CB1F3167.wem</Path>
+				</File>
+				<File Id="701909898" Language="SFX">
+					<ShortName>Russian4.wav</ShortName>
+					<Path>SFX/Russian4_A1793BE9.wem</Path>
 				</File>
 				<File Id="867146824" Language="SFX">
 					<ShortName>RAI-Gramophone7-282154-01-2-001.wav</ShortName>
@@ -137,6 +153,10 @@
 				<File Id="1048002417" Language="SFX">
 					<ShortName>TakeMeToTheLandOfJazz.wav</ShortName>
 					<Path>SFX/TakeMeToTheLandOfJazz_F7B8F599.wem</Path>
+				</File>
+				<File Id="1071556064" Language="SFX">
+					<ShortName>Russian2.wav</ShortName>
+					<Path>SFX/Russian2_A1793BE9.wem</Path>
 				</File>
 				<File Id="1072169702" Language="SFX">
 					<ShortName>IHateToLeaveYouNow_LouisArmstrong.wav</ShortName>

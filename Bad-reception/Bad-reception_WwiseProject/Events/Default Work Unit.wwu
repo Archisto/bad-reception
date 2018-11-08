@@ -136,7 +136,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Lontoo-virta" ID="{BD5E5CAF-C475-4A5D-91E2-E306860D117D}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+									<ObjectRef Name="Lontoo-musat" ID="{BD5E5CAF-C475-4A5D-91E2-E306860D117D}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -146,7 +146,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Moskova-virta" ID="{404F7A02-07FC-49CB-910E-C74C8910416E}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
+									<ObjectRef Name="Moskova-virta" ID="{5A9CA33D-2CCD-4178-9A12-3C5F31000CB8}" WorkUnitID="{297070D5-08B7-42BF-AFEB-FB9740AA9E61}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -173,6 +173,30 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Radio" ID="{361D1526-18EE-4045-883D-D98A25456BF2}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C7EF3B2D-8604-49C3-9191-CD7FFE617366}" ShortID="250629872">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-200"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio_distort" ID="{26C91A80-0CDD-41CA-8198-D27D145F0DA7}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4E675CEF-87EB-4B6D-8D9E-07202E6B4A4E}" ShortID="727489169">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-200"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio_static" ID="{E4128DF6-7D90-4E42-8028-BEE7F8EEB52F}" WorkUnitID="{5AA15A7B-4ACC-4D23-A9A5-7E45CA84AF82}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
