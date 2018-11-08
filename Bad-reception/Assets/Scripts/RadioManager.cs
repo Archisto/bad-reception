@@ -63,9 +63,14 @@ public class RadioManager : MonoBehaviour {
         AkSoundEngine.PostEvent("PlayRadio", gameObject);
 
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Awake()
+    {
+        this.frequency = Random.value * (RadioManager.maxFrequency - RadioManager.minFrequency) + RadioManager.minFrequency;
+    }
+
+    // Update is called once per frame
+    void Update () {
         updateWWValues();
 	}
 
