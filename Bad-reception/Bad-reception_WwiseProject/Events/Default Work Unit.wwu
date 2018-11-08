@@ -5,6 +5,12 @@
 			<ChildrenList>
 				<Event Name="PlayRadio" ID="{36361417-CF95-4C41-B1D4-63F2600F36B1}">
 					<ChildrenList>
+						<Action Name="" ID="{0EB927FC-B01A-446D-9022-DF9F6BCB5F87}" ShortID="56612542">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
 						<Action Name="" ID="{80D7A53D-1C0D-4A21-A9C1-A7F6428B2B1E}" ShortID="263983259">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="11"/>
