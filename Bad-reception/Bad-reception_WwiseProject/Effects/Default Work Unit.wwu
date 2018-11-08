@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9E102FC0-1890-4243-ADE5-F6C8FB54A027}" SchemaVersion="89">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{9E102FC0-1890-4243-ADE5-F6C8FB54A027}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9E102FC0-1890-4243-ADE5-F6C8FB54A027}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="RadioEQ" ID="{294FECF5-4434-40E0-8E43-4F2BE5872879}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="663"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="20000"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="RadioMasterEQ" ID="{4892CBED-E521-4ADD-BA43-D413A53B4CFD}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="160"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="5378"/>
+						<Property Name="GainBand1" Type="Real32" Value="-24"/>
+						<Property Name="GainBand3" Type="Real32" Value="-24"/>
+						<Property Name="OnOffBand2" Type="bool" Value="False"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

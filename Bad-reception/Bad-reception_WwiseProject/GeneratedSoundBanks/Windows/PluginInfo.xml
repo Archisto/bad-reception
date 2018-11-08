@@ -3,6 +3,7 @@
 	<Plugins>
 		<Plugin Name="Wwise Sine" ID="6553602" DLL="AkSineTone"/>
 		<Plugin Name="Wwise Parametric EQ" ID="6881283" DLL="AkParametricEQ"/>
+		<Plugin Name="Wwise Compressor" ID="7077891" DLL="AkCompressor"/>
 		<Plugin Name="Wwise Tremolo" ID="8585219" DLL="AkTremolo"/>
 		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
 		<Plugin Name="No Output" ID="11862023" DLL="DefaultSink"/>
